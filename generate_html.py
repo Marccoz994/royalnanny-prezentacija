@@ -361,8 +361,8 @@ def build_html():
         }
 
         .split-left-main .slide-titles-wrap {
-            margin-bottom: 8px;
-            flex-shrink: 0;
+            margin-bottom: 14px;
+            flex: 0 0 auto;
         }
 
         .split-left-main .split-text-col {
@@ -374,22 +374,24 @@ def build_html():
         }
 
         .split-left-main .split-text-col .proto-card {
-            padding: 10px 16px;
+            padding: 18px 24px;
         }
 
         .split-left-main .split-text-col .proto-card-title {
-            font-size: 17.5px;
-            margin-bottom: 4px;
+            font-size: 21px;
+            margin-bottom: 8px;
         }
 
         .split-left-main .split-text-col .proto-bullets {
-            gap: 3px;
+            gap: 9px;
+            justify-content: space-evenly;
+            flex: 1;
         }
 
         .split-left-main .split-text-col .proto-bullets li {
-            font-size: 13.2px;
-            line-height: 1.32;
-            padding-left: 14px;
+            font-size: 15.5px;
+            line-height: 1.48;
+            padding-left: 18px;
         }
 
         .split-right-main {
@@ -491,15 +493,295 @@ def build_html():
             filter: brightness(1.25);
         }
 
-        /* Layout: Two Column Cards */
-        .layout-two-col,
-        .layout-two-cards {
+        /* Layout: Two Column Cards Full-Width */
+        .layout-two-col-root {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            height: 100%;
+            min-height: 0;
+            box-sizing: border-box;
+        }
+
+        .layout-two-col {
             display: grid;
             grid-template-columns: 1fr 1fr;
             gap: 24px;
+            flex: 1;
+            min-height: 0;
+            margin-bottom: 12px;
+        }
+
+        .layout-two-col .proto-card {
+            background: var(--c-card-bg);
+            border: 1px solid var(--c-border);
+            border-left: 6px solid var(--c-terra);
+            border-radius: 16px;
+            padding: 26px 32px;
+            box-shadow: var(--shadow-sm);
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            flex: 1;
+            min-height: 0;
+            overflow: hidden;
+            box-sizing: border-box;
+        }
+
+        .dark-theme .layout-two-col .proto-card {
+            background: rgba(255, 255, 255, 0.06);
+            border: 1px solid rgba(205, 187, 160, 0.22);
+            border-left: 6px solid var(--c-gold);
+        }
+
+        .layout-two-col .proto-card-title {
+            font-family: var(--font-title);
+            font-size: 25px;
+            font-weight: 700;
+            color: var(--c-dark);
+            margin-bottom: 12px;
+            padding-bottom: 9px;
+            border-bottom: 1px solid rgba(205, 187, 160, 0.35);
+            flex-shrink: 0;
+        }
+
+        .dark-theme .layout-two-col .proto-card-title {
+            color: var(--c-sand);
+            border-bottom-color: rgba(205, 187, 160, 0.2);
+        }
+
+        .layout-two-col .proto-card-desc {
+            font-size: 16.5px;
+            font-style: italic;
+            color: var(--c-terra);
+            margin-bottom: 16px;
+            line-height: 1.48;
+            flex-shrink: 0;
+        }
+
+        .dark-theme .layout-two-col .proto-card-desc {
+            color: var(--c-gold);
+        }
+
+        .layout-two-col .proto-bullets {
+            gap: 16px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            margin: 0;
+            padding: 0;
+        }
+
+        .layout-two-col .proto-bullets li {
+            font-size: 18px;
+            line-height: 1.52;
+            padding-left: 24px;
+            color: #2D2320;
+            position: relative;
+        }
+
+        .dark-theme .layout-two-col .proto-bullets li {
+            color: var(--c-linen);
+        }
+
+        .layout-two-col .proto-bullets li::before {
+            font-size: 20px;
+            top: -1px;
+            left: 3px;
+        }
+
+        .layout-two-col .proto-bullets li strong {
+            color: #1A120F;
+            font-weight: 700;
+        }
+
+        .layout-two-col .proto-bullets li strong:first-of-type {
+            color: var(--c-terra);
+            font-weight: 750;
+        }
+
+        .dark-theme .layout-two-col .proto-bullets li strong {
+            color: #FFFFFF;
+            font-weight: 700;
+        }
+
+        .dark-theme .layout-two-col .proto-bullets li strong:first-of-type {
+            color: var(--c-gold);
+            font-weight: 750;
+        }
+
+        /* Layout: Curriculum Grid (Slide 02 Roadmap) */
+        .layout-curriculum-root {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
             height: 100%;
             min-height: 0;
+            box-sizing: border-box;
+        }
+
+        .curriculum-grid-4 {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 16px;
             flex: 1;
+            min-height: 0;
+            margin-bottom: 12px;
+        }
+
+        .curriculum-card {
+            background: var(--c-card-bg);
+            border-radius: 12px;
+            border: 1px solid var(--c-border);
+            padding: 16px 18px;
+            display: flex;
+            flex-direction: column;
+            box-shadow: var(--shadow-sm);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .dark-theme .curriculum-card {
+            background: rgba(255, 255, 255, 0.06);
+            border-color: rgba(205, 187, 160, 0.22);
+        }
+
+        .curriculum-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: var(--card-accent, var(--c-terra));
+        }
+
+        .curriculum-card.mod-1 { --card-accent: #765535; }
+        .curriculum-card.mod-2 { --card-accent: #8B906D; }
+        .curriculum-card.mod-3 { --card-accent: #47342E; }
+        .curriculum-card.mod-4 { --card-accent: #B94137; }
+
+        .curr-badge-row {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 8px;
+        }
+
+        .curr-mod-pill {
+            font-size: 11px;
+            font-weight: 700;
+            color: #fff;
+            background: var(--card-accent, #765535);
+            padding: 3px 8px;
+            border-radius: 4px;
+            letter-spacing: 0.5px;
+        }
+
+        .curr-count-pill {
+            font-size: 11px;
+            font-weight: 600;
+            color: var(--card-accent, #765535);
+            background: rgba(205, 187, 160, 0.25);
+            padding: 2px 8px;
+            border-radius: 12px;
+        }
+
+        .curr-card-h {
+            font-family: var(--font-title);
+            font-size: 15px;
+            font-weight: 700;
+            color: var(--c-dark);
+            margin-bottom: 8px;
+            line-height: 1.25;
+            min-height: 38px;
+        }
+
+        .dark-theme .curr-card-h {
+            color: var(--c-sand);
+        }
+
+        .curr-topic-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+            flex: 1;
+            overflow-y: auto;
+        }
+
+        .curr-topic-list li {
+            font-size: 12px;
+            color: var(--c-dark);
+            line-height: 1.35;
+            padding-left: 12px;
+            position: relative;
+        }
+
+        .dark-theme .curr-topic-list li {
+            color: var(--c-linen);
+        }
+
+        .curr-topic-list li::before {
+            content: '•';
+            position: absolute;
+            left: 0;
+            color: var(--card-accent, var(--c-terra));
+            font-weight: bold;
+        }
+
+        /* Accreditation Strip */
+        .curriculum-bottom-strip {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background: var(--c-dark);
+            color: var(--c-linen);
+            padding: 10px 20px;
+            border-radius: 10px;
+            flex-shrink: 0;
+            margin-bottom: 8px;
+        }
+
+        .accred-left {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+        }
+
+        .accred-seal {
+            background: var(--c-gold);
+            color: var(--c-dark);
+            font-size: 10px;
+            font-weight: 800;
+            padding: 4px 10px;
+            border-radius: 4px;
+            letter-spacing: 1px;
+        }
+
+        .accred-lead {
+            font-family: var(--font-title);
+            font-size: 15.5px;
+            font-weight: 700;
+            color: #fff;
+        }
+
+        .accred-metrics-chips {
+            display: flex;
+            gap: 16px;
+        }
+
+        .accred-chip {
+            font-size: 12px;
+            color: var(--c-sand);
+        }
+
+        .accred-chip strong {
+            color: var(--c-gold);
+            font-size: 14px;
+            margin-right: 3px;
         }
 
         /* Layout: Three Cards */
@@ -529,7 +811,7 @@ def build_html():
             border: 1px solid var(--c-border);
             border-left: 5px solid var(--c-terra);
             border-radius: 12px;
-            padding: 22px 28px;
+            padding: 16px 24px;
             box-shadow: var(--shadow-sm);
             display: flex;
             flex-direction: column;
@@ -549,10 +831,10 @@ def build_html():
 
         .proto-card-title {
             font-family: var(--font-title);
-            font-size: 23px;
+            font-size: 21px;
             font-weight: 700;
             color: var(--c-dark);
-            margin-bottom: 10px;
+            margin-bottom: 8px;
             display: flex;
             align-items: center;
             gap: 8px;
@@ -565,10 +847,10 @@ def build_html():
         }
 
         .proto-card-desc {
-            font-size: 17px;
-            line-height: 1.52;
+            font-size: 15.5px;
+            line-height: 1.45;
             color: #382F2B;
-            margin-bottom: 8px;
+            margin-bottom: 6px;
         }
 
         .dark-theme .proto-card-desc {
@@ -579,14 +861,14 @@ def build_html():
             list-style: none;
             display: flex;
             flex-direction: column;
-            gap: 10px;
+            gap: 8px;
             flex: 1;
-            justify-content: center;
+            justify-content: flex-start;
         }
 
         .proto-bullets li {
-            font-size: 17px;
-            line-height: 1.48;
+            font-size: 15.5px;
+            line-height: 1.44;
             color: #382F2B;
             position: relative;
             padding-left: 18px;
@@ -697,58 +979,6 @@ def build_html():
         .layout-matrix-4 .proto-bullets li {
             font-size: 15.2px;
             line-height: 1.42;
-        }
-
-        /* Density modifiers */
-        .density-medium .split-text-col {
-            gap: 12px;
-        }
-        .density-medium .proto-card {
-            padding: 18px 24px;
-        }
-        .density-medium .proto-card-title {
-            font-size: 19.5px;
-            margin-bottom: 8px;
-        }
-        .density-medium .proto-bullets {
-            gap: 8px;
-        }
-        .density-medium .proto-bullets li {
-            font-size: 15px;
-            line-height: 1.45;
-        }
-
-        .density-compact .split-text-col {
-            gap: 10px;
-        }
-        .density-compact .metrics-strip {
-            gap: 10px;
-            margin-bottom: 6px;
-        }
-        .density-compact .metric-badge {
-            padding: 6px 12px;
-        }
-        .density-compact .metric-val {
-            font-size: 23px;
-        }
-        .density-compact .metric-lbl {
-            font-size: 11px;
-        }
-        .density-compact .proto-card {
-            padding: 15px 22px;
-            border-left-width: 4px;
-        }
-        .density-compact .proto-card-title {
-            font-size: 18.5px;
-            margin-bottom: 6px;
-        }
-        .density-compact .proto-bullets {
-            gap: 6px;
-        }
-        .density-compact .proto-bullets li {
-            font-size: 14.5px;
-            line-height: 1.42;
-            padding-left: 16px;
         }
 
         /* Slide Footer */
@@ -1083,7 +1313,7 @@ def build_html():
         </div>
         <div class="actions-zone">
             <button class="btn-nav" id="btnPrev" title="Prethodni slajd (←)">‹ Prethodni</button>
-            <span class="slide-counter-badge" id="slideCounter">01 / 32</span>
+            <span class="slide-counter-badge" id="slideCounter">01 / 40</span>
             <button class="btn-nav" id="btnNext" title="Sledeći slajd (→)">Sledeći ›</button>
             <button class="btn-nav" id="btnGrid" title="Pregled svih slajdova (G)">☷ Slajdovi</button>
             <button class="btn-nav" id="btnNotes" title="Beleške za predavača (N)">📝 Beleške</button>
@@ -1158,14 +1388,8 @@ def build_html():
             const maxBullets = blocks.reduce((max, b) => Math.max(max, b.bullets ? b.bullets.length : 0), 0);
             const totalBullets = blocks.reduce((acc, b) => acc + (b.bullets ? b.bullets.length : 0), 0);
             const hasMetrics = Boolean(s.metrics && s.metrics.length > 0);
-            let densityClass = "";
-            if (numCards >= 3 || (hasMetrics && totalBullets >= 8) || maxBullets >= 5) {
-                densityClass = " density-compact";
-            } else if (hasMetrics || totalBullets >= 7) {
-                densityClass = " density-medium";
-            }
-            
-            slideContent.className = "slide-content" + (isDark ? " dark-theme" : "") + densityClass;
+            const hasHeavyCard = blocks.some(b => b.text && b.bullets && b.bullets.length >= 4);
+            slideContent.className = "slide-content" + (isDark ? " dark-theme" : "");
             
             const currentLogo = isDark ? LOGO_LIGHT : LOGO_DARK;
             const currentMonogram = isDark ? LOGO_MARK_CREAM : LOGO_MARK_DARK;
@@ -1205,10 +1429,84 @@ def build_html():
                 </div>
             `;
 
-            if (s.layout === "split_right_image" || s.layout === "cover") {
-                const isInfo = !s.image ? false : (s.image.startsWith("slide") || s.image.includes("_protocol") || s.image.includes("_card") || s.image.includes("_station") || s.image.includes("_care") || s.image.includes("_admin") || s.image.includes("_kit") || s.image.includes("_allergies") || s.image.includes("_positions") || s.image.includes("_first_aid") || s.image.includes("_dehydration") || s.image.includes("_hd.png"));
-                const colStyle = isInfo ? "background: transparent; border: none; box-shadow: none;" : "";
-                const fitStyle = isInfo ? "object-fit: contain; background: transparent; padding: 0;" : "object-fit: cover;";
+            if (s.layout === "curriculum_grid") {
+                const modules = s.curriculum_modules || [];
+                slideContent.innerHTML = `
+                    <div class="layout-curriculum-root">
+                        <div class="slide-inner-header">
+                            <div class="slide-titles-wrap">
+                                <div class="brand-eyebrow">
+                                    <img src="${currentMonogram}" alt="RN" class="rn-monogram-mark">
+                                    <span class="category-pill">${s.category || "ROYAL NANNY"}</span>
+                                </div>
+                                <h1 class="slide-h1">${s.title_styled || s.title}</h1>
+                                ${s.subtitle ? `<p class="slide-sub">${s.subtitle}</p>` : ""}
+                            </div>
+                            <img src="${currentLogo}" alt="Royal Nanny" class="slide-watermark-logo">
+                        </div>
+                        <div class="curriculum-grid-4">
+                            ${modules.map((m, mIdx) => `
+                                <div class="curriculum-card mod-${mIdx + 1}">
+                                    <div class="curr-badge-row">
+                                        <span class="curr-mod-pill">${m.mod_id}</span>
+                                        <span class="curr-count-pill">${m.badge}</span>
+                                    </div>
+                                    <h3 class="curr-card-h">${m.title}</h3>
+                                    <ul class="curr-topic-list">
+                                        ${m.topics.map(t => `<li>${t}</li>`).join("")}
+                                    </ul>
+                                </div>
+                            `).join("")}
+                        </div>
+                        <div class="curriculum-bottom-strip">
+                            <div class="accred-left">
+                                <span class="accred-seal">STRUČNA AKREDITACIJA KURIKULUMA</span>
+                                <span class="accred-lead">Spec. strukovna medicinska sestra Jelena Aleksić</span>
+                            </div>
+                            <div class="accred-metrics-chips">
+                                <div class="accred-chip"><strong>4</strong> modula</div>
+                                <div class="accred-chip"><strong>37</strong> tema</div>
+                                <div class="accred-chip"><strong>100%</strong> standard</div>
+                            </div>
+                        </div>
+                        ${footerHtml}
+                    </div>
+                `;
+            } else if (s.layout === "two_col_cards") {
+                slideContent.innerHTML = `
+                    <div class="layout-two-col-root">
+                        <div class="slide-inner-header">
+                            <div class="slide-titles-wrap">
+                                <div class="brand-eyebrow">
+                                    <img src="${currentMonogram}" alt="RN" class="rn-monogram-mark">
+                                    <span class="category-pill">${s.category || "ROYAL NANNY"}</span>
+                                </div>
+                                <h1 class="slide-h1">${s.title_styled || s.title}</h1>
+                                ${s.subtitle ? `<p class="slide-sub">${s.subtitle}</p>` : ""}
+                            </div>
+                            <img src="${currentLogo}" alt="Royal Nanny" class="slide-watermark-logo">
+                        </div>
+                        <div class="layout-two-col">
+                            ${s.content_blocks.map(b => `
+                                <div class="proto-card">
+                                    <h3 class="proto-card-title">${b.title}</h3>
+                                    ${b.text ? `<p class="proto-card-desc">${b.text}</p>` : ""}
+                                    ${b.bullets ? `
+                                        <ul class="proto-bullets">
+                                            ${b.bullets.map(item => `<li>${item}</li>`).join("")}
+                                        </ul>
+                                    ` : ""}
+                                </div>
+                            `).join("")}
+                        </div>
+                        ${metricsHtml}
+                        ${footerHtml}
+                    </div>
+                `;
+            } else if (s.layout === "split_right_image" || s.layout === "cover") {
+                const isPngInfo = Boolean(s.image && s.image.endsWith(".png") && (s.image.startsWith("slide") || s.image.includes("_protocol") || s.image.includes("_card") || s.image.includes("_station") || s.image.includes("_care") || s.image.includes("_admin") || s.image.includes("_kit") || s.image.includes("_allergies") || s.image.includes("_positions") || s.image.includes("_first_aid") || s.image.includes("_dehydration") || s.image.includes("_hd.png")));
+                const colStyle = isPngInfo ? "background: transparent; border: none; box-shadow: none;" : "";
+                const fitStyle = isPngInfo ? "object-fit: contain; background: transparent; padding: 0;" : "object-fit: cover;";
 
                 slideContent.innerHTML = `
                     <div class="layout-split-image-root">
@@ -1242,75 +1540,12 @@ def build_html():
                             </div>
                             <div class="split-image-col" style="${colStyle}">
                                 ${s.image ? `<img src="extracted_assets/${s.image}" alt="${s.title}" style="${fitStyle}">` : ""}
-                                ${(!isInfo && s.image) ? `
-                                    <div class="photo-overlay-badge">
-                                        <img src="${LOGO_LIGHT}" alt="Royal Nanny">
-                                    </div>
-                                ` : ""}
                             </div>
                         </div>
                     </div>
                     ${footerHtml}
                 `;
             } else {
-                if (s.layout === "two_col_cards") {
-                    bodyHtml += `
-                        <div style="display: flex; flex-direction: column; width: 100%; height: 100%;">
-                            ${metricsHtml}
-                            <div class="layout-two-col">
-                                ${s.content_blocks.map(b => `
-                                    <div class="proto-card">
-                                        <h3 class="proto-card-title">${b.title}</h3>
-                                        ${b.text ? `<p class="proto-card-desc">${b.text}</p>` : ""}
-                                        ${b.bullets ? `
-                                            <ul class="proto-bullets">
-                                                ${b.bullets.map(item => `<li>${item}</li>`).join("")}
-                                            </ul>
-                                        ` : ""}
-                                    </div>
-                                `).join("")}
-                            </div>
-                        </div>
-                    `;
-                } else if (s.layout === "three_cards") {
-                    bodyHtml += `
-                        <div style="display: flex; flex-direction: column; width: 100%; height: 100%;">
-                            ${metricsHtml}
-                            <div class="layout-three-cards">
-                                ${s.content_blocks.map(b => `
-                                    <div class="proto-card">
-                                        <h3 class="proto-card-title">${b.title}</h3>
-                                        ${b.text ? `<p class="proto-card-desc">${b.text}</p>` : ""}
-                                        ${b.bullets ? `
-                                            <ul class="proto-bullets">
-                                                ${b.bullets.map(item => `<li>${item}</li>`).join("")}
-                                            </ul>
-                                        ` : ""}
-                                    </div>
-                                `).join("")}
-                            </div>
-                        </div>
-                    `;
-                } else if (s.layout === "matrix_4") {
-                    bodyHtml += `
-                        <div class="layout-matrix-4">
-                            ${s.content_blocks.map(b => `
-                                <div class="proto-card">
-                                    <h3 class="proto-card-title">${b.title}</h3>
-                                    <div class="proto-card-inner">
-                                        ${b.text ? `<p class="proto-card-desc">${b.text}</p>` : ""}
-                                        ${b.bullets ? `
-                                            <ul class="proto-bullets">
-                                                ${b.bullets.map(item => `<li>${item}</li>`).join("")}
-                                            </ul>
-                                        ` : ""}
-                                    </div>
-                                </div>
-                            `).join("")}
-                        </div>
-                    `;
-                }
-
                 bodyHtml += `</div>`;
                 slideContent.innerHTML = headerHtml + bodyHtml + footerHtml;
             }

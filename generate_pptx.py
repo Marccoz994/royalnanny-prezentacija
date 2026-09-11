@@ -47,6 +47,41 @@ def clean_html(text):
 def strip_em_for_plain(text):
     return text.replace('<em>', '').replace('</em>', '')
 
+def add_formatted_bullet(tf, bullet_text, is_dark, base_size=Pt(13), space_before=Pt(6)):
+    """Kreira paragraf buleta sa formatiranim bold delovima (očuvano iz <strong> tagova)."""
+    pb = tf.add_paragraph()
+    pb.space_before = space_before
+    
+    # Bullet tačkica
+    r_dot = pb.add_run()
+    r_dot.text = "• "
+    r_dot.font.name = FONT_BODY
+    r_dot.font.size = base_size
+    r_dot.font.bold = True
+    r_dot.font.color.rgb = RGB_GOLD if is_dark else RGB_TERRA
+    
+    parts = re.split(r'(<strong>.*?</strong>)', bullet_text)
+    is_first_strong = True
+    for part in parts:
+        if not part:
+            continue
+        r = pb.add_run()
+        r.font.name = FONT_BODY
+        r.font.size = base_size
+        if part.startswith("<strong>") and part.endswith("</strong>"):
+            clean_str = clean_html(part)
+            r.text = clean_str
+            r.font.bold = True
+            if is_first_strong:
+                r.font.color.rgb = RGB_GOLD if is_dark else RGB_TERRA
+                is_first_strong = False
+            else:
+                r.font.color.rgb = RGB_WHITE if is_dark else RGB_DARK
+        else:
+            r.text = clean_html(part)
+            r.font.bold = False
+            r.font.color.rgb = RGB_LINEN if is_dark else RGB_DARK
+
 def set_slide_background(slide, color):
     background = slide.background
     fill = background.fill
@@ -169,6 +204,8 @@ def build_pptx():
         
         if layout == "cover":
             render_cover_layout(slide, s)
+        elif layout == "curriculum_grid":
+            render_curriculum_grid_layout(slide, s, is_dark)
         elif layout == "split_right_image":
             render_split_image_layout(slide, s, is_dark)
         elif layout == "two_col_cards":
@@ -232,12 +269,7 @@ def render_cover_layout(slide, s):
         
         if b.get("bullets"):
             for bullet in b["bullets"]:
-                pb = tf.add_paragraph()
-                pb.text = "• " + clean_html(bullet)
-                pb.font.name = FONT_BODY
-                pb.font.size = Pt(11.5)
-                pb.font.color.rgb = RGB_LINEN
-                pb.space_before = Pt(4)
+                add_formatted_bullet(tf, bullet, is_dark=True, base_size=Pt(12.5), space_before=Pt(6))
                 
     # Metrics kartice na dnu leve strane
     metrics = s.get("metrics", [])
@@ -283,7 +315,7 @@ def render_split_image_layout(slide, s, is_dark):
     if img_name:
         img_path = os.path.join(ASSETS_DIR, img_name)
         if os.path.exists(img_path):
-            is_info = img_name.startswith("slide") or any(k in img_name for k in ["_protocol", "_card", "_station", "_care", "_admin", "_kit", "_allergies", "_positions", "_first_aid", "_dehydration", "_hd.png"])
+            is_info = img_name.endswith(".png") and (img_name.startswith("slide") or any(k in img_name for k in ["_protocol", "_card", "_station", "_care", "_admin", "_kit", "_allergies", "_positions", "_first_aid", "_dehydration", "_hd.png"]))
             box_w = Inches(4.8)
             box_h = Inches(5.6)
             box_aspect = 4.8 / 5.6
@@ -310,12 +342,6 @@ def render_split_image_layout(slide, s, is_dark):
                 pic_left = Inches(7.72) + (box_w - pic_w) / 2
                 
             slide.shapes.add_picture(img_path, pic_left, pic_top, width=pic_w, height=pic_h)
-            
-            # Watermark overlay for photoshoot photos
-            if not is_info:
-                wm_path = os.path.join(ASSETS_DIR, "logo_horizontal_light.png")
-                if os.path.exists(wm_path):
-                    slide.shapes.add_picture(wm_path, Inches(9.2), Inches(1.3), width=Inches(1.8))
 
     # Provera za metrics traku
     metrics = s.get("metrics", [])
@@ -436,20 +462,111 @@ def render_split_image_layout(slide, s, is_dark):
             
         if b.get("bullets"):
             for bullet in b["bullets"]:
-                pb = tf.add_paragraph()
-                pb.text = "• " + clean_html(bullet)
-                pb.font.name = FONT_BODY
-                pb.font.size = f_bullet
-                pb.font.color.rgb = RGB_LINEN if is_dark else RGB_DARK
-                pb.space_before = space_b
+                add_formatted_bullet(tf, bullet, is_dark, base_size=f_bullet, space_before=space_b)
                 
         top_pos += card_h + Inches(gap)
 
+def render_curriculum_grid_layout(slide, s, is_dark):
+    modules = s.get("curriculum_modules", [])
+    if not modules:
+        return
+        
+    lefts = [Inches(0.8), Inches(3.75), Inches(6.70), Inches(9.65)]
+    card_w = Inches(2.8)
+    card_h = Inches(4.25)
+    top_pos = Inches(1.85)
+    
+    # Boje za 4 modula (Royal Nanny paleta)
+    mod_colors = [
+        RGB_TERRA,                  # Modul 1: Konjak / Terakota
+        RGB_SAGE,                   # Modul 2: Žalfija zelena
+        RGBColor(71, 52, 46),       # Modul 3: Espresso tamna
+        RGBColor(185, 65, 55)       # Modul 4: Koralno crvena
+    ]
+    
+    for i, m in enumerate(modules[:4]):
+        # Glavna kartica modula
+        card = slide.shapes.add_shape(MSO_SHAPE.ROUNDED_RECTANGLE, lefts[i], top_pos, card_w, card_h)
+        card.fill.solid()
+        card.fill.fore_color.rgb = RGB_DARK_CARD if is_dark else RGB_CARD_BG
+        card.line.color.rgb = RGB_SAND if is_dark else RGB_BORDER
+        card.line.width = Pt(1)
+        
+        # Gornja akcent traka
+        bar = slide.shapes.add_shape(MSO_SHAPE.RECTANGLE, lefts[i], top_pos, card_w, Inches(0.08))
+        bar.fill.solid()
+        bar.fill.fore_color.rgb = mod_colors[i]
+        bar.line.fill.background()
+        
+        tf = card.text_frame
+        tf.word_wrap = True
+        tf.margin_left = Inches(0.18)
+        tf.margin_right = Inches(0.16)
+        tf.margin_top = Inches(0.16)
+        tf.margin_bottom = Inches(0.14)
+        
+        # Oznaka modula i broj tema
+        p_badge = tf.paragraphs[0]
+        p_badge.text = f"{m.get('mod_id', f'MODUL {i+1}')}  •  {m.get('badge', '')}".upper()
+        p_badge.font.name = FONT_BODY
+        p_badge.font.size = Pt(9.5)
+        p_badge.font.bold = True
+        p_badge.font.color.rgb = mod_colors[i]
+        
+        # Naslov modula
+        p_title = tf.add_paragraph()
+        p_title.text = m.get("title", "")
+        p_title.font.name = FONT_TITLE
+        p_title.font.size = Pt(13)
+        p_title.font.bold = True
+        p_title.font.color.rgb = RGB_LINEN if is_dark else RGB_DARK
+        p_title.space_before = Pt(4)
+        
+        # Lista tema u okviru modula
+        topics = m.get("topics", [])
+        for t in topics:
+            pt = tf.add_paragraph()
+            pt.text = f"• {t}"
+            pt.font.name = FONT_BODY
+            pt.font.size = Pt(9.2)
+            pt.font.color.rgb = RGB_LINEN if is_dark else RGB_DARK
+            pt.space_before = Pt(2.5)
+            
+    # Donja traka stručne akreditacije
+    b_banner = slide.shapes.add_shape(MSO_SHAPE.ROUNDED_RECTANGLE, Inches(0.8), Inches(6.22), Inches(11.65), Inches(0.68))
+    b_banner.fill.solid()
+    b_banner.fill.fore_color.rgb = RGB_DARK_CARD if is_dark else RGB_DARK
+    b_banner.line.color.rgb = RGB_GOLD
+    b_banner.line.width = Pt(1)
+    
+    btf = b_banner.text_frame
+    btf.word_wrap = True
+    btf.margin_left = Inches(0.25)
+    btf.margin_right = Inches(0.25)
+    btf.margin_top = Inches(0.12)
+    btf.margin_bottom = Inches(0.08)
+    
+    bp1 = btf.paragraphs[0]
+    bp1.text = "★ STRUČNA AKREDITACIJA KURIKULUMA:  Spec. strukovna medicinska sestra Jelena Aleksić"
+    bp1.font.name = FONT_TITLE
+    bp1.font.size = Pt(12)
+    bp1.font.bold = True
+    bp1.font.color.rgb = RGB_GOLD
+    
+    bp2 = btf.add_paragraph()
+    bp2.text = "4 STRUČNA MODULA   •   37 KLINIČKIH I PEDIJATRIJSKIH TEMA   •   100% STANDARDIZACIJA ZNANJA"
+    bp2.font.name = FONT_BODY
+    bp2.font.size = Pt(9.5)
+    bp2.font.color.rgb = RGB_LINEN
+    bp2.space_before = Pt(2)
+
 def render_two_col_layout(slide, s, is_dark):
     blocks = s.get("content_blocks", [])
+    metrics = s.get("metrics", [])
+    
     lefts = [Inches(0.8), Inches(6.8)]
     col_w = Inches(5.75)
-    card_h = Inches(5.0)
+    card_h = Inches(4.25) if metrics else Inches(5.0)
     top_pos = Inches(1.85)
     
     for i, b in enumerate(blocks[:2]):
@@ -470,7 +587,7 @@ def render_two_col_layout(slide, s, is_dark):
         tf.margin_left = Inches(0.38)
         tf.margin_right = Inches(0.32)
         tf.margin_top = Inches(0.28)
-        tf.margin_bottom = Inches(0.28)
+        tf.margin_bottom = Inches(0.22)
         
         p0 = tf.paragraphs[0]
         p0.text = b.get("title", "")
@@ -483,18 +600,63 @@ def render_two_col_layout(slide, s, is_dark):
             pt = tf.add_paragraph()
             pt.text = clean_html(b["text"])
             pt.font.name = FONT_BODY
-            pt.font.size = Pt(15)
-            pt.font.color.rgb = RGB_LINEN if is_dark else RGB_DARK
-            pt.space_before = Pt(8)
+            pt.font.size = Pt(14)
+            pt.font.italic = True
+            pt.font.color.rgb = RGB_GOLD if is_dark else RGB_TERRA
+            pt.space_before = Pt(6)
             
-        if b.get("bullets"):
-            for bullet in b["bullets"]:
-                pb = tf.add_paragraph()
-                pb.text = "• " + clean_html(bullet)
-                pb.font.name = FONT_BODY
-                pb.font.size = Pt(14)
-                pb.font.color.rgb = RGB_LINEN if is_dark else RGB_DARK
-                pb.space_before = Pt(6)
+        bullets = b.get("bullets", [])
+        if bullets:
+            b_size = Pt(13)
+            sp_before = Pt(8)
+            for bullet in bullets:
+                add_formatted_bullet(tf, bullet, is_dark, base_size=b_size, space_before=sp_before)
+
+    # Donja traka sa kliničkim parametrima / metrics
+    if metrics:
+        m_count = len(metrics)
+        m_gap = 0.22
+        total_w = 11.75
+        m_w = (total_w - (m_count - 1) * m_gap) / m_count
+        m_h = 0.68
+        m_left = Inches(0.8)
+        m_top = Inches(6.22)
+        
+        for m in metrics:
+            m_card = slide.shapes.add_shape(MSO_SHAPE.ROUNDED_RECTANGLE, m_left, m_top, Inches(m_w), Inches(m_h))
+            m_card.fill.solid()
+            m_card.fill.fore_color.rgb = RGB_DARK_CARD if is_dark else RGB_CARD_BG
+            m_card.line.color.rgb = RGB_SAND if is_dark else RGB_BORDER
+            m_card.line.width = Pt(1)
+            
+            # Left accent bar
+            m_bar = slide.shapes.add_shape(MSO_SHAPE.RECTANGLE, m_left, m_top, Inches(0.06), Inches(m_h))
+            m_bar.fill.solid()
+            m_bar.fill.fore_color.rgb = RGB_GOLD if is_dark else RGB_TERRA
+            m_bar.line.fill.background()
+            
+            mtf = m_card.text_frame
+            mtf.word_wrap = True
+            mtf.margin_left = Inches(0.18)
+            mtf.margin_right = Inches(0.12)
+            mtf.margin_top = Inches(0.07)
+            mtf.margin_bottom = Inches(0.05)
+            
+            mp1 = mtf.paragraphs[0]
+            mp1.text = m["val"]
+            mp1.font.name = FONT_TITLE
+            mp1.font.size = Pt(15.5)
+            mp1.font.bold = True
+            mp1.font.color.rgb = RGB_GOLD if is_dark else RGB_TERRA
+            
+            mp2 = mtf.add_paragraph()
+            mp2.text = m["lbl"]
+            mp2.font.name = FONT_BODY
+            mp2.font.size = Pt(9.5)
+            mp2.font.color.rgb = RGB_LINEN if is_dark else RGB_OLIVE
+            mp2.space_before = Pt(1)
+            
+            m_left += Inches(m_w + m_gap)
 
 def render_three_cards_layout(slide, s, is_dark):
     blocks = s.get("content_blocks", [])
@@ -540,12 +702,7 @@ def render_three_cards_layout(slide, s, is_dark):
             
         if b.get("bullets"):
             for bullet in b["bullets"]:
-                pb = tf.add_paragraph()
-                pb.text = "• " + clean_html(bullet)
-                pb.font.name = FONT_BODY
-                pb.font.size = Pt(13)
-                pb.font.color.rgb = RGB_LINEN if is_dark else RGB_DARK
-                pb.space_before = Pt(5)
+                add_formatted_bullet(tf, bullet, is_dark, base_size=Pt(12.5), space_before=Pt(6))
 
 def render_matrix_layout(slide, s, is_dark):
     blocks = s.get("content_blocks", [])
@@ -595,12 +752,7 @@ def render_matrix_layout(slide, s, is_dark):
             
         if b.get("bullets"):
             for bullet in b["bullets"]:
-                pb = tf.add_paragraph()
-                pb.text = "• " + clean_html(bullet)
-                pb.font.name = FONT_BODY
-                pb.font.size = Pt(12.5)
-                pb.font.color.rgb = RGB_LINEN if is_dark else RGB_DARK
-                pb.space_before = Pt(4)
+                add_formatted_bullet(tf, bullet, is_dark, base_size=Pt(12), space_before=Pt(4))
 
 if __name__ == "__main__":
     build_pptx()

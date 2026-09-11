@@ -1,0 +1,12 @@
+# OS and Cache files
+.DS_Store
+Thumbs.db
+__pycache__/
+*.pyc
+
+# Large branding PDFs and temporary extracts (exceeds GitHub 100MB limit)
+ROYAL NANNY_branding 2026 2.pdf
+brand_pages/
+page_*.png
+preview_*.png
+catalog_montage.jpg

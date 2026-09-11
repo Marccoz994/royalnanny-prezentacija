@@ -1025,7 +1025,7 @@ def build_html():
             <span><span class="kbd">F</span> Puni ekran</span>
         </div>
         <div style="color: var(--c-sand);">
-            Predavač: <strong>Jelena Aleksić</strong> • Royal Nanny 2026
+            Saradnik: <strong>Spec. strukovna med-sestra Jelena Aleksić</strong> • Royal Nanny 2026
         </div>
     </footer>
 

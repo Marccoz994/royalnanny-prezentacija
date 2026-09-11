@@ -1,12 +1,61 @@
 # Royal Nanny Akademija – Prezentacija za obuku predavača
 
-Ekskluzivna, profesionalna edukativna prezentacija i prateći materijali za obuku predavača **Royal Nanny Akademije**.
+Ekskluzivna, profesionalna edukativna prezentacija i prateći materijali za obuku predavača **Royal Nanny Akademije**.  
+**Saradnik i autor kurikuluma:** Spec. strukovna med-sestra Jelena Aleksić
 
 ---
 
-## 🌟 Ključne karakteristike
+## 🌟 4 Zvanična edukativna modula
 
-- **32 detaljno razrađena slajda**: Od nege novorođenčeta, dojenja i bezbednosti, do hitnih stanja, komunikacije sa roditeljima i pravnog okvira.
+1. **Modul 1 – Higijena i nega novorođenčeta**:
+   - Priprema sobe za bebu, nameštaja i opreme za bebu
+   - Kupanje bebe (priprema i tehnika)
+   - Nega kože
+   - Nega pupčanika i pupčane rane
+   - Nega čula
+   - Oblačenje bebe
+   - Položaj pri hranjenju, nošenju i spavanju
+   - Higijena bebine garderobe i bebinog pribora
+
+2. **Modul 2 – Dojenje**:
+   - Prednosti dojenja
+   - Higijena i nega dojki
+   - Priprema dojki za podoj
+   - Položaji pri dojenju
+   - Pravilno postavljanje bebe na dojku
+   - Ispucale bradavice – ragade
+   - Upala dojki
+   - Izmazanje majčinog mleka
+   - Čuvanje mleka
+   - Adaptirana formula
+
+3. **Modul 3 – Nega odojčeta**:
+   - Vakcinacija
+   - Šetnja
+   - Uvođenje čvrste hrane
+   - Zdrave životne navike
+   - Denticija
+   - Putovanje
+
+4. **Modul 4 – Nega bolesnog deteta**:
+   - Grčevi
+   - Osip po telu, pelenski osip
+   - Infekcija oka
+   - Zapušen nos
+   - Vakcinacija (postvakcinalne reakcije i nega)
+   - Opstipacija – dijareja
+   - Visoka temperatura
+   - Povrede i nezgode
+   - Zarazne bolesti
+   - Ujed insekta
+   - Alergije
+   - Putna apoteka
+   - Davanje lekova
+
+---
+
+## 🎛️ Mogućnosti prezentacije
+
 - **Interaktivna HTML prezentacija (`index.html`)**:
   - 📥 **Dugme za preuzimanje PPTX-a**: Direktan download kompletne PowerPoint prezentacije sa svim slajdovima i beleškama.
   - 🎙️ **Režim za predavača (Speaker Notes)**: Pritisnite taster `N` ili kliknite na "Beleške" za detaljan vodič kroz predavanje i diskusije.

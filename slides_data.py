@@ -1,50 +1,66 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-SLIDES_DATA = [   {   'bg_theme': 'dark',
+"""
+Strukturirani podaci za 32 slajda prezentacije Royal Nanny Akademije.
+Zvanični kurikulum: 4 modula nege i pedijatrije po materijalu Jelene Aleksić.
+Saradnik: Spec. strukovna med-sestra Jelena Aleksić
+"""
+
+SLIDES_DATA = [   {   'badge': 'ROYAL NANNY AKADEMIJA',
+        'bg_theme': 'dark',
         'category': 'ROYAL NANNY AKADEMIJA',
-        'content_blocks': [   {   'bullets': [   '<strong>7 kliničkih modula:</strong> Od nege novorođenčeta do hitnih pedijatrijskih stanja.',
-                                                 '<strong>Strogi protokoli bezbednosti:</strong> Prevencija rizika i bezbedno postupanje u svakom trenutku.',
-                                                 '<strong>Vrhunski bonton & diskrecija:</strong> Diplomatska komunikacija i poštovanje privatnosti porodice.',
-                                                 '<strong>Praktične demonstracije:</strong> Usvajanje veština kroz realne situacije iz prakse.'],
-                                  'text': 'Sveobuhvatni pedagoško-medicinski program kreiran za prenošenje najviših '
-                                          'standarda nege, bezbednosti, emocionalne topline i profesionalne diskrecije '
-                                          'u porodicama visokih zahteva.',
+        'content_blocks': [   {   'bullets': [   '<strong>4 sveobuhvatna modula:</strong> Higijena i nega '
+                                                 'novorođenčeta, dojenje, nega odojčeta i nega bolesnog deteta.',
+                                                 '<strong>Medicinski utemeljeni protokoli:</strong> Zlatni standardi '
+                                                 'pedijatrijske nege po programu Jelene Aleksić.',
+                                                 '<strong>Vrhunski bonton & diskrecija:</strong> Diplomatska '
+                                                 'komunikacija, etika i poštovanje privatnosti doma.',
+                                                 '<strong>Praktične demonstracije:</strong> Usvajanje veština kroz '
+                                                 'realne kliničke i životne situacije.'],
+                                  'text': 'Sveobuhvatni pedijatrijsko-medicinski program kreiran za prenošenje '
+                                          'najviših standarda nege, bezbednosti, emocionalne topline i profesionalne '
+                                          'diskrecije u porodicama visokih zahteva.',
                                   'title': 'Ekskluzivna obuka za elitne dadilje'}],
         'id': 1,
         'image': 'p1_img2_736x946.png',
         'layout': 'cover',
-        'lecturer_notes': {   'cilj': 'Postaviti ton celokupne obuke, definisati autoritet predavača i uvesti '
-                                      'polaznice u filozofiju brenda Royal Nanny.',
-                              'greske': "Polaznice često misle da je dovoljno samo 'voleti decu'. Moramo im odmah "
-                                        'staviti do znanja da ljubav bez stručnosti, protokola i predviđanja rizika '
-                                        'nije dovoljna za rad na ovom nivou.',
-                              'pitanje': 'Šta po vama razlikuje prosečnu bebisiterku od sertifikovane Royal Nanny '
-                                         'profesionalne dadilje?',
-                              'teze': 'Naglasite da Royal Nanny nije samo agencija za čuvanje dece, već institucija '
-                                      'koja postavlja standard izvrsnosti. Dadilja u ovakvom okruženju je partner '
-                                      'roditeljima sa medicinski utemeljenim znanjem i besprekornim manirima. '
-                                      'Materijal Jelene Aleksić predstavlja zlatni standard pedijatrijske nege na '
-                                      'našim prostorima.'},
+        'lecturer_notes': {   'cilj': 'Postaviti autoritet predavača, predstaviti saradnika Spec. strukovnu med-sestru '
+                                      'Jelenu Aleksić i definisati standarde izvrsnosti.',
+                              'greske': "Polaznice često misle da je 'ljubav prema deci' dovoljna. Jasno podvući da je "
+                                        'stručnost bez improvizacije temelj rada.',
+                              'pitanje': 'Šta po vašem mišljenju razlikuje prosečnu dadilju od sertifikovane Royal '
+                                         'Nanny profesionalne negovateljice?',
+                              'teze': 'Naglasite da Royal Nanny obuka nije samo kurs čuvanja dece, već akademija '
+                                      'elitne nege. Polaznice moraju shvatiti da je spoj medicinske obučenosti, '
+                                      'preventivnog razmišljanja i bontona ono što stvara poverenje roditelja.'},
         'logo': 'logo_horizontal_light.png',
-        'metrics': [   {'lbl': 'Modula obuke', 'val': '7'},
-                       {'lbl': 'Kliničkih protokola', 'val': '24+'},
+        'metrics': [   {'lbl': 'Stručna modula', 'val': '4'},
+                       {'lbl': 'Kliničkih protokola', 'val': '30+'},
                        {'lbl': 'Fokus na bezbednost', 'val': '100%'}],
         'module': 'Uvod',
-        'subtitle': 'Edukativni modul za predavače i instruktore • Prema materijalu Jelene Aleksić',
+        'subtitle': 'Edukativni program za predavače • Saradnik: Spec. strukovna med-sestra Jelena Aleksić',
         'title': 'Standardi profesionalne nege i razvoja deteta',
         'title_styled': 'Standardi <em>profesionalne nege</em> i razvoja deteta'},
     {   'badge': 'FILOZOFIJA BRENDA',
         'bg_theme': 'light',
         'category': 'MISIJA I IDENTITET',
-        'content_blocks': [   {   'bullets': [   '<strong>Ekskluzivna sinergija:</strong> Pažljivo građen most između visokih zahteva luksuznog doma i iskrene brige o deci.',
-                                                 '<strong>Dvostruka kompetencija:</strong> Spoj medicinske i pedijatrijske obučenosti sa besprekornim manirima i etikom.',
-                                                 '<strong>Individualni pristup:</strong> Prilagođavanje specifičnim pravilima, navikama i vrednostima svake porodice.',
-                                                 '<strong>Sigurnost i mir doma:</strong> Dadilja kao pouzdan oslonac koji roditeljima pruža potpuno rasterećenje.'],
+        'content_blocks': [   {   'bullets': [   '<strong>Ekskluzivna sinergija:</strong> Pažljivo građen most između '
+                                                 'visokih zahteva luksuznog doma i iskrene brige o deci.',
+                                                 '<strong>Dvostruka kompetencija:</strong> Spoj medicinske i '
+                                                 'pedijatrijske obučenosti sa besprekornim manirima i etikom.',
+                                                 '<strong>Individualni pristup:</strong> Prilagođavanje specifičnim '
+                                                 'pravilima, navikama i vrednostima svake porodice.',
+                                                 '<strong>Sigurnost i mir doma:</strong> Dadilja kao pouzdan oslonac '
+                                                 'koji roditeljima pruža potpuno rasterećenje.'],
                                   'title': 'Retko i lično iskustvo'},
-                              {   'bullets': [   '<strong>1. Poverenje & Sigurnost:</strong> Apsolutna pouzdanost i pedijatrijska sigurnost deteta u svakom trenutku.',
-                                                 '<strong>2. Elegancija & Diskretnost:</strong> Tih, nenametljiv rad, poštovanje privatnosti doma i vrhunski bonton.',
-                                                 '<strong>3. Medicinska svrha:</strong> Svaki postupak i rutina imaju stručno pedijatrijsko i razvojno opravdanje.',
-                                                 '<strong>4. Fluidnost & Toplota:</strong> Meki pristup koji poštuje dečju individualnost i prirodni ritam.'],
+                              {   'bullets': [   '<strong>1. Poverenje & Sigurnost:</strong> Apsolutna pouzdanost i '
+                                                 'pedijatrijska sigurnost deteta u svakom trenutku.',
+                                                 '<strong>2. Elegancija & Diskretnost:</strong> Tih, nenametljiv rad, '
+                                                 'poštovanje privatnosti doma i vrhunski bonton.',
+                                                 '<strong>3. Medicinska svrha:</strong> Svaki postupak i rutina imaju '
+                                                 'stručno pedijatrijsko i razvojno opravdanje.',
+                                                 '<strong>4. Fluidnost & Toplota:</strong> Meki pristup koji poštuje '
+                                                 'dečju individualnost i prirodni ritam.'],
                                   'title': 'Stubovi profesionalne izvrsnosti'}],
         'id': 2,
         'image': 'p11_img1_1080x1349.png',
@@ -65,951 +81,1304 @@ SLIDES_DATA = [   {   'bg_theme': 'dark',
     {   'badge': 'NASTAVNI PLAN',
         'bg_theme': 'light',
         'category': 'KURIKULUM I SATNICA',
-        'content_blocks': [   {   'bullets': [   '<strong>Modul 1: Priprema prostora & mikroklima:</strong> Higijena sobe, kreveca, tehnike kupanja i pH nega kože.',
-                                                 '<strong>Modul 2: Klinička toaleta novorođenčeta:</strong> Suva obrada pupčanika, nega čula i pelenska regija.',
-                                                 '<strong>Modul 3: Ishrana, laktacija & formula:</strong> Dojenje, položaji, skladištenje mleka i sterilna formula.',
-                                                 '<strong>Modul 4: Razvoj, san & dnevne rutine:</strong> Prevencija SIDS-a, Tummy time, denticija i prve šetnje.'],
-                                  'title': 'Moduli 1 – 4: Temelji nege i ishrana novorođenčeta'},
-                              {   'bullets': [   '<strong>Modul 5: Uobičajene tegobe & febrilnost:</strong> Protokoli kod kolika, temperature i doziranje lekova.',
-                                                 '<strong>Modul 6: Urgentna pedijatrija & bezbednost:</strong> Padovi, gušenje, opekotine i eliminacija rizika u domu.',
-                                                 '<strong>Modul 7: Putovanja, apoteka & etika:</strong> Putna apoteka, primena lekova i etički kodeks agencije.',
-                                                 '<strong>Standard sertifikacije:</strong> Praktične simulacije na lutkama, provera znanja i Royal Nanny licenca.'],
-                                  'title': 'Moduli 5 – 7: Zdravlje, urgentna stanja i etika'}],
+        'content_blocks': [   {   'bullets': [   '<strong>Modul 1 – Higijena i nega novorođenčeta:</strong> Priprema '
+                                                 'sobe i opreme, kupanje, nega kože, obrada pupčanika, nega čula, '
+                                                 'oblačenje, položaji i higijena pribora.',
+                                                 '<strong>Modul 2 – Dojenje:</strong> Prednosti dojenja, higijena i '
+                                                 'priprema dojki, položaji i pravilan hvat, ragade, mastitis, '
+                                                 'izmazanje, čuvanje mleka i adaptirana formula.'],
+                                  'title': 'Moduli 1 & 2: Nega novorođenčeta i dojenje'},
+                              {   'bullets': [   '<strong>Modul 3 – Nega odojčeta:</strong> Vakcinacija, prve šetnje, '
+                                                 'uvođenje čvrste hrane, zdrave životne navike, denticija i priprema '
+                                                 'za putovanja.',
+                                                 '<strong>Modul 4 – Nega bolesnog deteta:</strong> Grčevi, osip i '
+                                                 'pelenski ojed, infekcije oka i zapušen nos, febrilnost, dijareja, '
+                                                 'povrede i nezgode, zarazne bolesti, alergije, apoteka i lekovi.',
+                                                 '<strong>Saradnik programa:</strong> Spec. strukovna med-sestra '
+                                                 'Jelena Aleksić • Zlatni standard pedijatrijske prakse.'],
+                                  'title': 'Moduli 3 & 4: Nega odojčeta i bolesnog deteta'}],
         'id': 3,
         'image': 'p10_img1_3000x1999.png',
         'layout': 'split_right_image',
-        'lecturer_notes': {   'cilj': "Dati polaznicama jasan 'roadmap' današnjeg predavanja kako bi znale šta da "
-                                      'očekuju i prate svoj napredak.',
-                              'greske': 'Predavač predugo ostaje na uvodnim slajdovima. Pređite na modul 1 u roku od '
+        'lecturer_notes': {   'cilj': 'Dati polaznicama jasan roadmap današnjeg predavanja kroz 4 zvanična modula '
+                                      'kurikuluma Jelene Aleksić.',
+                              'greske': 'Predavač predugo ostaje na uvodnim slajdovima. Pređite na Modul 1 u roku od '
                                         'prvih 10-15 minuta obuke.',
-                              'pitanje': 'Koji od ovih 7 segmenata vam deluje kao najveći lični izazov u dosadašnjem '
-                                         'radu?',
-                              'teze': 'Objasnite dinamiku: nakon teorijskih smernica sledi analiza konkretnih studija '
-                                      'slučajeva i demonstracija tehnika (kupanje, prepovijanje, hvat kod dojenja, '
-                                      'prva pomoć). Predavanja su interaktivna.'},
+                              'pitanje': 'Koji od ova 4 modula vam deluje kao oblast u kojoj imate najviše pitanja ili '
+                                         'nedoumica?',
+                              'teze': 'Objasnite dinamiku: program je podeljen u 4 logičke celine – od nege '
+                                      'novorođenčeta, preko ishrane i odojčeta, do nege bolesnog deteta i hitnih '
+                                      'intervencija. Predavanja su interaktivna uz demonstracije.'},
         'module': 'Uvod',
-        'subtitle': 'Pregled 7 tematskih celina obuke za profesionalne dadilje',
+        'subtitle': '4 zvanična modula obuke • Saradnik: Spec. strukovna med-sestra Jelena Aleksić',
         'title': 'Struktura edukativnog programa',
         'title_styled': 'Struktura <em>edukativnog programa</em>'},
-    {   'badge': 'MODUL 1: OSNOVE NEGE',
+    {   'badge': 'MODUL 1: HIGIJENA I NEGA NOVOROĐENČETA',
         'bg_theme': 'light',
-        'category': 'HIGIJENA I PROSTOR',
-        'content_blocks': [   {   'bullets': [   '<strong>Neutralan i smiren enterijer:</strong> Pastelne boje zidova, prozračne prostorije bogate prirodnim svetlom.',
-                                                 '<strong>Uklanjanje sakupljača prašine:</strong> Izbacivanje teških tepiha, plišanih igračaka i suvišnih draperija.',
-                                                 '<strong>Poprečno provetravanje:</strong> Kratkotrajno, intenzivno provetravanje nekoliko puta dnevno (beba u drugoj sobi).',
-                                                 '<strong>Kontrola vlažnosti (45–60%):</strong> Upotreba hladnog ovlaživača vazduha za očuvanje disajnih puteva.'],
-                                  'title': 'Ambijent i enterijer'},
-                              {   'bullets': [   '<strong>Čvrst, ravan dušek:</strong> Antialergijski dušek koji tačno naleže na ram kreveca bez ikakvog procepa.',
-                                                 '<strong>Prazan prostor za spavanje:</strong> U krevecu NEMA jastuka, debelih jorgana, traka ili mekih gnezda.',
-                                                 '<strong>Prirodna posteljina:</strong> 100% češljani pamuk, opran neutralnim bebi deterdžentom bez omekšivača.',
-                                                 '<strong>Bezbedna pozicija:</strong> Krevetac je udaljen od grejnih tela, prozora na kip i direktne promaje.'],
-                                  'title': 'Krevetac i bezbednost sna'}],
+        'category': 'SOBA, NAMEŠTAJ I OPREMA',
+        'content_blocks': [   {   'bullets': [   '<strong>Temperatura sobe (20–22°C):</strong> Idealna temperatura za '
+                                                 'boravak i san bebe; pretopljavanje prostorije dokazano povećava '
+                                                 'rizik od SIDS-a.',
+                                                 '<strong>Vlažnost vazduha (45–60%):</strong> Očuvanje vlažnosti '
+                                                 'sluzokože gornjih disajnih puteva pomoću hladnog ultrazvučnog '
+                                                 'ovlaživača vazduha.',
+                                                 '<strong>Poprečno provetravanje:</strong> Kratkotrajno i intenzivno '
+                                                 'provetravanje 3–4 puta dnevno dok beba privremeno boravi u drugoj '
+                                                 'sobi.',
+                                                 '<strong>Izbacivanje sakupljača prašine:</strong> Soba bez teških '
+                                                 'tepiha, zavesa, plišanih igračaka i osveživača vazduha koji '
+                                                 'iritiraju bronhije.'],
+                                  'title': 'Optimalna mikroklima i higijena prostora'},
+                              {   'bullets': [   '<strong>Standard kreveca i dušeka:</strong> Čvrst antialergijski '
+                                                 'dušek koji tačno naleže na ram kreveca (razmak između dušeka i '
+                                                 'ograde manji od 2 prsta).',
+                                                 '<strong>Pravilo praznog kreveca:</strong> Stroga zabrana jastuka, '
+                                                 'debelih pokrivača, pozicionera i plišanih ogradica; beba spava u '
+                                                 'namenskoj vreći.',
+                                                 '<strong>Pult za prepovijanje:</strong> Ergonomski pult u visini '
+                                                 "struka sa zaštitnim bočnim stranicama; pravilo: 'Jedna ruka je uvek "
+                                                 "na bebi!'.",
+                                                 '<strong>Pozicioniranje nameštaja:</strong> Krevetac mora biti '
+                                                 'udaljen od grejnih tela, klima uređaja, direktnog sunčevog zračenja '
+                                                 'i traka za roletne.'],
+                                  'title': 'Izbor kreveca, nameštaja i bezbednost'}],
         'id': 4,
         'image': 'slide04_nursery_cot.jpg',
         'layout': 'split_right_image',
-        'lecturer_notes': {   'cilj': 'Osposobiti dadilje da procene i urede prostor u skladu sa strogim bezbednosnim '
-                                      'i mikroklimatskim standardima.',
-                              'greske': 'Postavljanje kreveca neposredno uz grejno telo, klimu ili prozor sa promajom; '
-                                        'stavljanje plišanih igračaka u krevetac.',
-                              'pitanje': 'Kako biste taktično predložili roditeljima da izbace dekorativne jastuke i '
-                                         'baldahine iz kreveca radi bezbednosti?',
-                              'teze': 'Prenaglasite opasnost od pregrevanja prostorije. Roditelji u Srbiji često '
-                                      'pregrevaju sobe (preko 24°C tokom sna), što je direktan faktor rizika za SIDS '
-                                      '(sindrom iznenadne smrti odojčeta). Optimalno je 20-22°C za spavanje.'},
-        'metrics': [   {'lbl': 'Temperatura sobe', 'val': '20–22°C'},
-                       {'lbl': 'Optimalna vlažnost', 'val': '45–60%'},
-                       {'lbl': 'Čvrst, ravan dušek', 'val': '100%'}],
+        'lecturer_notes': {   'cilj': 'Naučiti polaznice kako da pripreme i održe idealan, siguran i čist prostor za '
+                                      'novorođenče pre njegovog dolaska iz porodilišta.',
+                              'greske': "Ostavljanje bebe na pultu za prepovijanje 'samo na sekund' dok se dohvati "
+                                        'pelena – najčešći uzrok teških padova.',
+                              'pitanje': 'Šta biste uradili ako zateknete krevetac pun plišanih jastučića i debelih '
+                                         'ogradica koje su roditelji kupili iz estetskih razloga?',
+                              'teze': 'Pretopljavanje je najveća greška roditelja. Dadilja mora autoritativno ali '
+                                      'taktično objasniti zašto 20-22°C čuva bebin san i disanje. Insistirati na '
+                                      'praznom krevecu.'},
         'module': 'Modul 1',
-        'subtitle': 'Bezbedno i stimulativno okruženje za bebu',
-        'title': 'Priprema sobe, kreveca i optimalne mikrokline',
-        'title_styled': 'Priprema sobe, kreveca i <em>optimalne mikrokline</em>'},
-    {   'badge': 'PROTOKOL KUPANJA',
+        'subtitle': 'Optimalna mikroklima, bezbedan krevetac i organizacija prostora',
+        'title': 'Priprema sobe za bebu, nameštaja i opreme',
+        'title_styled': 'Priprema sobe za bebu, <em>nameštaja i opreme</em>'},
+    {   'badge': 'MODUL 1: HIGIJENA I NEGA NOVOROĐENČETA',
         'bg_theme': 'light',
-        'category': 'PROTOKOL KUPANJA',
-        'content_blocks': [   {   'bullets': [   '<strong>Učestalost:</strong> 2–3 puta nedeljno, najduže do 10 minuta (ostalim danima parcijalna toaleta).',
-                                                 '<strong>Termin kupanja:</strong> Uvek 1.5 do 2 sata nakon obroka (nikada gladna, nikada pun stomak).',
-                                                 '<strong>Doslednost u satu:</strong> Ustaljeno večernje vreme stvara biološki ritam za miran san.',
-                                                 '<strong>Apsolutna priprema:</strong> Ruka se sa bebe NE SKIDA; sav pribor je nadohvat ruke.'],
-                                  'title': 'Zlatna pravila organizacije'},
-                              {   'bullets': [   '<strong>Stabilna kadica:</strong> Dezinfikovana, sa postoljem i proverenim termometrom (35–37°C).',
-                                                 '<strong>Pripremljen frotir:</strong> Veliki mekani pamučni peškir sa kapuljačom.',
-                                                 '<strong>Ispiranje & nega:</strong> Bokal sa čistom toplom vodom i dermatološki sindet (pH 5.5).',
-                                                 '<strong>Set za prepovijanje:</strong> Spreman set za pupak, pelena i čista garderoba.'],
-                                  'title': 'Obavezan pribor za kupanje'}],
+        'category': 'KUPANJE BEBE',
+        'content_blocks': [   {   'bullets': [   '<strong>Zagrejanost prostorije (24–26°C):</strong> Prostorija u '
+                                                 'kojoj se beba kupa mora biti prethodno ugrejana, bez promaje i '
+                                                 'hladnih strujanja vazduha.',
+                                                 '<strong>Temperatura vode (36.5–37°C):</strong> Precizno merenje '
+                                                 'vodenim termometrom uz obaveznu potvrdu unutrašnjom stranom '
+                                                 'podlaktice/lakta.',
+                                                 '<strong>Količina vode u kadici:</strong> Za novorođenče sipa se samo '
+                                                 '5 do 8 cm vode (do nivoa bebinih kukova pri spuštanju).',
+                                                 '<strong>Sigurnosni raspored pribora:</strong> Frotirski peškir sa '
+                                                 'kapuljačom, tetra pelene, čista odeća i pribor složeni po redosledu '
+                                                 'upotrebe.'],
+                                  'title': 'Priprema ambijenta i opreme'},
+                              {   'bullets': [   '<strong>Bokal sa čistom toplom vodom:</strong> Uvek pripremiti bokal '
+                                                 'tople vode (37°C) za završno ispiranje tela i glavice.',
+                                                 '<strong>Medicinski sindet:</strong> Dermatološko sredstvo bez sapuna '
+                                                 '(pH 5.5) koje ne narušava prirodnu hidrolipidnu barijeru bebine '
+                                                 'kože.',
+                                                 '<strong>Pribor za pupčanik i čula:</strong> Sterilne komprese, '
+                                                 'fiziološki rastvor i antiseptik za pupčanu ranu otvoreni pre početka '
+                                                 'toalete.',
+                                                 '<strong>Apsolutni fokus pažnje:</strong> Beba se NIKADA ne ostavlja '
+                                                 'sama u kadici ili na stolu za prepovijanje, čak ni na delić '
+                                                 'sekunde.'],
+                                  'title': 'Sterilni i negujući pribor'}],
         'id': 5,
         'image': 'slide05_bath_prep_station.png',
         'layout': 'split_right_image',
-        'lecturer_notes': {   'cilj': 'Ugraditi bezbednosni refleks: ništa se ne traži u toku kupanja; beba se nikada '
-                                      'ne ostavlja sama ni na delić sekunde.',
-                              'greske': 'Proveravanje vode samo šakom (naviknutom na toplije temperature) i '
-                                        'zaboravljanje bokala za ispiranje pa polivanje vodom iz kadice koja je već '
-                                        'zaprljana sapunicom.',
-                              'pitanje': 'Šta radite ako beba tokom kupanja počne intenzivno da plače i pokazuje strah '
-                                         'od vode?',
-                              'teze': 'Objasnite fiziologiju: bebina koža je izuzetno tanka, a površina tela u odnosu '
-                                      'na masu je velika, što znači da se beba hladi tri puta brže od odrasle osobe. '
-                                      'Zato je temperatura sobe 24-26°C ključna.'},
-        'metrics': [   {'lbl': 'Temperatura sobe za kupanje', 'val': '24–26°C'},
-                       {'lbl': 'Temperatura vode', 'val': '35–37°C'},
-                       {'lbl': 'Nedeljno (do 10 min)', 'val': '2–3x'}],
+        'lecturer_notes': {   'cilj': 'Usvojiti protokol pripreme kupanja koji garantuje bezbednost, sprečava '
+                                      'hipotermiju i eliminiše stres kod novorođenčeta.',
+                              'greske': 'Zaboravljanje bokala za ispiranje pa korišćenje sapunjave vode iz kadice za '
+                                        'pranje lica i očiju.',
+                              'pitanje': 'Zašto je testiranje vode laktom obavezno čak i kada imamo digitalni '
+                                         'termometar za vodu?',
+                              'teze': 'Beba gubi toplotu četiri puta brže od odrasle osobe. Zato sve mora biti '
+                                      'pripremljeno unapred: peškir raširen, odeća otkopčana, voda tačno 37°C. Kada se '
+                                      'beba jednom svuče, nema traženja stvari po kući.'},
         'module': 'Modul 1',
-        'subtitle': 'Egzaktni parametri i besprekorna organizacija pre ulaska u vodu',
-        'title': 'Kupanje novorođenčeta: Priprema i mikroklima',
-        'title_styled': 'Kupanje novorođenčeta: <em>Priprema i mikroklima</em>'},
-    {   'badge': 'PRAKTIČNE VEŠTINE',
+        'subtitle': 'Zlatni standard: Sve neophodno pripremljeno na dohvat ruke pre svlačenja bebe',
+        'title': 'Kupanje bebe: Priprema, stanica i mikroklima',
+        'title_styled': 'Kupanje bebe: <em>Priprema, stanica i mikroklima</em>'},
+    {   'badge': 'MODUL 1: HIGIJENA I NEGA NOVOROĐENČETA',
         'bg_theme': 'light',
         'category': 'TEHNIKA KUPANJA',
-        'content_blocks': [   {   'bullets': [   '<strong>Podrška glave i vrata:</strong> Beba leži na leđima, glavica oslonjena na podlakticu dadilje (~5 cm iznad vode).',
-                                                 '<strong>Stabilan zahvat:</strong> Prstima iste ruke čvrsto, ali nežno obuhvatite bebinu nadlakticu.',
-                                                 '<strong>Postepen ulazak:</strong> Prvo se nogice polako spuštaju u kadicu, a tek onda trup i leđa.',
-                                                 '<strong>Miran glas i kontakt očima:</strong> Konstantna nežna vokalizacija dadilje stvara osećaj potpune sigurnosti.'],
-                                  'title': 'Pravilan hvat i ulazak u vodu'},
-                              {   'bullets': [   '<strong>Pedijatrijski redosled:</strong> Lice čistom vodom, kosica, vrat i prevoji, trup, a <em>genitalije na samom kraju</em>.',
-                                                 '<strong>Ispiranje:</strong> Polivanje čistom toplom vodom iz pripremljenog bokala odozgo na dole.',
-                                                 '<strong>Sušenje tapkanjem:</strong> Umotati bebu u frotir; sušiti blagim tapkanjem (nikada grubim trljanjem).',
-                                                 '<strong>Tretman temenjače:</strong> Omekšati sterilnim bebi uljem pre kupanja i tokom kupanja nežno iščetkati.'],
-                                  'title': 'Redosled pranja i sušenje'}],
+        'content_blocks': [   {   'bullets': [   '<strong>Stabilan hvat podlakticom:</strong> Beba leži potiljkom na '
+                                                 'levoj podlaktici dadilje, dok šaka čvrsto obuhvata bebinu dalju '
+                                                 'nadlakticu ispod pazuha.',
+                                                 '<strong>Postepeno uranjanje:</strong> Beba se unosi polako, prvo '
+                                                 'nožicama i karlicom, uz topao glas i kontakt očima koji pruža osećaj '
+                                                 'sigurnosti.',
+                                                 '<strong>Topla tetra pelena preko stomaka:</strong> Prekrivanje tela '
+                                                 'mokrom toplom tetra pelenom sprečava Moroov refleks i strah od vode.',
+                                                 '<strong>Trajanje kupanja (5–7 minuta):</strong> Kod novorođenčeta '
+                                                 'kupanje je kratko kako bi se sprečilo rashlađivanje vode i '
+                                                 'isušivanje epidermisa.'],
+                                  'title': 'Pravilan hvat i spuštanje u vodu'},
+                              {   'bullets': [   '<strong>Lice i glava pre tela:</strong> Lice se briše isključivo '
+                                                 'čistom vodom; glavica se pere i ispira zabačena unazad (voda ne '
+                                                 'ulazi u oči i uši).',
+                                                 '<strong>Pregibi i nabori tela:</strong> Pažljivo pranje nabora '
+                                                 'vrata, pazuha, prepona i međuprstnih prostora gde se zadržavaju '
+                                                 'naslage.',
+                                                 '<strong>Genitalna toaleta:</strong> Kod devojčica strogo od napred '
+                                                 'ka nazad (ka anusu); kod dečaka nežno pranje bez nasilnog '
+                                                 'prevlačenja prepucijuma.',
+                                                 '<strong>Sušenje tapkanjem (bez trljanja):</strong> Umotavanje u '
+                                                 'mekan frotir; svi pregibi se pažljivo osuše tapkanjem pamučnom tetra '
+                                                 'pelenom.'],
+                                  'title': 'Redosled pranja i sušenje tapkanjem'}],
         'id': 6,
         'image': 'slide06_baby_bath.jpg',
         'layout': 'split_right_image',
-        'lecturer_notes': {   'cilj': 'Detaljno demonstrirati i utvrditi manualne veštine manipulacije odojčetom u '
-                                      'vlažnom i klizavom medijumu.',
-                              'greske': 'Pranje lica sapunom; nasilno skidanje ljuspica temenjače noktima što stvara '
-                                        'ulazna vrata za infekciju.',
-                              'pitanje': 'Kako postupate sa novorođenčetom kome pupčani patrljak još nije otpao – da '
-                                         'li se potapa u vodu?',
-                              'teze': 'Objasnite razliku između trljanja i tapkanja kože frotirnim peškirom. Koža '
-                                      'novorođenčeta ima nerazvijen rožasti sloj koji se lako oštećuje mehaničkim '
-                                      'trenjem. Obratite pažnju na prevoje: iza ušiju, vrat, pazuh, prepone.'},
+        'lecturer_notes': {   'cilj': 'Praktično uvežbati hvat i redosled kupanja kako bi kupanje bilo sigurna, nežna '
+                                      'i prijatna večernja rutina.',
+                              'greske': 'Agresivno trljanje peškirom koje oštećuje nežni rožasti sloj kože i '
+                                        'ostavljanje vlažnih nabora vrata i prepona što vodi u maceraciju i ojed.',
+                              'pitanje': 'Kako smiriti bebu koja ima snažan Moroov refleks i histerično plače čim uđe '
+                                         'u vodu?',
+                              'teze': 'Demonstrirajte hvat na lutki: prsti obuhvataju nadlakticu, glava ima čvrst '
+                                      'oslonac na podlaktici. Objasnite pravilo pranja od najčistijeg ka najprljavijem '
+                                      'delu tela.'},
         'module': 'Modul 1',
-        'subtitle': 'Pravilan hvat, precizan redosled i nega temenjače',
-        'title': 'Tehnika kupanja u kadici i rutina nege',
-        'title_styled': 'Tehnika kupanja u kadici i <em>rutina nege</em>'},
-    {   'badge': 'DERMOPEDIJATRIJA',
+        'subtitle': 'Siguran hvat, precizan redosled toalete i nežno sušenje tapkanjem',
+        'title': 'Tehnika kupanja bebe u kadici i rutina nege',
+        'title_styled': 'Tehnika kupanja bebe u <em>kadici i rutina nege</em>'},
+    {   'badge': 'MODUL 1: HIGIJENA I NEGA NOVOROĐENČETA',
         'bg_theme': 'light',
-        'category': 'DERMATOLOGIJA I KOŽA',
-        'content_blocks': [   {   'bullets': [   '<strong>Zaštitni kiseli omotač:</strong> Prirodni pH 5.5 štiti bebinu kožu od bakterijskih i gljivičnih infekcija.',
-                                                 '<strong>Zabrana alkalnih sapuna:</strong> Klasični sapuni (pH 9–10) drastično isušuju kožu i ruše hidrolipidnu barijeru.',
-                                                 '<strong>Izbor sindeta:</strong> Koriste se isključivo medicinski sindeti („sapun bez sapuna”) sa fiziološkim pH 5.5.'],
-                                  'title': 'Fiziološki pH 5.5'},
-                              {   'bullets': [   '<strong>Formulacija bez iritansa:</strong> Kreme bez mineralnih ulja, parabena, veštačkih boja i mirisa.',
-                                                 '<strong>Pravilo 3 minuta:</strong> Nanošenje na kožu unutar 3 min od kupanja dok je koža još blago vlažna.',
-                                                 '<strong>Zadržavanje vlage:</strong> Emolijensi vezuju vodu u epidermu bez zapušavanja pora i okluzije.'],
-                                  'title': 'Emolijensi na vodenoj bazi'},
-                              {   'bullets': [   '<strong>Pantenol za regeneraciju:</strong> Svakodnevna nega pregiba, prevencija iritacija i elastičnost kože.',
-                                                 '<strong>Cink-oksid za zaštitu:</strong> Upija višak vlage, isušuje maceriranu kožu i stvara barijeru od urina.',
-                                                 '<strong>Tehnika nanošenja:</strong> Uvek nanositi u tankom, prozračnom sloju — nikada u debelim naslagama.'],
-                                  'title': 'Pantenol & Cink-oksid'}],
+        'category': 'NEGA KOŽE',
+        'content_blocks': [   {   'bullets': [   '<strong>3 do 5 puta tanji epidermis:</strong> Koža novorođenčeta je '
+                                                 'izrazito propustljiva za hemijske supstance, toksine i alergene iz '
+                                                 'spoljašnje sredine.',
+                                                 '<strong>Nezrela funkcija znojnih žlezda:</strong> Otežana '
+                                                 'termoregulacija i sklonost brzom gubitku vlage čine kožu podložnom '
+                                                 'perutanju i suvoći.',
+                                                 '<strong>Formiranje kiselog omotača (pH 5.5):</strong> U prvim '
+                                                 'nedeljama koža prelazi sa neutralnog na blago kiseli pH koji štiti '
+                                                 'od patogenih bakterija.',
+                                                 '<strong>Fiziološko perutanje (deskvamacija):</strong> Prirodna '
+                                                 'pojava zamene rožastog sloja nakon rođenja; ne zahteva agresivno '
+                                                 'skidanje već nežnu hidrataciju.'],
+                                  'title': 'Specifičnosti kože novorođenčeta'},
+                              {   'bullets': [   '<strong>Upotreba medicinskih sindeta:</strong> Pranje '
+                                                 'dermokozmetičkim uljanim kupkama ili sindetima bez sapuna, parfema i '
+                                                 'sulfata.',
+                                                 '<strong>Pravilo 3 minuta za emolijens:</strong> Medicinska krema ili '
+                                                 'balzam nanosi se u tankom sloju unutar 3 minuta nakon kupanja dok je '
+                                                 'koža još vlažna.',
+                                                 '<strong>Izbegavanje teških ulja:</strong> Čista mineralna, '
+                                                 'parafinska i maslinova ulja mogu zapušiti pore i narušiti prirodnu '
+                                                 'lipidnu barijeru kože.',
+                                                 '<strong>Princip dermatološkog minimalizma:</strong> Manje je više – '
+                                                 'ne gomilati kozmetičke preparate; zdravoj koži potrebna je samo '
+                                                 'čista voda i blagi sindet.'],
+                                  'title': 'Dermatološki izbor i pravilo 3 minuta'}],
         'id': 7,
         'image': 'p6_img4_1080x1080.png',
         'layout': 'split_right_image',
-        'lecturer_notes': {   'cilj': 'Naučiti polaznice da čitaju sastav kozmetičkih preparata i razumeju mehanizme '
-                                      'delovanja.',
-                              'greske': 'Mazanje debelih slojeva masnih krema na vlažnu kožu, što stvara efekat '
-                                        'staklene bašte i pospešuje razvoj gljivica (Candida).',
-                              'pitanje': 'U kojoj situaciji birate kremu na bazi pantenola, a kada obavezno prelazite '
-                                         'na cink-oksid?',
-                              'teze': 'Skrenite pažnju da su klasični alkalni sapuni (pH 9-10) strogo zabranjeni u '
-                                      'pedijatrijskoj nezi. Micelarna voda za bebe (preko 98% prirodnih sastojaka, bez '
-                                      'ispiranja) je odlična za među-dane kada se beba ne kupa celokupno.'},
+        'lecturer_notes': {   'cilj': 'Upoznati polaznice sa osetljivošću dečje kože i osposobiti ih za pravilan '
+                                      'odabir dermokozmetike bez komercijalnih zabluda.',
+                              'greske': 'Korišćenje bebi pudera (talka) koji beba može udahnuti i preterano mazanje '
+                                        'debelih slojeva krema na zdrave delove tela.',
+                              'pitanje': 'Zašto maslinovo ulje iz kuhinje nije preporučljivo za negu kože '
+                                         'novorođenčeta?',
+                              'teze': 'Koža novorođenčeta upija sve što se na nju stavi. Objasnite razliku između '
+                                      'klasičnog sapuna koji podiže pH na alkalnih 8-9 i medicinskog sindeta koji čuva '
+                                      "pH 5.5. Upozorite na štetnost 'prirodnih' ulja iz kuhinje."},
         'module': 'Modul 1',
-        'subtitle': 'Zaštita prirodne barijere i hidrolipidnog sloja',
+        'subtitle': 'Anatomija neonatalne kože, barijerna funkcija i dermatološki izbor',
         'title': 'Nega kože: Sindeti, emolijensi i pH ravnoteža',
-        'title_styled': 'Nega kože: <em>Sindeti, emolijensi</em> i pH ravnoteža'},
-    {   'badge': 'MODUL 2: KLINIČKI PROTOKOLI',
+        'title_styled': 'Nega kože: <em>Sindeti, emolijensi i pH ravnoteža</em>'},
+    {   'badge': 'MODUL 1: HIGIJENA I NEGA NOVOROĐENČETA',
         'bg_theme': 'light',
-        'category': 'SPECIJALNA NEGA',
-        'content_blocks': [   {   'bullets': [   '<strong>1. Aseptična priprema:</strong> Temeljno pranje i dezinfekcija ruku pre svakog dodira pupčane rane.',
-                                                 '<strong>2. Skidanje gaze i antiseptik:</strong> Pažljivo skidanje gaze bez cimanja štipaljke; prskanje <strong>Oktenisepta</strong>.',
-                                                 '<strong>3. Čišćenje & sušenje:</strong> Bazu očistiti sterilnom gazom jednim potezom i ostaviti da se osuši na vazduhu.',
-                                                 '<strong>4. Zaštita i pelena:</strong> Suva sterilna gaza i flaster; pelenu obavezno saviti <em>ispod pupka</em>.'],
-                                  'title': 'Protokol toalete korak-po-korak'},
-                              {   'bullets': [   '<strong>Crveni rub:</strong> Crvenilo i otok kože oko pupka koji se širi na trbuh.',
-                                                 '<strong>Sekrecija i miris:</strong> Gnojan, zamućen iscedak neprijatnog mirisa (omfalitis).',
-                                                 '<strong>Aktivno krvarenje:</strong> Obilnije vlaženje ili pulsirajuće kapljanje krvi.',
-                                                 '<strong>Opšte stanje:</strong> Febrilnost, odbijanje hrane ili izražena letargija.'],
-                                  'title': 'Alarmantni znaci za pedijatra'}],
+        'category': 'PUPČANIK I PUPČANA RANA',
+        'content_blocks': [   {   'bullets': [   '<strong>Protokol suve nege po SZO:</strong> Pupčani bataljak se '
+                                                 'održava čistim i suvim, izložen vazduhu radi prirodne mumifikacije.',
+                                                 '<strong>Pravilno postavljanje pelene:</strong> Gornja ivica pelene '
+                                                 'se presavija prema spolja nadole kako pupak ne bi bio u kontaktu sa '
+                                                 'urinom.',
+                                                 '<strong>Antiseptik po indikaciji (Octenisept):</strong> Prska se na '
+                                                 'bazu pupčanika samo u slučaju kontakta sa nečistoćom ili urinom, uz '
+                                                 'sušenje sterilnom gazom.',
+                                                 '<strong>Stroga zabrana agresivnih sredstava:</strong> ZABRANJENA '
+                                                 'upotreba povidon joda (apsorpcija joda oštećuje štitastu žlezdu), '
+                                                 'alkohola i antibiotskih praškova.'],
+                                  'title': 'Standard suve obrade pupčanika'},
+                              {   'bullets': [   '<strong>Fiziološko otpadanje (7–15. dan):</strong> Bataljak otpada '
+                                                 'samostalno kada se potpuno osuši; strogo je zabranjeno povlačenje '
+                                                 'ili uvrtanje.',
+                                                 '<strong>Nega pupčane rane:</strong> Nakon otpadanja, ranica se čisti '
+                                                 'sterilnom gazom i Octeniseptom dok se dno rane potpuno ne '
+                                                 'epitelizuje.',
+                                                 '<strong>Crveni alarm: Omfalitis (infekcija):</strong> Crvenilo kože '
+                                                 'oko pupka prečnika >1 cm, otok, vlaženje, gnojan miris i povišena '
+                                                 'temperatura.',
+                                                 '<strong>Pupčani granulom:</strong> Ružičasto zrnasto tkivo na dnu '
+                                                 'pupka koje stalno vlaži; zahteva pedijatrijski pregled i lapiziranje '
+                                                 'srebrn-nitratom.'],
+                                  'title': 'Otpadanje bataljka i crvene zastavice'}],
         'id': 8,
         'image': 'slide08_umbilical_cord_care.png',
         'layout': 'split_right_image',
-        'lecturer_notes': {   'cilj': 'Obučiti polaznice besprekornoj aseptičnoj tehnici obrade pupka i prevenciji '
-                                      'sepse novorođenčeta.',
-                              'greske': 'Kvašenje gaze urinom; sipanje antibiotskih praškova na svoju ruku (stvara se '
-                                        'skrama ispod koje bujaju anaerobne bakterije).',
-                              'pitanje': 'Šta preduzimate ako primetite da se gaza na pupku natopila urinom tokom '
-                                         'prepovijanja?',
-                              'teze': 'Pupčana rana je direktna veza sa krvotokom novorođenčeta. Suvoća je ključ – '
-                                      'vlažan pupak je idealno tlo za bakterije. Zato se pelena uvek presavija nadole '
-                                      'da urin ne bi dospeo na gazu.'},
-        'metrics': [   {'lbl': 'Dan: prosečno otpadanje', 'val': '5–7.'},
-                       {'lbl': 'Dnevno obavezna toaleta', 'val': '1x'},
-                       {'lbl': 'Sterilne gaze', 'val': '5x5 cm'}],
-        'module': 'Modul 2',
-        'subtitle': 'Hirurški precizan protokol toalete i prepoznavanje infekcije',
-        'title': 'Obrada pupčanika i pupčane rane',
-        'title_styled': 'Obrada pupčanika i <em>pupčane rane</em>'},
-    {   'badge': 'SENZORNA NEGA',
+        'lecturer_notes': {   'cilj': 'Ovladati procedurom asepse pri obradi pupčanika i pravovremenim prepoznavanjem '
+                                      'znakova lokalne i sistemske infekcije.',
+                              'greske': 'Kvašenje pupčanika u kadici pre nego što ranica epitelizuje i stavljanje '
+                                        'običnog flastera koji stvara vlažnu komoru pogodnu za bakterije.',
+                              'pitanje': 'Šta ćete uraditi ako primetite par kapi sasušene krvi na gazi prilikom '
+                                         'otpadanja bataljka?',
+                              'teze': 'Pupčana vena je direktan put mikroorganizama u krvotok novorođenčeta. Ruke se '
+                                      'moraju dezinfikovati pre svakog dodira. Objasnite zašto je suva nega zlatni '
+                                      'standard i zašto je povidon jod zabranjen.'},
+        'module': 'Modul 1',
+        'subtitle': 'Zlatni standard suve obrade, antiseptički protokol i prepoznavanje komplikacija',
+        'title': 'Nega pupčanika i pupčane rane',
+        'title_styled': 'Nega pupčanika i <em>pupčane rane</em>'},
+    {   'badge': 'MODUL 1: HIGIJENA I NEGA NOVOROĐENČETA',
         'bg_theme': 'light',
         'category': 'NEGA ČULA',
-        'content_blocks': [   {   'bullets': [   '<strong>Oči – pravilo jednog pokreta:</strong> Sterilna gaza sa fiziološkim rastvorom; potez isključivo od spoljašnjeg ugla ka nosu.',
-                                                 '<strong>Pravilo jedne gaze:</strong> Za svako oko koristi se nova sterilna gaza (sprečavanje unakrsne infekcije).',
-                                                 '<strong>Uši – spoljašnja toaleta:</strong> Čisti se samo spoljašnji nabor i koža iza uva mekim peškirom ili tupferom.',
-                                                 '<strong>Zabrana štapića:</strong> Štapići se nikada ne guraju u kanal jer potiskuju cerumen i rizikuju povredu bubne opne.'],
-                                  'title': 'Nega očiju i higijena ušiju'},
-                              {   'bullets': [   '<strong>Obligatno disanje na nos:</strong> Bebe dišu samo na nos; po 2 kapi fiziološkog pre jela i sna omekšavaju sekret.',
-                                                 '<strong>Nežna aspiracija:</strong> Aspirator koristiti nežno i umereno samo kada beba ima čujne poteškoće u disanju.',
-                                                 '<strong>Ravno sečenje noktića:</strong> Makazice sa zaobljenim vrhom; seći isključivo ravno radi prevencije urastanja.',
-                                                 '<strong>Pravi momenat:</strong> Nokte seći dok beba mirno spava ili neposredno posle kupanja kada su nokti elastični.'],
-                                  'title': 'Prohodnost nosa i sečenje noktića'}],
+        'content_blocks': [   {   'bullets': [   '<strong>Toaleta očiju sterilnom gazom:</strong> Briše se od '
+                                                 'spoljašnjeg ugla oka ka unutrašnjem; za svako oko koristi se nova, '
+                                                 'zasebna sterilna gaza sa fiziološkim rastvorom.',
+                                                 '<strong>Nega nosa fiziološkim kapima:</strong> Po 2–3 kapi 0.9% NaCl '
+                                                 'u svaku nozdrvu pre dojenja i spavanja radi razmekšavanja sekreta.',
+                                                 '<strong>Nega ušiju bez štapića:</strong> Čisti se isključivo '
+                                                 'spoljašnja ušna školjka i prostor iza uva; pamučni štapići se NIKADA '
+                                                 'ne guraju u ušni kanal.',
+                                                 '<strong>Masaža suznog kanala:</strong> Kod suženja kanala i '
+                                                 'krmeljanja, nežna masaža unutrašnjeg ugla oka čistim prstom usmerena '
+                                                 'nadole duž nosa.'],
+                                  'title': 'Toaleta očiju, ušiju i nosnih hodnika'},
+                              {   'bullets': [   '<strong>Prvo sečenje nakon 2. nedelje:</strong> Noktići se skraćuju '
+                                                 'tek kada očvrsnu i odvoje se od kožice jagodice.',
+                                                 '<strong>Medicinski pribor:</strong> Upotreba bebi makazica sa tupim, '
+                                                 'zaobljenim vrhom ili staklene turpije, prethodno prebrisanih '
+                                                 'alkoholom.',
+                                                 '<strong>Tehnika sečenja:</strong> Na rukama se noktići seku blago '
+                                                 'polukružno, a na nogama strogo ravno (prevencija urastanja nokta).',
+                                                 '<strong>Optimalan tajming:</strong> Noktići se seku dok beba čvrsto '
+                                                 'spava u fazi dubokog sna ili neposredno posle kupanja kada su meki.'],
+                                  'title': 'Bezbedno skraćivanje i nega noktića'}],
         'id': 9,
         'image': 'p4_img1_736x976.png',
         'layout': 'split_right_image',
-        'lecturer_notes': {   'cilj': 'Ukloniti uvrežene a opasne navike (poput guranja štapića za uši duboko u ušni '
-                                      'kanal ili sečenja noktiju ukrivo).',
-                              'greske': 'Korišćenje iste gaze za oba oka (prenos konjunktivitisa); sečenje noktiju '
-                                        'polukružno sa dubokim zasecanjem uglova.',
-                              'pitanje': 'Šta radite ako se pri sečenju noktiju desi da se zakači kožica i pojavi se '
-                                         'kap krvi?',
-                              'teze': 'Podvucite higijenu genitalija kod devojčica: briše se uvek od napred ka nazad '
-                                      '(od simfize ka čmaru) sterilnim tupferom sa toplom vodom, kako se ešerihija '
-                                      'koli iz stolice ne bi prenela u mokraćne kanale.'},
-        'module': 'Modul 2',
-        'subtitle': 'Zaštita senzornih organa bez agresivnih intervencija',
-        'title': 'Nega očiju, ušiju, nosa i sečenje noktića',
-        'title_styled': 'Nega očiju, ušiju, nosa i <em>sečenje noktića</em>'},
-    {   'badge': 'PREPOVIJANJE I HIGIJENA',
+        'lecturer_notes': {   'cilj': 'Obučiti polaznice za sterilno i bezbedno izvođenje svakodnevne toalete čula '
+                                      'novorođenčeta.',
+                              'greske': 'Guranje štapića sa vatom u nosne otvore i uši bebe umesto korišćenja urolane '
+                                        'sterilne gaze ili fiziološkog rastvora.',
+                              'pitanje': 'Zašto nikada ne koristimo istu sterilnu gazu za oba oka bebe?',
+                              'teze': 'Pokažite pravilan smer brisanja oka: od spolja ka unutra, jednom gazom samo '
+                                      'jedan potez. Naglasite opasnost od štapića za uši koji mogu probušiti bubnu '
+                                      'opnu ili nabiti cerumen.'},
+        'module': 'Modul 1',
+        'subtitle': 'Precizna toaleta čulnih organa sterilnim tehnikama i bezbedno sečenje noktiju',
+        'title': 'Nega čula novorođenčeta: Oči, uši, nos i noktići',
+        'title_styled': 'Nega čula novorođenčeta: <em>Oči, uši, nos i noktići</em>'},
+    {   'badge': 'MODUL 1: HIGIJENA I NEGA NOVOROĐENČETA',
         'bg_theme': 'light',
-        'category': 'PELENSKA REGIJA',
-        'content_blocks': [   {   'bullets': [   '<strong>Vlaga i amonijak:</strong> Kombinacija toplote, vlage, urinskog amonijaka i digestivnih enzima narušava barijeru kože.',
-                                                 '<strong>Preduga izloženost:</strong> Odlaganje menjanja mokre pelene ili preusko stezanje koje onemogućava ventilaciju.',
-                                                 '<strong>Agresivna higijena:</strong> Prekomerna upotreba vlažnih maramica sa veštačkim mirisima i alkoholom.',
-                                                 '<strong>Kritične faze:</strong> Periodi nicanja prvih zubića, uvođenje novih namirnica ili antibiotska terapija.'],
-                                  'title': 'Uzroci nastanka pelenskog osipa'},
-                              {   'bullets': [   '<strong>Pranje čistom vodom:</strong> Nakon stolice uvek oprati pod mlazom tople tekuće vode.',
-                                                 '<strong>Temeljno sušenje:</strong> Peškirom nežno utapkati suvoću u svim naborima (bez trljanja).',
-                                                 '<strong>Zlatno vreme (5–10 min):</strong> Ostaviti bebu da leži golišava na pamučnoj peleni pre nove pelene.',
-                                                 '<strong>Zaštitna krema sa cinkom:</strong> Tanak sloj cink-oksidne kreme koja odbija vlagu i štiti kožu.'],
-                                  'title': "Terapijski protokol i 'Golišavo vreme'"}],
+        'category': 'OBLAČENJE I PRIBOR',
+        'content_blocks': [   {   'bullets': [   '<strong>Pravilo jednog sloja više:</strong> Beba se oblači u jedan '
+                                                 'sloj više u odnosu na odraslu osobu u istoj prostoriji; izbegavati '
+                                                 'pretopljavanje.',
+                                                 '<strong>100% organski češljani pamuk:</strong> Isključivo prirodni, '
+                                                 'meki materijali; bez sintetike, krutih traka, tvrdih etiketa i '
+                                                 'metalnih drikera koji dodiruju kožu.',
+                                                 '<strong>Provera temperature na potiljku:</strong> Temperatura se '
+                                                 'proverava opipavanjem potiljka i grudnog koša (topli i suvi), a ne '
+                                                 'šaka i stopala.',
+                                                 '<strong>Praktičnost kroja:</strong> Bodići sa preklopom na grudima '
+                                                 '(benkice) koji se ne navlače preko glave, idealni za novorođenčad.'],
+                                  'title': 'Principi pravilnog oblačenja bebe'},
+                              {   'bullets': [   '<strong>Odvojeno pranje na 60–90°C:</strong> Bebin veš se pere '
+                                                 'zasebno, blagim tečnim hipoalergenim deterdžentom bez parfema i bez '
+                                                 'omekšivača.',
+                                                 '<strong>Dvostruko ispiranje i peglanje:</strong> Obavezno dodatno '
+                                                 'ispiranje radi uklanjanja deterdženta; peglanje parom uništava '
+                                                 'rezidualne mikrobe.',
+                                                 '<strong>Sterilizacija hranilica i pribora:</strong> Flašice, cucle, '
+                                                 'pumpice i glodalice sterilišu se parom ili otkuvavanjem pre prve '
+                                                 'upotrebe i redovno održavaju.',
+                                                 '<strong>Dezinfekcija površina:</strong> Podloga za presvlačenje, '
+                                                 'kadica i igračke redovno se peru i dezinfikuju bezbednim netoksičnim '
+                                                 'sredstvima.'],
+                                  'title': 'Higijena garderobe i bebinog pribora'}],
         'id': 10,
-        'image': 'p16_img1_735x919.png',
+        'image': 'p9_img1_736x920.png',
         'layout': 'split_right_image',
-        'lecturer_notes': {   'cilj': 'Standardizovati negu pelenske regije i eliminisati preteranu zavisnost od '
-                                      'vlažnih maramica u kućnim uslovima.',
-                              'greske': 'Nanošenje debelog sloja masne masti na vlažnu, neosušenu kožu – time se vlaga '
-                                        'zarobljava i ojed se rapidno pogoršava.',
-                              'pitanje': 'Kako prepoznajete razliku između običnog ojeda od pelene i gljivične '
-                                         'infekcije kvasnicama (Candida)?',
-                              'teze': 'Vlažne maramice su nužno zlo za putovanja i šetnju. U kući, standard Royal '
-                                      'Nanny je pranje toplom tekućom vodom ili pamučnim tupferima sa micelarnom vodom '
-                                      'za bebe. Luftiranje kože od 10 minuta je najefikasniji lek za iritaciju.'},
-        'module': 'Modul 2',
-        'subtitle': 'Zaštita integriteta kože i pravilna tehnika toalete',
-        'title': 'Pelenska regija: Prevencija i tretman ojeda',
-        'title_styled': 'Pelenska regija: <em>Prevencija i tretman</em> ojeda'},
-    {   'badge': 'MODUL 3: ISHRANA',
+        'lecturer_notes': {   'cilj': 'Standardizovati održavanje bebine garderobe, pribora i oblačenja po strogim '
+                                      'pedijatrijskim i higijenskim normama.',
+                              'greske': 'Pretopljavanje deteta vunenim kapicama i čarapama unutar ugrejane sobe što '
+                                        'dovodi do dehidratacije i toplotnog osipa.',
+                              'pitanje': 'Bebine šake su hladne na dodir, ali potiljak je vreo i vlažan. Da li ćete '
+                                         'bebu dodatno obući ili raskomotiti?',
+                              'teze': 'Omekšivači za veš su jedan od vodećih uzroka kontaktnog dermatitisa kod '
+                                      'odojčadi. Oblačenje mora biti praktično i komforno, a kontrola temperature vrši '
+                                      'se isključivo na vratu/grudima.'},
+        'module': 'Modul 1',
+        'subtitle': 'Pravilo slojevitog oblačenja, izbor tkanina i rigorozna higijena bebinog pribora',
+        'title': 'Oblačenje bebe i higijena garderobe i pribora',
+        'title_styled': 'Oblačenje bebe i <em>higijena garderobe i pribora</em>'},
+    {   'badge': 'MODUL 1: HIGIJENA I NEGA NOVOROĐENČETA',
         'bg_theme': 'light',
-        'category': 'ISHRANA I LAKTACIJA',
-        'content_blocks': [   {   'bullets': [   '<strong>Imunološki štit:</strong> Živa antitela (sekretorni IgA), laktoferin i lizozim koji štite digestivni trakt.',
-                                                 '<strong>Dinamičan sastav:</strong> Mleko menja kalorijsku i vodenu gustinu tokom podoja i u toku rasta bebe.',
-                                                 '<strong>Mikrobiom creva:</strong> Žive probiotičke kulture majke koje kolonizuju i štite sluzokožu creva.',
-                                                 '<strong>Emocionalna povezanost:</strong> Oksitocin i kontakt „koža na kožu” produbljuju sigurnu afektivnu vezanost.'],
-                                  'title': 'Moć majčinog mleka'},
-                              {   'bullets': [   '<strong>Opušteno okruženje:</strong> Neutralisanje stresa (hormon kortizol direktno blokira refleks otpuštanja mleka).',
-                                                 '<strong>Hidracija za majku:</strong> Serviranje čaše tople vode ili čaja pre podoja (jak osećaj žeđi pri laktaciji).',
-                                                 '<strong>Ergonomski oslonac:</strong> Pravilno postavljanje jastuka za dojenje i udobno podupiranje leđa majke.',
-                                                 '<strong>Pomoć nakon podoja:</strong> Preuzimanje bebe radi podrigivanja i smirivanja, omogućavajući mami odmor.'],
-                                  'title': 'Uloga Royal Nanny dadilje u laktaciji'}],
+        'category': 'POLOŽAJI I BEZBEDAN SAN',
+        'content_blocks': [   {   'bullets': [   '<strong>Stabilna potpora za glavu i kičmu:</strong> Glava '
+                                                 'novorođenčeta mora imati čvrst oslonac na podlaktici; kičma prati '
+                                                 "prirodan fiziološki 'C' luk.",
+                                                 "<strong>Položaj 'tigar na drvetu':</strong> Beba leži potrbuške duž "
+                                                 'podlaktice dadilje sa glavom u lakatnom prevoju – odličan položaj za '
+                                                 'eliminaciju gasova.',
+                                                 '<strong>Položaj podignutog uzglavlja pri hranjenju:</strong> Ugao od '
+                                                 '30–45° tokom podoja ili flašice; sprečava aspiraciju mleka i ulazak '
+                                                 'tečnosti u Eustahijevu tubu.',
+                                                 '<strong>Protokol podrigivanja nakon obroka:</strong> Vertikalno '
+                                                 'držanje bebe naslonjene na rame ili na krilu uz lagano tapkanje po '
+                                                 'leđima 10–15 minuta.'],
+                                  'title': 'Položaji pri nošenju i hranjenju'},
+                              {   'bullets': [   '<strong>Spavanje ISKLJUČIVO na leđima:</strong> Položaj na leđima na '
+                                                 'ravnoj površini je najbezbedniji položaj za san tokom cele prve '
+                                                 'godine života.',
+                                                 '<strong>Zabrana bočnog i potrbušnog položaja:</strong> Bočni položaj '
+                                                 'je nestabilan i nosi visok rizik od nekontrolisanog prevrtanja na '
+                                                 'stomak.',
+                                                 '<strong>Prazan krevetac i namenska vreća:</strong> Bez jastuka, '
+                                                 'gnezda, plišanih igračaka i ogradica; dete spava u vreći za spavanje '
+                                                 'prilagođenoj sobnoj temperaturi.',
+                                                 '<strong>Zaseban krevetac pored roditelja:</strong> Zajednička soba '
+                                                 '(room-sharing) u sopstvenom krevecu tokom prvih 6 meseci pruža '
+                                                 'optimalnu bezbednost.'],
+                                  'title': 'Zlatna pravila bezbednog spavanja (SIDS)'}],
         'id': 11,
-        'image': 'p17_img1_736x1103.png',
-        'layout': 'split_right_image',
-        'lecturer_notes': {   'cilj': 'Definisati jasnu ulogu dadilje kao podrške dojenju, bez pritiska na majku i bez '
-                                      'osuđivanja.',
-                              'greske': 'Savetovanje uvođenja formule na svoju ruku na prvi plač bebe; komentarisanje '
-                                        "kvaliteta mleka ('vodenasto ti je mleko' – mit koji uništava samopouzdanje "
-                                        'majke).',
-                              'pitanje': 'Kako podržati mamu koja ima jak osećaj krivice jer ima poteškoća sa '
-                                         'količinom mleka?',
-                              'teze': 'Podsetite polaznice: dadilja ne zamenjuje majku u dojenju, već je njen '
-                                      'najvažniji logistički oslonac. Ako je majka umorna ili anksiozna, produkcija '
-                                      'mleka opada. Dadilja koja donese čašu vode, namesti jastuk i preuzme bebu za '
-                                      'podrigivanje čini razliku između uspeha i prekida laktacije.'},
-        'module': 'Modul 3',
-        'subtitle': 'Nutritivna i imunološka superiornost majčinog mleka',
-        'title': 'Dojenje: Prednosti i profesionalna uloga dadilje',
-        'title_styled': 'Dojenje: <em>Prednosti i uloga dadilje</em>'},
-    {   'badge': 'LAKTACIJSKE VEŠTINE',
-        'bg_theme': 'light',
-        'category': 'TEHNIKA DOJENJA',
-        'content_blocks': [   {   'bullets': [   '<strong>1. Kolevka:</strong> Klasičan položaj; bebina glava u prevoju lakta, u ravni „stomak na stomak”.',
-                                                 '<strong>2. Unakrsna kolevka:</strong> Ruka suprotna od dojke pridržava potiljak — maksimalna kontrola.',
-                                                 '<strong>3. Ragbi hvat:</strong> Beba ispod pazuha; <em>idealan za carski rez</em> (bez pritiska na ranu).',
-                                                 '<strong>4. Bočni položaj:</strong> Mama i beba leže okrenute jedno ka drugom — savršen za noćni odmor.'],
-                                  'title': '4 ključna položaja za dojenje'},
-                              {   'bullets': [   '<strong>Širok zahvat:</strong> Ugao usana preko 130° sa asimetričnim obuhvatom areole odozdo.',
-                                                 '<strong>Izvrnute usne:</strong> Donja usnica izvrnuta (kao ribica), brada uronjena u dojku.',
-                                                 '<strong>Čujno gutanje:</strong> Ritmično gutanje bez coktanja ili uvlačenja obraza.',
-                                                 '<strong>Odsustvo bola:</strong> Pravilan podoj ne sme da boli nakon prvih par sekundi!'],
-                                  'title': 'Znakovi pravilnog hvata'}],
-        'id': 12,
-        'image': 'slide12_breastfeeding_positions.png',
-        'layout': 'split_right_image',
-        'lecturer_notes': {   'cilj': 'Obučiti predavače da na lutkama precizno prenesu tehniku asimetričnog hvata '
-                                      'dojke.',
-                              'greske': 'Guranje bebine glave silom ka dojci (izaziva refleks odgurivanja); '
-                                        'ignorisanje zvuka coktanja koji ukazuje na prekid vakuuma.',
-                              'pitanje': "Koji su znaci da beba efikasno vuče mleko u odnosu na pasivno 'cuclanje' "
-                                         'bradavice?',
-                              'teze': 'Bol pri dojenju je UVEK znak nepravilnog položaja ili plitkog hvata, nikada '
-                                      "'normalno stanje koje treba trpeti'. Bradavica mora biti duboko u mekom nepcu "
-                                      'bebe. Ragbi hvat je ključna tehnika koju dadilja mora znati za majke porađene '
-                                      'carskim rezom.'},
-        'module': 'Modul 3',
-        'subtitle': 'Ergonomija majke i bebin asimetrični zahvat areole',
-        'title': 'Položaji pri dojenju i pravilan hvat',
-        'title_styled': 'Položaji pri dojenju i <em>pravilan hvat</em>'},
-    {   'badge': 'ZDRAVSTVENA NEGA MAJKE',
-        'bg_theme': 'light',
-        'category': 'KOMPLIKACIJE LAKTACIJE',
-        'content_blocks': [   {   'bullets': [   '<strong>Uzrok i simptomi:</strong> Plitak hvat bradavice ili kratak frenulum; pojava bolnih mikropukotina.',
-                                                 '<strong>Terapijski protokol:</strong> Korekcija položaja i hvata; mazanje čistim lanolinom nakon podoja.',
-                                                 '<strong>Odmor bradavice:</strong> Ako rana krvari: odmor 24–48h uz ručno izmlazanje i hranjenje bebi čašicom.'],
-                                  'title': 'Ragade (Rane na bradavicama)'},
-                              {   'bullets': [   '<strong>Stanje tkiva:</strong> Dojke tople, tvrde, otečene i bolne usled zadržavanja tečnosti i navale mleka.',
-                                                 '<strong>Toplo pre podoja:</strong> Topao tuš ili tople obloge 2–3 min pre podoja za lakši protok i opuštanje.',
-                                                 '<strong>Hladno posle podoja:</strong> Hladne obloge 15 min nakon podoja radi smanjenja edema i upale.'],
-                                  'title': 'Prepunjenost dojki (Engorgement)'},
-                              {   'bullets': [   '<strong>Klinička slika:</strong> Crveno, bolno polje na dojci + temperatura preko 38.5°C, jeza i malaksalost.',
-                                                 '<strong>Obavezan nastavak podoja:</strong> <em>Ne prekidati pražnjenje!</em> Zastoj mleka samo pogoršava upalu.',
-                                                 '<strong>Medicinski korak:</strong> Hitan kontakt sa ginekologom radi pravovremene antibiotske terapije.'],
-                                  'title': 'Mastitis (Upala tkiva dojke)'}],
-        'id': 13,
-        'image': 'slide13_lactation_challenges.png',
-        'layout': 'split_right_image',
-        'lecturer_notes': {   'cilj': 'Razjasniti zablude oko toplo-hladnih obloga i objasniti pravovremeno '
-                                      'prepoznavanje mastitisa.',
-                              'greske': 'Pranje bradavica sapunom pre i posle podoja (uklanja prirodne zaštitne lipide '
-                                        'koje luče Montgomerijeve žlezde); stavljanje vrućih obloga nakon podoja.',
-                              'pitanje': 'Zašto je strogo zabranjeno prekinuti pražnjenje dojke kada dođe do početnog '
-                                         'mastitisa?',
-                              'teze': 'Objasnite pravilo: TOPLO pre podoja (širi mlečne kanaliće i pomaže protok), '
-                                      'HLADNO posle podoja (smanjuje upalu i otok tkiva). Kod mastitisa, zabluda je da '
-                                      'majka mora da prekine dojenje. Naprotiv, mleko je bezbedno za bebu, a '
-                                      'pražnjenje dojke je ključni deo lečenja.'},
-        'module': 'Modul 3',
-        'subtitle': 'Diferencijacija stanja, prva pomoć i protokoli nege',
-        'title': 'Izazovi u laktaciji: Ragade, prepunjenost i mastitis',
-        'title_styled': 'Izazovi u laktaciji: <em>Ragade, prepunjenost</em> i mastitis'},
-    {   'badge': 'PROTOKOL SKLADIŠTENJA',
-        'bg_theme': 'light',
-        'category': 'SKLADIŠTENJE MLEKA',
-        'content_blocks': [   {   'bullets': [   '<strong>Uslovi i posuda:</strong> Čista sterilna staklena flašica ili kesica, zaštićena od direktnog sunca.',
-                                                 '<strong>Pravilo mešanja:</strong> Nikada ne mešati sveže toplo mleko sa već ohlađenim mlekom u frižideru.'],
-                                  'title': 'Sobna temperatura (3–4h)'},
-                              {   'bullets': [   '<strong>Pozicija na polici:</strong> Najhladniji deo na 4°C – u dubini police, <strong>NIKADA u vratima</strong>.',
-                                                 '<strong>Označavanje:</strong> Svaka flašica mora imati nalepnicu sa tačnim datumom i satom izmlazanja.'],
-                                  'title': 'Frižider (3–4 dana)'},
-                              {   'bullets': [   '<strong>Bezbedno zamrzavanje:</strong> Sterilne kesice; ostaviti 2 cm praznog prostora pri vrhu zbog širenja leda.',
-                                                 '<strong>Zlatno odmrzavanje:</strong> Noć u frižideru ili u toploj vodi (do 40°C); <em>NIKADA u mikrotalasnoj!</em>'],
-                                  'title': 'Zamrzivač (3–6 meseci)'}],
-        'id': 14,
-        'image': 'slide14_milk_storage_protocol.png',
-        'layout': 'split_right_image',
-        'lecturer_notes': {   'cilj': 'Ugraditi rigorozne higijenske standarde rukovanja biološkim materijalom '
-                                      '(izdojenim mlekom).',
-                              'greske': 'Čuvanje mleka u vratima frižidera; ponovno zamrzavanje jednom odmrznutog '
-                                        'mleka (strogo zabranjeno!).',
-                              'pitanje': 'Šta radite sa odmrznutim mlekom koje je zagrejano, a beba je popila samo '
-                                         'pola bočice?',
-                              'teze': 'Naglasite zašto je mikrotalasna pećnica strogo zabranjena: 1. Uništava '
-                                      "delikatne imunoglobuline i antitela; 2. Stvara 'vruće tačke' (hot spots) koje "
-                                      'mogu izazvati teške opekotine bebinog jednjaka iako je flašica spolja mlaka.'},
-        'metrics': [   {'lbl': 'Sobna temperatura (do 25°C)', 'val': '3–4 h'},
-                       {'lbl': 'U frižideru (4°C, dubina)', 'val': '3–4 dana'},
-                       {'lbl': 'U zamrzivaču (-18°C)', 'val': '3–6 meseci'}],
-        'module': 'Modul 3',
-        'subtitle': 'Vremenski protokoli, higijena pumpica i bezbedno odmrzavanje',
-        'title': 'Izmlazanje i skladištenje majčinog mleka',
-        'title_styled': 'Izmlazanje i <em>skladištenje majčinog mleka</em>'},
-    {   'badge': 'FORMULA PROTOKOL',
-        'bg_theme': 'light',
-        'category': 'MLEČNA FORMULA',
-        'content_blocks': [   {   'bullets': [   '<strong>Temperatura vode:</strong> Prokuvana i ohlađena na tačno ~40°C (ili niskomineralna voda).',
-                                                 '<strong>Zlatni redosled:</strong> <em>UVEK prvo voda u flašicu, pa tek onda prah</em> (sprečava hipernatrijemiju).',
-                                                 '<strong>Ravne merice:</strong> Obavezno ravnanje nožem — nikada prepune (rizik od opstipacije) niti poluprazne.',
-                                                 '<strong>Centrifugalno mešanje:</strong> Vrteti među dlanovima — ne mućkati gore-dole (sprečava penu i grčeve).'],
-                                  'title': 'Pravila pravilne pripreme'},
-                              {   'bullets': [   '<strong>Sveža priprema:</strong> Priprema se neposredno pre obroka; nikada se ne čuva unapred.',
-                                                 '<strong>Provera toplote:</strong> Par kapi na unutrašnju stranu podlaktice mora biti prijatno mlako.',
-                                                 '<strong>Pravilo 1 sat:</strong> Načeta flašica se <strong>MORA BACITI nakon 1 sata</strong> zbog bakterija iz pljuvačke.',
-                                                 '<strong>Higijena & sterilizacija:</strong> Pranje četkicom odmah nakon obroka i sterilizacija jednom dnevno.'],
-                                  'title': 'Stroga pravila bezbednosti'}],
-        'id': 15,
-        'image': 'slide15_formula_prep_protocol.png',
-        'layout': 'split_right_image',
-        'lecturer_notes': {   'cilj': 'Iskoreniti opasne navike ostavljanja nepopijene formule za kasnije ili '
-                                      "'odokativnog' doziranja praha.",
-                              'greske': "Podgrevanje formule u mikrotalasnoj; čuvanje načete bočice u torbi 'da beba "
-                                        "popije za sat vremena'; dodavanje vode u gotovu formulu.",
-                              'pitanje': "Zašto je redosled 'prvo voda, pa prah' apsolutno nepromenjiv zakonski "
-                                         'standard?',
-                              'teze': 'Podvucite mehanizam opstipacije i hipernatrijemije: ako se stavi previše praha '
-                                      'u premalo vode, bubrezi novorođenčeta ne mogu da izluče višak elektrolita. '
-                                      'Rotirajući pokret flašice (centrifugalan) umesto jakog mućkanja direktno '
-                                      'smanjuje grčeve.'},
-        'metrics': [   {'lbl': 'Optimalna temperatura vode', 'val': '~40°C'},
-                       {'lbl': '1 ravna merica na 30ml vode', 'val': '1:30'},
-                       {'lbl': 'Maksimalno trajanje obroka', 'val': '1 sat'}],
-        'module': 'Modul 3',
-        'subtitle': 'Aseptični uslovi, tačne razmere i pravila rukovanja',
-        'title': 'Adaptirana mlečna formula: Priprema i bezbednost',
-        'title_styled': 'Adaptirana mlečna formula: <em>Priprema i bezbednost</em>'},
-    {   'badge': 'MODUL 4: RAZVOJ',
-        'bg_theme': 'light',
-        'category': 'POLOŽAJI I SAN',
-        'content_blocks': [   {   'bullets': [   '<strong>Podrška glave i kičme:</strong> Obe ruke podupiru trup i vrat duž podlaktice dadilje (mišići vrata su nerazvijeni).',
-                                                 '<strong>Polusedeći položaj pri bočici:</strong> Beba se uvek hrani u naručju uz stalan kontakt očima.',
-                                                 '<strong>Zabrana ostavljanja bočice:</strong> Flašica se nikada ne podupire krpicama u krevecu (visok rizik od aspiracije).',
-                                                 '<strong>Tehnika podrigivanja:</strong> Uspravan položaj preko ramena ili na krilu uz blago ritmično tapkanje po leđima.'],
-                                  'title': 'Bezbedno nošenje i hranjenje'},
-                              {   'bullets': [   '<strong>Samo na leđima (Back to Sleep):</strong> Beba uvek spava isključivo na leđima na ravnoj i čvrstoj podlozi.',
-                                                 '<strong>Prazan krevetac:</strong> Strogo bez jastučića, debelih jorgana, traka, mašni, gnezda i plišanih igračaka.',
-                                                 '<strong>Tummy Time (vreme na stomaku):</strong> Samo dok je beba BUDNA i pod neposrednim nadzorom (jača vrat i leđa).',
-                                                 '<strong>Optimalna mikroklima:</strong> Temperatura sobe 20–22°C; beba spava u pamučnoj vreći bez pokrivanja lica.'],
-                                  'title': 'Zlatni standard bezbednog sna (SIDS prevencija)'}],
-        'id': 16,
         'image': 'p18_img1_736x1103.png',
         'layout': 'split_right_image',
-        'lecturer_notes': {   'cilj': 'Obučiti polaznice prevenciji sindroma iznenadne smrti odojčeta (SIDS) i '
-                                      'pravilnoj mehanici nošenja.',
-                              'greske': "Postavljanje bebe na spavanje na stomak 'zato što tako lepše spava'; "
-                                        'podupiranje flašice krpicom umesto držanja u rukama.',
-                              'pitanje': 'Šta radite ako beba zapišti i zagrcne se tokom hranjenja na bočicu?',
-                              'teze': 'Podrigivanje može trajati i 15-20 minuta. Ako beba ne podrigne i odmah se '
-                                      'spusti na leđa, rizik od aspiracije želudačnog sadržaja je visok. Tummy time je '
-                                      'obavezan svakog dana, ali ISKLJUČIVO pod neposrednim nadzorom.'},
-        'module': 'Modul 4',
-        'subtitle': 'Prevencija SIDS-a, podrigivanje i sigurna stimulacija',
-        'title': 'Položaji pri nošenju, hranjenju i bezbedan san',
-        'title_styled': 'Položaji pri nošenju, hranjenju i <em>bezbedan san</em>'},
-    {   'badge': 'NUTRITIVNI PROTOKOLI',
+        'lecturer_notes': {   'cilj': 'Usvojiti ergonomske položaje nošenja i striktno primenjivati protokole '
+                                      'prevencije sindroma iznenadne smrti odojčeta (SIDS).',
+                              'greske': "Dozvoljavanje spavanja u auto-sedištu ('jajetu') van automobila duže od 30 "
+                                        'minuta – opasnost od položajne asfiksije.',
+                              'pitanje': 'Roditelji insistiraju da beba spava na boku uz jastučić jer se plaše da će '
+                                         'se zagrcnuti ako bljucne na leđima. Kako ćete im objasniti anatomiju?',
+                              'teze': "Podaci pokazuju da je kampanja 'Spavanje na leđima' smanjila stopu SIDS-a za "
+                                      'više od 50%. Dadilja nikada ne sme dozvoliti spavanje bebe na stomaku bez '
+                                      'stalnog medicinskog nadzora.'},
+        'module': 'Modul 1',
+        'subtitle': 'Biomehanika nošenja novorođenčeta, prevencija aspiracije i protokoli bezbednog sna',
+        'title': 'Položaj pri hranjenju, nošenju i spavanju',
+        'title_styled': 'Položaji pri <em>hranjenju, nošenju i spavanju</em>'},
+    {   'badge': 'MODUL 2: DOJENJE',
         'bg_theme': 'light',
-        'category': 'NEMLEČNA DOHRANA',
-        'content_blocks': [   {   'bullets': [   '<strong>Znaci spremnosti:</strong> Stabilno drži glavu, sedi uz podršku, nestaje refleks guranja jezika.',
-                                                 '<strong>Pravilo 3 dana:</strong> Nova namirnica uvodi se 3 dana zaredom u prepodnevnim satima radi reakcija.',
-                                                 '<strong>Progresija tekstura:</strong> Glatka kaša -> gnječenje viljuškom -> sitno seckano (oko 9. meseca).',
-                                                 '<strong>Bez začina:</strong> Prvih godinu dana <em>strogo bez soli, dodatog šećera i meda</em> (rizik od botulizma).'],
-                                   'title': 'Znaci spremnosti i pravila'},
-                               {   'bullets': [   '<strong>1. Žitarice bez glutena:</strong> Pirinčane i kukuruzne kašice na majčinom mleku ili formuli.',
-                                                 '<strong>2. Blago povrće:</strong> Šargarepa, tikvica, bundeva, krompir, batat (kuvano na pari).',
-                                                 '<strong>3. Prvo voće:</strong> Jabuka, kruška, kajsija, breskva, šljiva (prvo termički obrađeno).',
-                                                 '<strong>4. Meso & proteini:</strong> Piletina, ćuretina, junetina (od 7. meseca) i kuvano žumance.'],
-                                   'title': 'Preporučeni redosled namirnica'}],
+        'category': 'PREDNOSTI I PRIPREMA',
+        'content_blocks': [   {   'bullets': [   '<strong>Jedinstven biološki sastav:</strong> Majčino mleko sadrži '
+                                                 'specifična antitela (sekretorni IgA), žive leukocite, enzime i '
+                                                 'prebiotike (HMO).',
+                                                 "<strong>Kolostrum ('tečno zlato'):</strong> Prvo mleko bogato "
+                                                 'proteinima i imunoglobulinima; oblaže sluzokožu creva i deluje kao '
+                                                 'prva prirodna vakcina.',
+                                                 '<strong>Dugoročne zdravstvene prednosti:</strong> Štiti od '
+                                                 'respiratornih i digestivnih infekcija, alergija, dijabetesa i '
+                                                 'smanjuje rizik od gojaznosti.',
+                                                 '<strong>Psihološka bliskost i oksitocin:</strong> Kontakt koža na '
+                                                 'kožu smanjuje nivo stresa kod majke i bebe i podstiče emocionalno '
+                                                 'vezivanje.'],
+                                  'title': 'Zlatni standard ishrane: Prednosti dojenja'},
+                              {   'bullets': [   '<strong>Pranje isključivo čistom vodom:</strong> Dojke se peru samo '
+                                                 'mlakom vodom tokom dnevnog tuširanja; sapuni isušuju prirodna ulja '
+                                                 'Montgomeryjevih žlezda.',
+                                                 '<strong>Priprema pre podoja:</strong> Tople obloge ili kratak topao '
+                                                 'tuš 5 minuta pre podoja olakšavaju refleks otpuštanja mleka '
+                                                 '(let-down refleks).',
+                                                 '<strong>Udoban položaj i relaksacija:</strong> Majka mora sedeti '
+                                                 'potpuno opuštenih ramena i leđa, uz potporu namenskim jastukom za '
+                                                 'dojenje.',
+                                                 '<strong>Uloga profesionalne dadilje:</strong> Dadilja priprema '
+                                                 'prostor, donosi bebu, dodaje majci čašu vode za hidrataciju i stvara '
+                                                 'tihu atmosferu.'],
+                                  'title': 'Higijena i priprema dojki pre podoja'}],
+        'id': 12,
+        'image': 'p17_img1_736x1103.png',
+        'layout': 'split_right_image',
+        'lecturer_notes': {   'cilj': 'Osnažiti predavače i dadilje da pruže maksimalnu podršku majci koja doji bez '
+                                      'nametanja pritiska ili stresa.',
+                              'greske': "Komentari dadilje poput: 'Beba plače, možda ti mleko nije dovoljno jako' – to "
+                                        'uništava samopouzdanje majke i sabotira laktaciju.',
+                              'pitanje': 'Zašto se bradavice ne smeju prati sapunom pre svakog podoja?',
+                              'teze': 'Dojenje je prirodno, ali se uči. Uloga dadilje je da majci pruži komfor: '
+                                      'dodavanje jastuka, čaša vode (dojenje izaziva intenzivnu žeđ usled oksitocina) '
+                                      'i smirivanje okruženja.'},
+        'module': 'Modul 2',
+        'subtitle': 'Imunološki značaj majčinog mleka, nega bradavica i podrška majci',
+        'title': 'Prednosti dojenja, higijena i priprema dojki za podoj',
+        'title_styled': 'Prednosti dojenja, <em>higijena i priprema dojki za podoj</em>'},
+    {   'badge': 'MODUL 2: DOJENJE',
+        'bg_theme': 'light',
+        'category': 'POLOŽAJI I TEHNIKA',
+        'content_blocks': [   {   'bullets': [   '<strong>Klasična kolevka:</strong> Bebina glava u pregibu lakta, '
+                                                 "telo okrenuto 'stomak na stomak' sa majkom; uho, rame i kuk u ravnoj "
+                                                 'liniji.',
+                                                 '<strong>Unakrsna kolevka (Cross-cradle):</strong> Suprotna ruka '
+                                                 'pridržava bebin potiljak i rameni pojas; idealan položaj za '
+                                                 'novorođenče i učenje hvata.',
+                                                 '<strong>Fudbalski hvat (ispod pazuha):</strong> Beba leži bočno '
+                                                 'ispod majčine ruke; odličan izbor nakon carskog reza, kod većih '
+                                                 'dojki ili blizanaca.',
+                                                 '<strong>Ležeći bočni položaj:</strong> Majka i beba leže okrenute '
+                                                 'jedno ka drugom; omogućava odmor majke tokom noći uz budan nadzor '
+                                                 'dadilje.'],
+                                  'title': 'Glavni položaji pri dojenju'},
+                              {   'bullets': [   '<strong>Široko otvorena usta (ugao >130°):</strong> Beba obuhvata ne '
+                                                 'samo bradavicu već i veći deo donje areole (bradavica usmerena ka '
+                                                 'nepcu).',
+                                                 '<strong>Izvrnute usne i bradica:</strong> Donja usna potpuno '
+                                                 'izvrnuta prema spolja, bradica duboko utisnuta u dojku, nosić '
+                                                 'slobodan za disanje.',
+                                                 '<strong>Čujno gutanje bez coktanja:</strong> Čuju se duboki gutljaji '
+                                                 '(pauza u disanju pri gutanju); nema coktanja ili uvlačenja obraza.',
+                                                 '<strong>Bezbolan podoj:</strong> Nakon prvih 10-20 sekundi podoj ne '
+                                                 'sme biti bolan; bol je uvek znak plitkog i nepravilnog hvata.'],
+                                  'title': 'Znakovi pravilnog asimetričnog hvata'}],
+        'id': 13,
+        'image': 'slide12_breastfeeding_positions.png',
+        'layout': 'split_right_image',
+        'lecturer_notes': {   'cilj': 'Uvežbati prepoznavanje asimetričnog hvata i biomehanike sisanja kako bi se '
+                                      'sprečila pojava bola i oštećenja bradavica.',
+                              'greske': "Povlačenje bebe sa dojke 'na silu' dok drži vakuum – garantovan način za "
+                                        'nastanak ragada.',
+                              'pitanje': 'Kako pravilno prekinuti vakuum i odvojiti bebu sa dojke ako je hvat plitak i '
+                                         'bolan?',
+                              'teze': 'Ključna poruka: Beba se privlači dojci, a ne dojka bebi! Majka se ne naginje '
+                                      "napred jer to izaziva bolove u leđima. Bradavica treba da 'gleda' u bebin nosić "
+                                      'pre nego što beba zine.'},
+        'module': 'Modul 2',
+        'subtitle': 'Ključni položaji majke i bebe, anatomija pravilnog hvata i prevencija bola',
+        'title': 'Položaji pri dojenju i pravilno postavljanje na dojku',
+        'title_styled': 'Položaji pri dojenju i <em>pravilno postavljanje na dojku</em>'},
+    {   'badge': 'MODUL 2: DOJENJE',
+        'bg_theme': 'light',
+        'category': 'IZAZOVI U LAKTACIJI',
+        'content_blocks': [   {   'bullets': [   '<strong>Uzrok je isključivo plitak hvat:</strong> Ragade ne nastaju '
+                                                 'od predugog sisanja već zato što beba desnima gnječi vrh bradavice '
+                                                 'umesto areole.',
+                                                 '<strong>Premazivanje sopstvenim mlekom:</strong> Nakon podoja '
+                                                 'istisnuti kap svežeg mleka, premazati bradavicu i ostaviti da se '
+                                                 'osuši na vazduhu.',
+                                                 '<strong>100% prečišćeni lanolin:</strong> Medicinski lanolin stvara '
+                                                 'vlažnu barijeru koja ubrzava zarastanje bez potrebe za ispiranjem '
+                                                 'pre podoja.',
+                                                 '<strong>Silikonske bradavice (privremeno):</strong> Koristiti '
+                                                 'isključivo kao privremeno pomagalo dok ranice zacele, uz stručnu '
+                                                 'korekciju hvata.'],
+                                  'title': 'Ispucale bradavice (Ragade)'},
+                              {   'bullets': [   '<strong>Prepunjenost (engorgement):</strong> Dojke su teške, '
+                                                 'zategnute i tople; rešava se čestim podojima, masažom i hladnim '
+                                                 'oblogama posle podoja.',
+                                                 '<strong>Začepljen mlečni kanal:</strong> Bolan čvorić na dojci; '
+                                                 'blaga masaža prema bradavici pod toplim tušem i podoj sa bebinom '
+                                                 'bradicom ka čvoru.',
+                                                 '<strong>Klinički mastitis:</strong> Crvenilo u obliku trougla, jaka '
+                                                 'bolnost, temperatura >38.5°C, jeza i drhtavica – zahteva pregled '
+                                                 'lekara i antibiotike.',
+                                                 '<strong>DOJENJE SE NE PREKIDA:</strong> Kod mastitisa dojenje se '
+                                                 'nastavlja; redovno pražnjenje obolele dojke je ključno za izlečenje '
+                                                 '(mleko je bezbedno).'],
+                                  'title': 'Prepunjenost dojki i mastitis'}],
+        'id': 14,
+        'image': 'slide13_lactation_challenges.png',
+        'layout': 'split_right_image',
+        'lecturer_notes': {   'cilj': 'Osposobiti polaznice za prepoznavanje i trijažu komplikacija u laktaciji i '
+                                      'pružanje stručne prve pomoći.',
+                              'greske': 'Agresivno i bolno stiskanje dojke na silu – to izaziva traumu tkiva i '
+                                        'pogoršava upalu.',
+                              'pitanje': 'Koja je razlika između fiziološke prepunjenosti dojki i kliničkog mastitisa?',
+                              'teze': 'Razbijte mit: majka sa temperaturom i mastitisom NE SME da prestane da doji. '
+                                      'Zastoj mleka pogoršava infekciju i vodi u apsces. Antibiotik koji lekar propiše '
+                                      'je kompatibilan sa dojenjem.'},
+        'module': 'Modul 2',
+        'subtitle': 'Uzroci oštećenja, diferencijacija prepunjenosti i klinički tretman mastitisa',
+        'title': 'Ispucale bradavice (ragade) i upala dojki (mastitis)',
+        'title_styled': 'Ispucale bradavice (ragade) i <em>upala dojki (mastitis)</em>'},
+    {   'badge': 'MODUL 2: DOJENJE',
+        'bg_theme': 'light',
+        'category': 'IZMAZANJE I SKLADIŠTENJE',
+        'content_blocks': [   {   'bullets': [   '<strong>Stroga higijena ruku:</strong> Temeljno pranje ruku sapunom '
+                                                 'i toplom vodom pre svakog kontakta sa pumpicom i posudama za mleko.',
+                                                 '<strong>Sterilizacija delova pumpice:</strong> Svi delovi koji '
+                                                 'dolaze u kontakt sa mlekom sterilišu se jednom dnevno i peru nakon '
+                                                 'svake upotrebe.',
+                                                 '<strong>Tehnika manuelnog izmazanja:</strong> Prsti u obliku slova '
+                                                 "'C' 3 cm iza areole; ritmičan pritisak ka grudnom košu pa spajanje "
+                                                 'prstiju.',
+                                                 '<strong>Električne pumpice:</strong> Korišćenje odgovarajućeg levka '
+                                                 '(veličina flanđe) koji ne tare bradavicu i rad na umerenoj jačini '
+                                                 'vakuma.'],
+                                  'title': 'Tehnike i higijena izmazanja'},
+                              {   'bullets': [   '<strong>Sobna temperatura (do 22°C):</strong> Sveže izmlazano mleko '
+                                                 'bezbedno je do 4 sata na čistom, prohladnom mestu.',
+                                                 '<strong>Frižider (4°C):</strong> U dubini police frižidera (nikada u '
+                                                 'vratima zbog oscilacija temperature) čuva se do 3–4 dana (optimalno '
+                                                 '72h).',
+                                                 '<strong>Zamrzivač (-18°C):</strong> U namenskim sterilnim kesicama '
+                                                 'sa upisanim datumom i mililitražom čuva se od 3 do 6 meseci.',
+                                                 '<strong>Odmrzavanje i zabrana mikrotalasne:</strong> Odmrzavanje u '
+                                                 'frižideru ili u posudi sa toplom vodom; mikrotalasna uništava '
+                                                 'antitela i pravi vrele tačke!'],
+                                  'title': 'Standardi skladištenja i odmrzavanja (4-4-6)'}],
+        'id': 15,
+        'image': 'slide14_milk_storage_protocol.png',
+        'layout': 'split_right_image',
+        'lecturer_notes': {   'cilj': 'Usvojiti pravila asepse pri manipulaciji izmlazanim mlekom i striktno poštovati '
+                                      'temperaturne standarde skladištenja.',
+                              'greske': 'Grejanje majčinog mleka u mikrotalasnoj rerni ili na ringli – proteini i '
+                                        'antitela denaturišu već na temperaturama preko 40°C.',
+                              'pitanje': 'Zašto se flašica sa majčinim mlekom ne sme mućkati energično kao sok?',
+                              'teze': 'Objasnite pravilo FIFO (First In, First Out) – uvek se troši najstarije '
+                                      'zamrznuto mleko. Jednom odmrznuto mleko se nikada ponovo ne zamrzava.'},
+        'module': 'Modul 2',
+        'subtitle': 'Manuelno i pumpicom izmazanje, sterilne posude i temperaturni standardi',
+        'title': 'Izmazanje i protokoli čuvanja majčinog mleka',
+        'title_styled': 'Izmazanje i <em>protokoli čuvanja majčinog mleka</em>'},
+    {   'badge': 'MODUL 2: DOJENJE',
+        'bg_theme': 'light',
+        'category': 'MLEČNA FORMULA',
+        'content_blocks': [   {   'bullets': [   '<strong>Izbor formule po savetu pedijatra:</strong> Standardna '
+                                                 'formula 1, hipoalergena (HA) ili anti-refluks (AR) – bez '
+                                                 'samoinicijativnih promena.',
+                                                 '<strong>Prokuvavanje i hlađenje vode:</strong> Sveža voda se '
+                                                 'prokuvava i hladi na 40–50°C pre mešanja (prevruća voda uništava '
+                                                 'vitamine, hladna se ne rastvara).',
+                                                 '<strong>Isključivo RAVNE merice praha:</strong> Svaka merica se '
+                                                 'poravnava nožem bez sabijanja; prva se sipa voda pa tek onda prah.',
+                                                 '<strong>Tačna razmera (1 merica na 30 ml vode):</strong> Strogo '
+                                                 'poštovanje proporcije; gušća formula opterećuje bubrege i izaziva '
+                                                 'opstipaciju.'],
+                                  'title': 'Protokol pripreme formule'},
+                              {   'bullets': [   '<strong>Test temperature na podlaktici:</strong> Nekoliko kapi na '
+                                                 'unutrašnju stranu ručnog zgloba pre davanja bebi (mora biti prijatno '
+                                                 'mlaka).',
+                                                 '<strong>Pravilo 1 sata:</strong> Započeta flašica mora se popiti u '
+                                                 'roku od 60 minuta; sav preostali sadržaj se BACA zbog razmnožavanja '
+                                                 'bakterija iz pljuvačke.',
+                                                 '<strong>Paced bottle-feeding tehnika:</strong> Flašica se drži '
+                                                 'horizontalno da mleko ispunjava vrh cucle; pravi se pauza na svakih '
+                                                 'nekoliko gutljaja.',
+                                                 '<strong>Zabrana ostavljanja bebe same sa flašicom:</strong> Nikada '
+                                                 'ne podupirati flašicu jastukom – izuzetan rizik od zagrcnjavanja, '
+                                                 'gušenja i upale uva.'],
+                                  'title': 'Bezbednost i tehnika hranjenja flašicom'}],
+        'id': 16,
+        'image': 'slide15_formula_prep_protocol.png',
+        'layout': 'split_right_image',
+        'lecturer_notes': {   'cilj': 'Standardizovati sterilnu pripremu i bezbednu administraciju adaptiranog mleka '
+                                      'kada majka ne doji.',
+                              'greske': "Podgrevanje već jednom popijene i ohlađene formule 'da se ne baci' – opasnost "
+                                        'od teških crevnih infekcija.',
+                              'pitanje': "Šta se dešava ako dadilja sipa 'malo puniju mericu da beba bolje napreduje'?",
+                              'teze': 'Formula nije sterilna u kutiji, a bakterija Cronobacter sakazakii može biti '
+                                      'smrtonosna za novorođenče. Voda i flašice moraju biti besprekorno čisti. '
+                                      'Hranjenje na flašicu zahteva isti kontakt očima i toplinu kao i dojenje.'},
+        'module': 'Modul 2',
+        'subtitle': 'Precizno doziranje, mikrobiološka bezbednost i pravila hranjenja na flašicu',
+        'title': 'Adaptirana formula: Priprema, higijena i bezbednost',
+        'title_styled': 'Adaptirana formula: <em>Priprema, higijena i bezbednost</em>'},
+    {   'badge': 'MODUL 3: NEGA ODOJČETA',
+        'bg_theme': 'light',
+        'category': 'ŠETNJA I NAVIKE',
+        'content_blocks': [   {   'bullets': [   '<strong>Vreme za prvu šetnju:</strong> Zdravorođena beba može u prvu '
+                                                 'šetnju već od 2–3. nedelje života u prolećnim i letnjim mesecima.',
+                                                 '<strong>Vremenska ograničenja:</strong> Izbegavati izlazak pri '
+                                                 'temperaturama ispod -5°C, iznad 32°C, pri magli, jakom vetru i '
+                                                 'povišenom aerozagađenju.',
+                                                 '<strong>Postepeno produžavanje boravka:</strong> Prvi dan 15–20 '
+                                                 'minuta, zatim postepeno do 1–2 sata dnevno (podstiče apetit i '
+                                                 'sintezu vitamina D).',
+                                                 '<strong>Zabrana prekrivanja kolica pelenom:</strong> Prekrivanje '
+                                                 'kolica pamučnom pelenom podiže temperaturu unutar kolica za 4–7°C '
+                                                 '(rizik od toplotnog udara!).'],
+                                  'title': 'Protokol za prve šetnje i boravak napolju'},
+                              {   'bullets': [   '<strong>Tummy time (Vreme na stomaku):</strong> Od prvih nedelja, '
+                                                 '2–3 puta dnevno po par minuta na čvrstoj podlozi dok je beba budna – '
+                                                 'jača vrat i leđa.',
+                                                 '<strong>Diferencijacija dana i noći:</strong> Dnevne aktivnosti uz '
+                                                 'prirodno svetlo i uobičajeni šum; noćna hranjenja u polumraku bez '
+                                                 'stimulacije.',
+                                                 '<strong>Slobodan pokret bez dubka:</strong> Pedijatrijski zabranjena '
+                                                 'upotreba hodalica (dubaka); beba razvija puzanje i hod na podnoj '
+                                                 'podlozi (puzzle).',
+                                                 '<strong>Senzorna stimulacija bez ekrana:</strong> Pričanje, pevanje, '
+                                                 'masaža tela i kontakt očima; NULTA tolerancija na telefone i '
+                                                 'televiziju do 2. godine.'],
+                                  'title': 'Zdrave životne navike i motorni razvoj'}],
         'id': 17,
         'image': 'p14_img2_736x920.png',
         'layout': 'split_right_image',
-        'lecturer_notes': {   'cilj': 'Preneti jasan raspored i stroga pravila nemlečne ishrane kako bi dadilja bila '
-                                      'pouzdan realizator pedijatrijskog plana.',
-                              'greske': 'Uvođenje više namirnica odjednom; forsiranje deteta da pojede celu porciju '
-                                        'kada pokazuje znake sitosti (okretanje glave).',
-                              'pitanje': 'Zašto se med ne sme davati deci mlađoj od godinu dana čak ni u mikroskopskim '
-                                         'količinama na cuclu?',
-                              'teze': 'Objasnite zašto je jutarnji termin (oko 10-11h) obavezan za novu namirnicu: ako '
-                                      'se pojavi alergijska reakcija, pojaviće se tokom dana kada je lako reagovati i '
-                                      'otići lekaru, a ne u toku noći. Med je strogo zabranjen do navršene prve godine '
-                                      'zbog spora Clostridium botulinum.'},
-        'metrics': [   {'lbl': 'Nedelja: optimalan početak', 'val': '17–26.'},
-                       {'lbl': 'Jedna namirnica uzastopno', 'val': '3 dana'},
-                       {'lbl': 'Početna količina ujutru', 'val': '2–3 kašičice'}],
-        'module': 'Modul 4',
-        'subtitle': 'Pravilo 3 dana, teksture i prevencija nutritivnih alergija',
-        'title': 'Uvođenje čvrste hrane: Protokoli i redosled',
-        'title_styled': 'Uvođenje čvrste hrane: <em>Protokoli i redosled</em>'},
-    {   'badge': 'ZDRAVE NAVIKE',
+        'lecturer_notes': {   'cilj': 'Uspostaviti zdrave životne navike, pravilan motorni razvoj i bezbedan boravak '
+                                      'na svežem vazduhu.',
+                              'greske': "Davanje telefona ili puštanje crtaća odojčetu tokom hranjenja kako bi 'mirno "
+                                        "jelo'.",
+                              'pitanje': 'Zašto Svetska zdravstvena organizacija i pedijatrijska udruženja izričito '
+                                         'zabranjuju upotrebu dubka (hodalice)?',
+                              'teze': 'Naglasite opasnost prekrivanja kolica leti. Mnogi roditelji prekriju kolica '
+                                      'tetra pelenom misleći da štite bebu od sunca, a zapravo stvaraju opasnu rernu. '
+                                      'Tummy time je temelj motorike i sprečava zaležanu glavicu (plagiocefaliju).'},
+        'module': 'Modul 3',
+        'subtitle': 'Boravak na svežem vazduhu, motorni razvoj kroz igru i ritam dana i noći',
+        'title': 'Šetnja i zdrave životne navike odojčeta',
+        'title_styled': 'Šetnja i <em>zdrave životne navike odojčeta</em>'},
+    {   'badge': 'MODUL 3: NEGA ODOJČETA',
         'bg_theme': 'light',
-        'category': 'ZDRAVE NAVIKE',
-        'content_blocks': [   {   'bullets': [   '<strong>Isključivo dojenje (do 6. meseca):</strong> Beba nema potrebu za vodom jer majčino mleko sadrži 88% vode.',
-                                                 '<strong>Uvođenje vode sa dohranom:</strong> Sa čvrstom hranom uvodi se prokuvana i ohlađena ili niskomineralna voda.',
-                                                 '<strong>Zabrana zaslađenih napitaka:</strong> Izbegavati industrijske sokove i zaslađene čajeve koji kvare apetit.',
-                                                 '<strong>Prevencija karijesa bočice:</strong> Uspavljivanje uz flašicu sa sokom ili mlekom oštećuje prve zubiće.'],
-                                  'title': 'Unos vode i tečnosti'},
-                              {   'bullets': [   '<strong>Simptomi denticije:</strong> Pojačano lučenje pljuvačke, stavljanje šaka u usta, otečene desni (od 6. meseca).',
-                                                 '<strong>Olakšavanje tegoba:</strong> Ohlađene silikonske glodalice i nežna masaža desni silikonskim naprstkom.',
-                                                 '<strong>Pranje od prvog zubića:</strong> Četkanje počinje od <em>prvog izniklog zuba</em> mekom dečjom četkicom i vodom.',
-                                                 '<strong>Navika pranja ruku:</strong> Rano uspostavljanje higijenskih navika pre svakog obroka i igre.'],
-                                  'title': 'Denticija i nega prvih zubića'}],
+        'category': 'ČVRSTA HRANA',
+        'content_blocks': [   {   'bullets': [   '<strong>Uzrast spremnosti (oko 6. meseca):</strong> Dete samostalno '
+                                                 'sedi uz podršku, drži stabilno glavu i gubi refleks izbacivanja '
+                                                 'hrane jezikom.',
+                                                 '<strong>Pravilo 3 dana za novu namirnicu:</strong> Svaka nova '
+                                                 'namirnica uvodi se pojedinačno, u prepodnevnim časovima, tokom 3 '
+                                                 'uzastopna dana.',
+                                                 '<strong>Postupnost u količini i teksturi:</strong> Počinje se sa 1–2 '
+                                                 'kašičice finog pirea, postepeno povećavajući obrok; mleko ostaje '
+                                                 'primarna ishrana.',
+                                                 '<strong>Bez prisiljavanja:</strong> Dete uči da istražuje teksture i '
+                                                 'ukuse; prihvatanje pojedinog povrća zahteva i do 10–15 ponuđenih '
+                                                 'pokušaja.'],
+                                  'title': 'Spremnost deteta i pravilo 3 dana'},
+                              {   'bullets': [   '<strong>Redosled uvođenja:</strong> Prvo neutralno povrće (tikvica, '
+                                                 'krompir, šargarepa), zatim žitarice bez glutena (pirinač, proso), '
+                                                 'voće, pa meso.',
+                                                 '<strong>STROGO ZABRANJENO pre 1. godine:</strong> So (opterećuje '
+                                                 'bubrege), šećer, kravlje mleko kao napitak i med (smrtonosni '
+                                                 'infantilni botulizam!).',
+                                                 '<strong>Opasnost od gušenja čvrstom hranom:</strong> Cela zrna '
+                                                 'grožđa, čeri paradajz, kokice, tvrde bombone i celi orasi/lešnici '
+                                                 'strogo zabranjeni.',
+                                                 '<strong>Rano uvođenje alergena:</strong> Gluten, jaje i riba uvode '
+                                                 'se pre navršene 1. godine po savremenim smernicama radi smanjenja '
+                                                 'rizika od alergija.'],
+                                  'title': 'Redosled namirnica i zabranjene namirnice'}],
         'id': 18,
         'image': 'p14_img3_736x1296.png',
         'layout': 'split_right_image',
-        'lecturer_notes': {   'cilj': 'Razbiti zabludu da se zubići peru tek kada svi niknu, i podvući važnost vode '
-                                      'umesto industrijskih sokova.',
-                              'greske': 'Davanje sokića na flašicu radi umirivanja; pripisivanje visoke temperature '
-                                        '(>38.5°C) nicanju zuba – zubi daju subfebrilnost do 37.5°C, viša temperatura '
-                                        'znači infekciju!',
-                              'pitanje': 'Kako roditeljima i dadiljama objasniti razliku između tegoba denticije i '
-                                         'prave respiratorne/virusne infekcije?',
-                              'teze': 'Objasnite fenomen karijesa ranog detinjstva (karijes flašice): kada se dete '
-                                      'uspavljuje sa sokom ili zašećerenim čajem, zubići se bukvalno rastapaju u '
-                                      'kiseloj sredini. Učiti dete da pije iz čašice od 6-7. meseca.'},
-        'module': 'Modul 4',
-        'subtitle': 'Denticija, uvođenje vode i rano sticanje higijenskih rutina',
-        'title': 'Hidracija, oralna higijena i nicanje zubića',
-        'title_styled': 'Hidracija, oralna higijena i <em>nicanje zubića</em>'},
-    {   'badge': 'RITAM DANA',
+        'lecturer_notes': {   'cilj': 'Obučiti polaznice za vođenje nemlečne dohrane po najnovijim pedijatrijskim '
+                                      'smernicama uz strogu prevenciju gušenja i botulizma.',
+                              'greske': 'Blendiranje hrane u potpuno tečnu kašu do 15. meseca – dete mora razviti '
+                                        'žvakanje gnječene hrane do 9–10. meseca.',
+                              'pitanje': 'Zašto se nova namirnica nikada ne uvodi uveče pre spavanja?',
+                              'teze': 'Podvucite crvenom bojom: MED JE ZABRANJEN pre navršene prve godine života zbog '
+                                      'spora Clostridium botulinum. So i šećer se nikada ne dodaju u bebinu hranu. '
+                                      'Nova namirnica se daje pre podne kako bi se reakcija uočila tokom dana.'},
+        'module': 'Modul 3',
+        'subtitle': 'Znakovi spremnosti, redosled namirnica i prevencija nutritivnih rizika',
+        'title': 'Uvođenje čvrste hrane (Nemlečna dohrana)',
+        'title_styled': 'Uvođenje čvrste hrane <em>(Nemlečna dohrana)</em>'},
+    {   'badge': 'MODUL 3: NEGA ODOJČETA',
         'bg_theme': 'light',
-        'category': 'AKTIVNOST I OBLAČENJE',
-        'content_blocks': [   {   'bullets': [   '<strong>Pravilo sloja više:</strong> U prvim mesecima, beba nosi '
-                                                 '<em>jedan tanak sloj više od odrasle osobe</em> u istim uslovima.',
-                                                 '<strong>Prirodni materijali:</strong> 100% češljani pamuk, bambus '
-                                                 'ili merino vuna; bez sintetike koja podstiče znojenje i ojed.',
-                                                 '<strong>Provera temperature:</strong> Temperatura se proverava '
-                                                 '<strong>na potiljku ili grudima</strong> (topli i suvi). Ruke i '
-                                                 'stopala beba su često hladni zbog periferne vazokonstrikcije i nisu '
-                                                 'merilo!',
-                                                 '<strong>Održavanje veša:</strong> Pranje na 60-90°C ekološkim bebi '
-                                                 'deterdžentom; dvostruko ispiranje; strogo bez omekšivača.'],
-                                  'title': 'Pravila oblačenja novorođenčeta'},
-                              {   'bullets': [   '<strong>Kada početi:</strong> Letnje bebe već posle 7-10 dana; '
-                                                 'zimske bebe nakon 2-3 nedelje pri stabilnom vremenu.',
-                                                 '<strong>Temperatura za šetnju:</strong> Optimalno između -5°C i '
-                                                 '28°C; izbegavati maglu, jak vetar, smog i podnevnu vrućinu.',
-                                                 '<strong>Trajanje:</strong> Počinje se sa 15-20 minuta, pa se '
-                                                 'postepeno produžava na 1-2 sata dnevno.',
-                                                 '<strong>Značaj:</strong> Prirodno svetlo pospešuje sintezu vitamina '
-                                                 'D i uspostavlja pravilan cirkadijalni ritam dan/noć.'],
-                                  'title': 'Protokol prvih izlazaka i šetnji'}],
+        'category': 'DENTICIJA I HIDRACIJA',
+        'content_blocks': [   {   'bullets': [   '<strong>Tipični simptomi (4–8. mesec):</strong> Pojačano '
+                                                 'balavljenje, otečene desni, grizenje tvrdih predmeta, razdražljivost '
+                                                 'i blago nemiran san.',
+                                                 '<strong>Šta NIJE simptom zubića:</strong> Temperatura preko 38.5°C, '
+                                                 'učestali prolivi i povraćanje nisu izazvani zubićima već infekcijom!',
+                                                 '<strong>Hlađene silikonske glodalice:</strong> Glodalice ohlađene u '
+                                                 'frižideru (NIKADA u zamrzivaču jer previše hladan predmet oštećuje '
+                                                 'desni).',
+                                                 '<strong>Masaža desni i gelovi:</strong> Nežna masaža čistim prstom '
+                                                 'obmotanim sterilnom gazom; biljni gelovi bez anestetika '
+                                                 '(lidokaina).'],
+                                  'title': 'Denticija: Simptomi i bezbedno olakšanje'},
+                              {   'bullets': [   '<strong>Toaleta pre nicanja zuba:</strong> Svakodnevno brisanje '
+                                                 'desni i jezika vlažnom sterilnom gazom nakon večernjeg obroka.',
+                                                 '<strong>Pranje prvih zubića:</strong> Čim nikne prvi zubić, koristi '
+                                                 'se meka silikonska četkica i pasta prilagođena uzrastu u veličini '
+                                                 'zrna pirinča.',
+                                                 '<strong>Prevencija karijesa bočice:</strong> Zabrana uspavljivanja '
+                                                 'deteta sa flašicom mleka, soka ili zaslađenog čaja u ustima.',
+                                                 '<strong>Pravilna hidracija vodom:</strong> Voda se uvodi tek sa '
+                                                 'početkom čvrste hrane (oko 6. meseca); do tada isključivo dojenje '
+                                                 'ili formula zadovoljavaju žeđ.'],
+                                  'title': 'Oralna higijena i uvođenje vode'}],
         'id': 19,
-        'image': 'p9_img1_736x920.png',
+        'image': 'p17_img2_736x1313.png',
         'layout': 'split_right_image',
-        'lecturer_notes': {   'cilj': 'Iskoreniti utopljavanje dece i strah od boravka na svežem vazduhu.',
-                              'greske': 'Pokrivanje kolica debelom pelenom tokom leta (efekat rerne – temperatura u '
-                                        'kolicima skače i do 10°C!); stavljanje kape bebi u zagrejanoj sobi.',
-                              'pitanje': 'Kako tačno proveravate da li je bebi prevruće ili hladno tokom šetnje u '
-                                         'kolicima?',
-                              'teze': 'Podsetite polaznice: hladne šake i stopala su normalna fiziološka pojava kod '
-                                      'novorođenčeta. Ako se beba utopljava jer su joj ruke hladne, dolazi do '
-                                      'pregrevanja, dehidracije i nemira. Šetnja je najbolji prirodni sedativ za '
-                                      'dete.'},
-        'module': 'Modul 4',
-        'subtitle': 'Pravilo jednog sloja, svež vazduh i cirkadijalni ritam',
-        'title': 'Oblačenje, termoregulacija i prve šetnje',
-        'title_styled': 'Oblačenje, termoregulacija i <em>prve šetnje</em>'},
-    {   'badge': 'MODUL 5: TEGOBE I NEGA',
+        'lecturer_notes': {   'cilj': 'Razjasniti zablude oko nicanja zubića, postaviti temelje oralne higijene i '
+                                      'pravilne hidracije odojčeta.',
+                              'greske': 'Upotreba gelova sa lidokainom za desni koji mogu utrnuti grlo odojčeta i '
+                                        'izazvati zagrcnjavanje ili poremećaj gutanja.',
+                              'pitanje': 'Da li je dojenoj bebi od 3 meseca tokom vrelih letnjih dana potrebno davati '
+                                         'vodu na flašicu?',
+                              'teze': 'Zubići ne izazivaju visoku temperaturu od 39°C. Često roditelji i neobučene '
+                                      "dadilje propuste ozbiljnu urinarnu ili virusnu infekciju misleći da je to 'od "
+                                      "zubića'. Četkica se uvodi sa prvim zubom."},
+        'module': 'Modul 3',
+        'subtitle': 'Prepoznavanje simptoma, bezbedno olakšavanje bola i uvođenje vode',
+        'title': 'Denticija (Nicanje zubića), oralna higijena i hidracija',
+        'title_styled': 'Denticija (Nicanje zubića), <em>oralna higijena i hidracija</em>'},
+    {   'badge': 'MODUL 3: NEGA ODOJČETA',
         'bg_theme': 'light',
-        'category': 'INFANTILNE KOLIKE',
-        'content_blocks': [   {   'bullets': [   '<strong>Fiziološka priroda:</strong> Nezrelost digestivnog i nervnog sistema (počinju od 2. nedelje, traju do 4. meseca).',
-                                                 '<strong>Veselovo pravilo trojke:</strong> Plač duži od 3 sata dnevno, najmanje 3 dana u nedelji, duže od 3 nedelje.',
-                                                 '<strong>Karakterističan napad:</strong> Iznenadan večernji plač, crvenilo u licu, stisnute šačice i nožice ka trbuhu.',
-                                                 '<strong>Uredno napredovanje:</strong> Dete je zdravo, lepo sisa, redovno puni pelene i dobija na težini.'],
-                                  'title': "Priroda grčeva i 'Pravilo trojke'"},
-                              {   'bullets': [   '<strong>Kontakt koža na kožu:</strong> Bebin stomak na grudi roditelja ili dadilje; toplota smiruje nervni sistem.',
-                                                 '<strong>Masaža stomaka:</strong> Blagi kružni pokreti u smeru kretanja kazaljke na satu prateći debelo crevo.',
-                                                 '<strong>Položaj i pokret:</strong> Savijanje nožica ka trbuhu („vožnja bicikla”) i položaj „leopard na grani”.',
-                                                 '<strong>Umerena toplota:</strong> Zgrejana pamučna pelena preko odeće (nikada vreli termofori na golu kožu!).'],
-                                  'title': 'Efikasne tehnike olakšavanja tegoba'}],
+        'category': 'VAKCINACIJA ODOJČETA',
+        'content_blocks': [   {   'bullets': [   '<strong>Vakcinacija u porodilištu:</strong> BCG vakcina (protiv '
+                                                 'tuberkuloze) i prva doza vakcine protiv Hepatitisa B aplikuju se na '
+                                                 'rođenju.',
+                                                 '<strong>Kombinovane petovalentne/šestovalentne:</strong> '
+                                                 'DTaP-IPV-Hib-HepB u 2, 3.5 i 5. mesecu štite od difterije, tetanusa, '
+                                                 'velikog kašlja, poliomijelitisa i hemofilusa.',
+                                                 '<strong>Pneumokokna vakcina:</strong> Štiti odojčad od teških '
+                                                 'bakterijskih upala pluća, meningitisa, sepse i gnojne upale srednjeg '
+                                                 'uva.',
+                                                 '<strong>MMR vakcina (12–15. mesec):</strong> Štiti dete od malih '
+                                                 'boginja (morbila), zaušaka (mumpsa) i rubeole.'],
+                                  'title': 'Kalendar imunizacije u prvoj godini'},
+                              {   'bullets': [   '<strong>Zdravstveni status deteta:</strong> Dete mora biti potpuno '
+                                                 'zdravo na dan vakcinacije; obavezan detaljan pregled izabranog '
+                                                 'pedijatra.',
+                                                 '<strong>Udobna odeća:</strong> Oblačenje deteta u meku pamučnu odeću '
+                                                 'koja se lako raskopčava u predelu butine gde se daje vakcina.',
+                                                 '<strong>Smirivanje i podrška:</strong> Dojenje, flašica ili zagrljaj '
+                                                 'neposredno nakon uboda deluju umirujuće i smanjuju bol.',
+                                                 '<strong>Vođenje evidencije:</strong> Upisivanje datuma, serije '
+                                                 'vakcine i planiranih revakcina u Dnevnik nege i koordinacija sa '
+                                                 'roditeljima.'],
+                                  'title': 'Uloga dadilje u pripremi za vakcinaciju'}],
         'id': 20,
+        'image': 'p1_img1_2000x2000.png',
+        'layout': 'split_right_image',
+        'lecturer_notes': {   'cilj': 'Upoznati polaznice sa obaveznim kalendarom vakcinacije i njihovom ulogom u '
+                                      'pripremi deteta i asistenciji roditeljima.',
+                              'greske': "Davanje sirupa za snižavanje temperature PRE odlaska na vakcinaciju 'da ne bi "
+                                        "dobilo temperaturu' – dokazano smanjuje efikasnost vakcine.",
+                              'pitanje': 'Koje preglede pedijatar mora obaviti pre nego što odobri davanje vakcine?',
+                              'teze': 'Imunizacija je civilizacijsko dostignuće koje spasava živote dece. Dadilja mora '
+                                      'imati pozitivan, profesionalan i smiren stav, bez prenošenja sopstvenih '
+                                      'strahova na dete.'},
+        'module': 'Modul 3',
+        'subtitle': 'Redovni kalendar vakcina, pedijatrijski pregled i priprema deteta',
+        'title': 'Vakcinacija odojčeta: Kalendar imunizacije i priprema',
+        'title_styled': 'Vakcinacija odojčeta: <em>Kalendar imunizacije i priprema</em>'},
+    {   'badge': 'MODUL 3: NEGA ODOJČETA',
+        'bg_theme': 'light',
+        'category': 'PUTOVANJA SA ODOJČETOM',
+        'content_blocks': [   {   'bullets': [   "<strong>Auto-sedište ('jaje') u kontra-smeru:</strong> Postavljeno "
+                                                 'isključivo suprotno od smera kretanja vozila (rear-facing) sa '
+                                                 'isključenim prednjim vazdušnim jastukom.',
+                                                 '<strong>Pravilo 2 sata na putu:</strong> Na dužim putovanjima '
+                                                 'automobilom obavezne su pauze na svaka 2 sata (vađenje bebe iz '
+                                                 'sedišta, prepovijanje i istezanje).',
+                                                 '<strong>Kontrola klime u automobilu:</strong> Razlika između spoljne '
+                                                 'i unutrašnje temperature ne sme prelaziti 5–6°C; ventilacija ne sme '
+                                                 'duvati direktno u bebu.',
+                                                 '<strong>Putovanje avionom:</strong> Dojenje ili hranjenje na flašicu '
+                                                 'tokom poletanja i sletanja sprečava bol u ušima usled promene '
+                                                 'kabinskog pritiska.'],
+                                  'title': 'Bezbednost u prevozu i priprema za put'},
+                              {   'bullets': [   '<strong>Zaštita od sunca na moru:</strong> Bebe do 6 meseci se '
+                                                 'NIKADA ne izlažu direktnom suncu; posle 6 meseci mineralni UV 50+ '
+                                                 'preparati bez hemijskih filtera.',
+                                                 '<strong>Zabrana boravka na plaži (10h–17h):</strong> Strogo '
+                                                 'izbegavanje jakog UV zračenja; obavezni pamučni šeširići sa širokim '
+                                                 'obodom i naočare za sunce.',
+                                                 '<strong>Zimski uslovi i planina:</strong> Slojevito oblačenje '
+                                                 "(skafander); zaštita lica hranljivom 'cold' kremom bez vode 20 "
+                                                 'minuta pre izlaska na mraz.',
+                                                 '<strong>Period aklimatizacije:</strong> Ostaviti detetu 24–48 sati '
+                                                 'za mirno navikavanje na novu sredinu, vodu, krevetac i nadmorsku '
+                                                 'visinu.'],
+                                  'title': 'Specifičnosti letovanja i zimovanja'}],
+        'id': 21,
+        'image': 'p7_img2_1080x1350.png',
+        'layout': 'split_right_image',
+        'lecturer_notes': {   'cilj': 'Pripremiti dadilju za bezbedno praćenje porodice na putovanjima, letovanjima i '
+                                      'zimovanjima po Royal Nanny standardu.',
+                              'greske': "Vožnja deteta u naručju odraslog 'samo par minuta dok se ne smiri' – "
+                                        'smrtonosan rizik i pri najmanjem kočenju.',
+                              'pitanje': 'Šta ćete uraditi ako tokom vožnje na autoputu beba počne neutešno da plače '
+                                         'zato što je gladna?',
+                              'teze': 'Putovanja sa bebom zahtevaju vojničku organizaciju. Auto-sedište je obavezno u '
+                                      'svakom trenutku kretanja vozila – NIKADA se dete ne vadi iz sedišta tokom '
+                                      'vožnje da bi se nahranilo.'},
+        'module': 'Modul 3',
+        'subtitle': 'Bezbednost u vožnji, adaptacija na klimu, zaštita od sunca i zimskih uslova',
+        'title': 'Putovanje sa odojčetom: Priprema, letovanje i zimovanje',
+        'title_styled': 'Putovanje sa odojčetom: <em>Priprema, letovanje i zimovanje</em>'},
+    {   'badge': 'MODUL 4: NEGA BOLESNOG DETETA',
+        'bg_theme': 'light',
+        'category': 'GRČEVI (KOLIKE)',
+        'content_blocks': [   {   'bullets': [   '<strong>Pravilo trojke po Vesselu:</strong> Plač traje duže od 3 '
+                                                 'sata dnevno, najmanje 3 dana u nedelji, tokom perioda od 3 uzastopne '
+                                                 'nedelje.',
+                                                 '<strong>Tipična klinička slika:</strong> Iznenadan neutešan plač u '
+                                                 'kasno popodne, crveno lice, stisnute pesnice i nožice privučene ka '
+                                                 'napetom stomaku.',
+                                                 '<strong>Uzroci kolika:</strong> Nezrelost gastrointestinalnog i '
+                                                 'nervnog sistema, aerofagija (gutanje vazduha) i senzorno '
+                                                 'preopterećenje.',
+                                                 '<strong>Umirujući stav dadilje:</strong> Dadilja mora zračiti '
+                                                 'staloženošću; anksioznost i panika odraslih prenose se na bebu i '
+                                                 'pojačavaju plač.'],
+                                  'title': 'Dijagnostički kriterijumi i priroda kolika'},
+                              {   'bullets': [   "<strong>Položaj 'tigar na drvetu':</strong> Beba leži potrbuške na "
+                                                 'podlaktici dadilje; blag pritisak na trbušni zid pruža trenutno '
+                                                 'olakšanje od gasova.',
+                                                 "<strong>Masaža abdomena i 'bicikl':</strong> Nežni kružni pokreti u "
+                                                 'smeru kazaljke na satu i savijanje kolena ka stomaku radi evakuacije '
+                                                 'gasova.',
+                                                 '<strong>Topli oblozi na stomačić:</strong> Zagrejana pamučna tetra '
+                                                 'pelena ili termofor sa košticama višnje položen preko bebinog '
+                                                 'bodića.',
+                                                 '<strong>Beli šum i nošenje u marami:</strong> Zvuci materice (beli '
+                                                 'šum, šum vode) i ritmično nošenje smiruju nervni sistem '
+                                                 'novorođenčeta.'],
+                                  'title': 'Nefarmakološke mere i tehnike olakšanja'}],
+        'id': 22,
         'image': 'slide20_baby_colic_care.jpg',
         'layout': 'split_right_image',
-        'lecturer_notes': {   'cilj': 'Osposobiti dadilje da ostanu smirene i pružaju sistematsku podršku tokom '
-                                      'najstresnijih sati u porodici.',
-                              'greske': 'Agresivno treskanje bebe iz očaja (rizik od Shaken Baby Syndrome – sindroma '
-                                        'tresenog deteta!); davanje preparata bez konsultacije.',
-                              'pitanje': "Šta je 'Shaken Baby Syndrome' i zašto predavači moraju oštro upozoriti "
-                                         'dadilje na kontrolu frustracije tokom plača?',
-                              'teze': 'Grčevi najviše iscrpljuju roditelje psihički. Dadilja koja donosi mir, tihi '
-                                      'glas i sigurnost drastično smanjuje tenziju. Napomenite da majka koja doji može '
-                                      'probati da eliminiše kravlje mleko i gazirano iz ishrane na 7 dana.'},
-        'module': 'Modul 5',
-        'subtitle': "Fiziološka prolaznost, 'Pravilo trojke' i tehnike olakšavanja",
-        'title': 'Grčevi kod beba (Kolike): Smiren pristup i nega',
-        'title_styled': 'Grčevi kod beba: <em>Smiren pristup i nega</em>'},
-    {   'badge': 'KLINIČKI PROTOKOL',
+        'lecturer_notes': {   'cilj': 'Obučiti polaznice za smireno, stručno i efikasno zbrinjavanje beba sa '
+                                      'infantilnim kolikama bez panike i nepotrebnih lekova.',
+                              'greske': 'Nervozno i grubo trešenje bebe (Shaken Baby Syndrome) u trenucima frustracije '
+                                        'plačem – fatalne posledice za mozak novorođenčeta!',
+                              'pitanje': 'Koja je razlika između plača izazvanog grčevima i plača koji ukazuje na '
+                                         'akutni abdomen ili upalu uva?',
+                              'teze': "Kolike nisu bolest već prolazna razvojna faza. Najvažniji 'lek' je mirna, "
+                                      'staložena dadilja koja roditeljima uliva sigurnost dok beba prolazi kroz '
+                                      'napad.'},
+        'module': 'Modul 4',
+        'subtitle': 'Definicija po Vesselu, biomehaničke tehnike smirivanja i podrška roditeljima',
+        'title': 'Grčevi kod beba (Infantilne kolike): Smiren pristup i nega',
+        'title_styled': 'Grčevi kod beba (Infantilne kolike): <em>Smiren pristup i nega</em>'},
+    {   'badge': 'MODUL 4: NEGA BOLESNOG DETETA',
         'bg_theme': 'light',
-        'category': 'FEBRILNA STANJA',
-        'content_blocks': [   {   'bullets': [   '<strong>Rektalno merenje (do 1. god):</strong> Vrh toplomera namazan kremom; očitavanje je za 0.5°C više od pazuha.',
-                                                 '<strong>Definicija febrilnosti:</strong> Temperatura je odbrambeni mehanizam; lekovi se daju iznad 38.5°C aksilarno.',
-                                                 '<strong>Opšte stanje deteta:</strong> Ponašanje, hidriranost i kontakt očima važniji su od samog broja na toplomeru.',
-                                                 '<strong>Znakovi dehidratacije:</strong> Uvučena fontanela, suve usne i pelena suva duže od 6h zahtevaju pregled.'],
-                                   'title': 'Merenje i definicija febrilnosti'},
-                               {   'bullets': [   '<strong>1. Raskomoćivanje:</strong> Lagani pamučni bodić i soba provetrena na 20–22°C (bez utopljavanja).',
-                                                 '<strong>2. Unos tečnosti:</strong> Češći podoji, voda ili gutljaji rastvora elektrolita (ORS).',
-                                                 '<strong>3. Tuširanje mlakom vodom:</strong> Voda temperature 36–37°C (nikada hladna!); kvasiti trup i noge.',
-                                                 '<strong>STROGO ZABRANJENO:</strong> Utrljavanje alkohola ili sirćeta (rizik od teškog trovanja kroz kožu!).'],
-                                   'title': 'Fizikalno obaranje temperature'}],
-        'id': 21,
-        'image': 'slide21_fever_check_hd.png',
-        'layout': 'split_right_image',
-        'lecturer_notes': {   'cilj': "Ukloniti 'febrifobiju' (panični strah od temperature) i iskoreniti opasne "
-                                      'metode poput trljanja alkoholom.',
-                              'greske': "Zamotavanje deteta u ćebad da se 'preznoji' (dovodi do toplotnog udara i "
-                                        'skoka temperature); kupanje ledenom vodom.',
-                              'pitanje': 'Zašto je skidanje temperature alkoholom medicinski nedopustivo i izuzetno '
-                                         'opasno po život deteta?',
-                              'teze': 'Temperatura je saveznik imunog sistema – ona usporava replikaciju virusa. Ne '
-                                      'lečimo toplomer, lečimo dete. Alkohol se resorbuje kroz vaskularizovanu dečju '
-                                      'kožu i udisanjem isparenja može izazvati akutno trovanje i komu.'},
-        'metrics': [   {'lbl': 'Aksilarna granica (pazuh)', 'val': '38.0°C'},
-                       {'lbl': 'Rektalna granica (guza)', 'val': '38.5°C'},
-                       {'lbl': 'Temperatura mlake vode za tuš', 'val': '36–37°C'}],
-        'module': 'Modul 5',
-        'subtitle': 'Egzaktno merenje, pragovi febrilnosti i rashlađivanje bez šoka',
-        'title': 'Visoka temperatura: Granične vrednosti i fizikalne mere',
-        'title_styled': 'Visoka temperatura: <em>Fizikalne mere</em> i granice'},
-    {   'badge': 'FARMAKOLOGIJA',
-        'bg_theme': 'light',
-        'category': 'FARMAKOTERAPIJA',
-        'content_blocks': [   {   'bullets': [   '<strong>Doziranje:</strong> <strong>10–15 mg po kilogramu</strong> '
-                                                 'telesne mase po pojedinačnoj dozi.',
-                                                 '<strong>Razmak:</strong> Na 4 do 6 sati (maksimalno 4 puta u 24 '
-                                                 'sata).',
-                                                 '<strong>Prva linija izbora:</strong> Može se davati od rođenja; '
-                                                 'bezbedan za želudac; dostupan u sirupu i čepićima.',
-                                                 '<strong>Pravilo:</strong> Doza se računa po KILOGRAMIMA deteta, '
-                                                 'nikada po uzrastu na kutiji!'],
-                                  'title': 'Paracetamol (Paracet, Febricet)'},
-                              {   'bullets': [   '<strong>Doziranje:</strong> <strong>5–10 mg po kilogramu</strong> '
-                                                 'telesne mase po pojedinačnoj dozi.',
-                                                 '<strong>Razmak:</strong> Na 6 do 8 sati (maksimalno 3 puta u 24 '
-                                                 'sata).',
-                                                 '<strong>Uzrast:</strong> Tek kod beba starijih od 3 meseca (i težih '
-                                                 'od 5–6 kg).',
-                                                 '<strong>Oprez:</strong> Daje se uz obrok ili mleko; ima i '
-                                                 'antiinflamatorno dejstvo. Ne kombinovati samoinicijativno bez saveta '
-                                                 'pedijatra.'],
-                                  'title': 'Ibuprofen (Brufen, Nurofen)'}],
-        'id': 22,
-        'image': 'slide22_pediatric_dosage_card.png',
-        'layout': 'split_right_image',
-        'lecturer_notes': {   'cilj': 'Obučiti polaznice matematički preciznom proračunu doze antipiretika.',
-                              'greske': 'Preventivno davanje antipiretika pre vakcine (dokazano smanjuje imuni '
-                                        'odgovor); davanje aspirina (rizik od smrtonosnog Rejovog sindroma!).',
-                              'pitanje': 'Zašto je Aspirin (acetilsalicilna kiselina) strogo zabranjen kod dece mlađe '
-                                         'od 16 godina?',
-                              'teze': 'U praksi većina roditelja poddozira lek (npr. daju 2.5 ml sirupa detetu od 14 '
-                                      'kg jer tako piše za uzrast na kutiji), pa temperatura ne pada, što izaziva '
-                                      'paniku. Predavač mora nacrtati formulu proračuna: kg x 15mg / koncentracija.'},
-        'module': 'Modul 5',
-        'subtitle': 'Doziranje isključivo prema telesnoj masi, a ne prema godinama',
-        'title': 'Antipiretici i doziranje: Paracetamol vs Ibuprofen',
-        'title_styled': 'Antipiretici i doziranje: <em>Paracetamol vs Ibuprofen</em>'},
-    {   'badge': 'GASTROENTEROLOGIJA',
-        'bg_theme': 'light',
-        'category': 'DIGESTIVNE SMETNJE',
-        'content_blocks': [   {   'bullets': [   '<strong>Pravilo 30 minuta:</strong> Nakon epizode povraćanja želudac je u spazmu – <em>punih 30 min detetu ne davati apsolutno ništa</em>.',
-                                                 '<strong>Rehidracija kašičicom:</strong> Početi sa 5 ml rashlađenog ORS rastvora na svakih 5–10 min; postepeno povećavati količinu.'],
-                                  'title': 'Povraćanje & Zlatna pauza'},
-                              {   'bullets': [   '<strong>Protokol elektrolita:</strong> Prevencija dehidratacije gotovim ORS rastvorom uz obavezno uvođenje pedijatrijskog probiotika.',
-                                                 '<strong>Restriktivna dijetoterapija:</strong> Pirinčana voda, kuvani krompir, kuvana šargarepa, pečena jabuka; bez sokova i mleka.'],
-                                  'title': 'Dijareja (Proliv) & ORS'},
-                              {   'bullets': [   '<strong>Ishrana i tečnost:</strong> Povećati unos vode, kompota od suvih šljiva/kajsija i ovsenih pahuljica kod starijih beba.',
-                                                 '<strong>Fizička stimulacija:</strong> Masaža stomaka u smeru kazaljke na satu i savijanje nožica; čepići samo po nalogu lekara.'],
-                                  'title': 'Opstipacija (Zatvor)'}],
+        'category': 'OSIPI I KOŽNE PROMENE',
+        'content_blocks': [   {   'bullets': [   '<strong>Uzroci nastanka:</strong> Vlaga, trenje, amonijak iz urina i '
+                                                 'enzimi stolice narušavaju kožnu barijeru pelenske regije.',
+                                                 '<strong>Higijena čistom mlakom vodom:</strong> Čim se pojavi '
+                                                 'crvenilo, potpuno obustaviti vlažne maramice; prati bebu isključivo '
+                                                 'mlakom vodom i tapkati suvim peškirom.',
+                                                 '<strong>Kreme sa cink-oksidom:</strong> Nanosi se tanak zaštitni '
+                                                 'film paste sa cinkom koja odbija vlagu i pomaže epitelizaciju '
+                                                 'oštećene kože.',
+                                                 "<strong>'Vazdušno kupanje':</strong> Ostaviti bebu razgolićenu bez "
+                                                 'pelene što duže na nepropusnoj podlozi; vazduh je najmoćniji '
+                                                 'prirodni lek za ojed.'],
+                                  'title': 'Pelenski dermatitis (Ojed)'},
+                              {   'bullets': [   '<strong>Toplotni osip (Miliarija):</strong> Sitne crvene tačkice na '
+                                                 'vratu, grudima i pregibima usled pretopljavanja; prolazi '
+                                                 'rashlađivanjem.',
+                                                 '<strong>Atopijski ekcem:</strong> Suva, zadebljala crvena polja koja '
+                                                 'svrbe; zahteva intenzivnu negu medicinskim emolijensima bez parfema.',
+                                                 '<strong>Kandida u pelenskoj regiji:</strong> Jarko crvenilo sa '
+                                                 'satelitskim tačkicama na rubovima; zahteva antimikotičnu mast po '
+                                                 'nalogu pedijatra.',
+                                                 '<strong>CRVENA ZASTAVICA: Petehije:</strong> Tačkasta krvarenja koja '
+                                                 'NE BLEDE pod pritiskom staklene čaše – HITAN TRANSPORT U BOLNICU '
+                                                 '(sumnja na sepsu/meningitis)!'],
+                                  'title': 'Osipi po telu i crvene zastavice'}],
         'id': 23,
-        'image': 'slide23_digestive_dehydration.png',
+        'image': 'p16_img1_735x919.png',
         'layout': 'split_right_image',
-        'lecturer_notes': {   'cilj': 'Standardizovati protokol oralne rehidracije – sprečiti najčešću roditeljsku '
-                                      'grešku: davanje pune čaše vode detetu koje odmah ponovo povrati.',
-                              'greske': 'Nalivanje deteta tečnošću odmah posle povraćanja; davanje gaziranih napitaka '
-                                        "('koka-kole') detetu sa dijarejom.",
-                              'pitanje': 'Koji su kardinalni klinički znaci dehidracije kod odojčeta koje povraća?',
-                              'teze': 'Znakovi teške dehidracije: uvučena fontanela, suva usta, plač bez suza, pelena '
-                                      'suva duže od 6 sati, upale oči, letargija. To je razlog za momentalni odlazak u '
-                                      'dežurnu bolnicu.'},
-        'metrics': [   {'lbl': 'Pauza nakon povraćanja', 'val': '30 min'},
-                       {'lbl': 'ORS na svakih 5–10 minuta', 'val': '5 ml'},
-                       {'lbl': 'Dehidracija -> Hitan prijem', 'val': '194'}],
-        'module': 'Modul 5',
-        'subtitle': 'Pravilo 30 minuta, oralna rehidracija (ORS) i dijetoterapija',
-        'title': 'Digestivne smetnje: Povraćanje, dijareja i opstipacija',
-        'title_styled': 'Digestivne smetnje: <em>Povraćanje, dijareja</em> i opstipacija'},
-    {   'badge': 'PRAKTIČNI PROTOKOLI',
+        'lecturer_notes': {   'cilj': 'Osposobiti dadilje za diferencijaciju bezazlenih kožnih promena od ozbiljnih '
+                                      'pedijatrijskih stanja i test staklene čaše.',
+                              'greske': 'Nanošenje kortikosteroidnih masti na svoju ruku bez izričitog pregleda i '
+                                        'recepta pedijatra.',
+                              'pitanje': 'Zašto vlažne maramice pogoršavaju pelenski osip čim se pojavi oštećenje '
+                                         'kože?',
+                              'teze': "Demonstrirajte 'test staklene čaše' (tumbler test): ako se pritisne dno čaše na "
+                                      'osip i crvenilo ne izbledi, u pitanju je krvarenje u koži (petehije) – minut je '
+                                      'važan, odmah se zove 194.'},
+        'module': 'Modul 4',
+        'subtitle': 'Diferencijacija osipa, prevencija ojeda i hitne crvene zastavice',
+        'title': 'Osip po telu, pelenski osip i promene na koži',
+        'title_styled': 'Osip po telu, pelenski osip i <em>promene na koži</em>'},
+    {   'badge': 'MODUL 4: NEGA BOLESNOG DETETA',
         'bg_theme': 'light',
-        'category': 'INFEKCIJE I VAKCINE',
-        'content_blocks': [   {   'bullets': [   '<strong>Obligatno nosno disanje:</strong> Bebe do 6 meseci dišu isključivo na nos; zapušen nos direktno onemogućava sisanje i san.',
-                                                 '<strong>Tehnika toalete nosa:</strong> Po 1–2 kapi fiziološkog u nozdrvu, sačekati minut da omekša, pa nežno aspirirati pre jela i sna.',
-                                                 '<strong>Konjunktivitis i nega oka:</strong> Brisati sterilnom gazom natopljenom fiziološkim rastvorom <em>od spoljašnjeg ka unutrašnjem uglu</em>.',
-                                                 '<strong>Pravilo zasebne gaze:</strong> Za svako oko koristi se nova sterilna gaza (sprečavanje unakrsnog prenosa infekcije).'],
-                                  'title': 'Toaleta nosa i konjunktivitis'},
-                              {   'bullets': [   '<strong>Uobičajene vakcinalne reakcije:</strong> Blag otok, crvenilo na mestu uboda i prolazna temperatura 24–48h nakon vakcinacije.',
-                                                 '<strong>Lokalna nega uboda:</strong> Stavljati hladne suve obloge na otok (nikada vlažne i nikada direktan led na kožu).',
-                                                 '<strong>Razvoj BCG ožiljka:</strong> Oko 10. nedelje na ramenu nastaje čvorić sa gnojnim vrhom koji spontano puca i stvara krastu.',
-                                                 '<strong>Stroga zabrana kod BCG-a:</strong> <em>Ne istiskivati, ne mazati alkoholom i ne stavljati flaster!</em> Zarasta prirodno.'],
-                                  'title': 'Vakcinalne reakcije i BCG ožiljak'}],
+        'category': 'RESPIRATORNE I OČNE INFEKCIJE',
+        'content_blocks': [   {   'bullets': [   '<strong>Zašto je zapušen nos kritičan:</strong> Odojčad dišu '
+                                                 'isključivo na nos; zapušenost onemogućava sisanje, hranjenje i '
+                                                 'dovodi do nemirnog sna i gubitka težine.',
+                                                 '<strong>Ispiranje fiziološkim rastvorom (0.9% NaCl):</strong> Beba '
+                                                 'leži na boku; ukapava se ili lagano ubrizgava 1–2 ml fiziološkog u '
+                                                 'gornju nozdrvu radi razređivanja sekreta.',
+                                                 '<strong>Nazalna aspiracija:</strong> Upotreba aspiratora (manuelnog '
+                                                 'ili priključenog na usisivač) nežno i kratko, isključivo nakon '
+                                                 'razmekšavanja sekreta rastvorom.',
+                                                 '<strong>Ovlaživanje vazduha:</strong> Ultrazvučni ovlaživač u sobi i '
+                                                 'podizanje uzglavlja kreveca za 30° olakšavaju disanje i sprečavaju '
+                                                 'slivanje sekreta.'],
+                                  'title': 'Zapušen nos kod odojčeta (Rinitis)'},
+                              {   'bullets': [   '<strong>Simptomi infekcije:</strong> Crvenilo vežnjače, otok kapaka, '
+                                                 'gust žućkast ili zelenkast sekret koji slepljuje trepavice nakon '
+                                                 'buđenja.',
+                                                 '<strong>Toaleta sterilnom gazom:</strong> Briše se od spoljašnjeg '
+                                                 'ugla oka ka nosu; za svako oko koristi se nova sterilna gaza '
+                                                 'natopljena fiziološkim rastvorom.',
+                                                 '<strong>Stroga zabrana čaja od kamilice:</strong> Kamilica se NIKADA '
+                                                 'ne stavlja na bebino oko – nije sterilna, sadrži alergene polena i '
+                                                 'pogoduje razvoju bakterija.',
+                                                 '<strong>Aplikacija antibiotskih kapi/masti:</strong> Isključivo po '
+                                                 'nalogu lekara; vrh kapaljke ne sme dodirnuti oko kako se bočica ne '
+                                                 'bi kontaminirala.'],
+                                  'title': 'Infekcija oka (Konjunktivitis)'}],
         'id': 24,
         'image': 'slide24_respiratory_care.png',
         'layout': 'split_right_image',
-        'lecturer_notes': {   'cilj': 'Umiriti roditelje i dadilje povodom normalnih reakcija na vakcine i obučiti ih '
-                                      'higijeni oka i disajnih puteva.',
-                              'greske': 'Stavljanje antibiotskih masti u oko bez pregleda lekara; istiskivanje gnoja '
-                                        'iz BCG ranice i lepljenje flastera preko nje.',
-                              'pitanje': 'Kako roditeljima objasniti zašto se BCG ranica na ramenu ne sme '
-                                         'dezinfikovati niti prekrivati flasterom?',
-                              'teze': 'Podsetite: BCG ranica često uplaši roditelje jer izgleda kao upaljen čir. To je '
-                                      'normalan znak stvaranja imuniteta. Posebno obratite pažnju na MMR vakcinu – '
-                                      'reakcija (temperatura i blagi osip) se javlja tek posle 7-10 dana, što je '
-                                      'uobičajen tok.'},
-        'module': 'Modul 5',
-        'subtitle': 'Aspiracija nosa, toaleta konjunktivitisa i nega BCG ranice',
-        'title': 'Respiratorne i očne infekcije & Vakcinalne reakcije',
-        'title_styled': 'Respiratorne infekcije & <em>Vakcinalne reakcije</em>'},
-    {   'badge': 'MODUL 6: BEZBEDNOST',
+        'lecturer_notes': {   'cilj': 'Usvojiti pravilnu tehniku toalete nosa i sterilnu negu oka uz eliminaciju '
+                                      'opasnih narodnih metoda poput kamilice.',
+                              'greske': 'Ukapavanje kapi za nos za odrasle (dekongestiva) u bebin nos – rizik od '
+                                        'kolapsa i zastoja disanja!',
+                              'pitanje': 'U kom položaju beba mora da leži prilikom obilnog ispiranja nosnih hodnika '
+                                         'fiziološkim rastvorom?',
+                              'teze': 'Zapušen nos kod odojčeta je urgentan problem jer beba ne može istovremeno da '
+                                      'diše na usta i sisa. Nos mora biti prohodan pre svakog podoja i spavanja. Čaj '
+                                      'od kamilice je zabranjen u modernoj pedijatriji.'},
+        'module': 'Modul 4',
+        'subtitle': 'Toaleta disajnih puteva, aspiracija sekreta i higijenski protokol konjunktivitisa',
+        'title': 'Zapušen nos i infekcija oka kod odojčadi',
+        'title_styled': 'Zapušen nos i <em>infekcija oka kod odojčadi</em>'},
+    {   'badge': 'MODUL 4: NEGA BOLESNOG DETETA',
         'bg_theme': 'light',
-        'category': 'BEZBEDNOST I RIZICI',
-        'content_blocks': [   {   'bullets': [   '<strong>Padovi:</strong> Sa stola za prepovijanje, bračnog kreveta, '
-                                                 'kauča (beba se okreće u sekundi!).',
-                                                 '<strong>Gušenje:</strong> Mekani jastuci, plastične kese, vrpce i '
-                                                 'trake na garderobi i krevecu.',
-                                                 '<strong>Opekotine:</strong> Pretopla voda u kadici, prskanje vrelog '
-                                                 'čaja/kafe iz šolje roditelja.',
-                                                 '<strong>Dubak (hodalica):</strong> <em>Strogo zabranjen medicinski '
-                                                 'rekvizit</em> – uzrok teških prevrtanja i padova niz stepenice.'],
-                                  'title': 'Uzrast do 1. godine: Tihe opasnosti'},
-                              {   'bullets': [   '<strong>Padovi sa visine:</strong> Penjanje na stolice, police, '
-                                                 'otvoreni prozori i terase (obavezne sigurnosne reze).',
-                                                 '<strong>Strana tela:</strong> Gutanje i udisanje sitnih igračaka, '
-                                                 'klikera, dugmastih baterija, magneta, kikirikija.',
-                                                 '<strong>Kuhinja:</strong> Drške šerpi okrenute ka ivici šporeta, '
-                                                 'rerna, noževi, vruće ringle.',
-                                                 '<strong>Trovanja:</strong> Kućna hemija, kapsule za pranje veša, '
-                                                 'kozmetika i lekovi u dometu dečjih ruku.'],
-                                  'title': 'Uzrast 1–4 godine: Radoznali istraživači'}],
+        'category': 'VAKCINALNE REAKCIJE',
+        'content_blocks': [   {   'bullets': [   '<strong>Lokalna reakcija na mestu uboda:</strong> Blag otok, '
+                                                 'crvenilo i bolnost na butini; stavljaju se suve hladne obloge preko '
+                                                 'tkanine (nikada led ili alkohol na ubod).',
+                                                 '<strong>Fiziološka febrilnost (24–48h):</strong> Umereno povišena '
+                                                 'temperatura je normalan znak imunološkog odgovora i stvaranja '
+                                                 'antitela; pojačati unos tečnosti.',
+                                                 '<strong>Prolazna pospanost i razdražljivost:</strong> Dete može biti '
+                                                 'pospanije ili plačljivije tokom prvog dana; pružiti dodatnu nežnost, '
+                                                 'mir i komfor.',
+                                                 '<strong>BCG reakcija (nakon 4–6 nedelja):</strong> Pojava crvenog '
+                                                 'čvorića, gnojnice i krastice na ramenu; NIKADA ne istiskivati i ne '
+                                                 'mazati (prirodan proces).'],
+                                  'title': 'Uobičajene postvakcinalne reakcije'},
+                              {   'bullets': [   '<strong>Praćenje temperature:</strong> Redovno merenje digitalnim '
+                                                 'toplomerom; paracetamol dati samo ako temperatura pređe 38.5°C '
+                                                 'rektalno.',
+                                                 '<strong>Zabrana preventivnog davanja lekova:</strong> Paracetamol se '
+                                                 'NE DAJE preventivno pre ili odmah posle vakcine jer umanjuje '
+                                                 'stvaranje antitela.',
+                                                 '<strong>Upozoravajući znaci za pedijatra:</strong> Neutešan vrišteći '
+                                                 'plač duži od 3 sata, febrilne konvulzije, otok mesta uboda veći od 5 '
+                                                 'cm ili izrazita klonulost.',
+                                                 '<strong>Zapisivanje u Dnevnik nege:</strong> Tačno vreme '
+                                                 'vakcinacije, izmerene temperature i sve primećene promene precizno '
+                                                 'se evidentiraju.'],
+                                  'title': 'Protokol nege i upozoravajući znaci'}],
         'id': 25,
-        'image': 'slide25_safe_play_hd.png',
+        'image': 'slide21_fever_check_hd.png',
         'layout': 'split_right_image',
-        'lecturer_notes': {   'cilj': "Razviti naviku 'skeniranja prostora' – dadilja mora videti opasnost 3 koraka "
-                                      'pre nego što dete krene ka njoj.',
-                              'greske': "Ostavljanje bebe na stolu za prepovijanje 'samo na sekund da dohvati pelenu' "
-                                        '(najčešći uzrok preloma lobanje kod odojčadi!).',
-                              'pitanje': 'Koji su prvi koraci koje profesionalna dadilja preduzima prilikom '
-                                         "'baby-proofing' pregleda novog stana?",
-                              'teze': 'Dubak/hodalica: naglasite polaznicama da pedijatrijska udruženja širom sveta '
-                                      'traže zabranu dubka. On ne uči dete da hoda, već stvara lažan osećaj '
-                                      'stabilnosti, deformiše stopala i omogućava detetu da brzinom od 1m/s stigne do '
-                                      'stepenica ili šporeta.'},
-        'module': 'Modul 6',
-        'subtitle': 'Rizici kod odojčeta (0–1 god) naspram prohodalog deteta (1–4 god)',
-        'title': 'Mapa bezbednosti i prevencija povreda po uzrastima',
-        'title_styled': 'Mapa bezbednosti i <em>prevencija povreda</em>'},
-    {   'badge': 'URGENTNA PEDIJATRIJA',
+        'lecturer_notes': {   'cilj': 'Obučiti polaznice za pravilno postvakcinalno praćenje odojčeta i smirivanje '
+                                      'roditeljske zabrinutosti.',
+                              'greske': 'Istiskivanje gnojnog čvorića na mestu BCG vakcine na ramenu bebe – to može '
+                                        'dovesti do duboke infekcije kosti i limfnih čvorova.',
+                              'pitanje': 'Koliko dugo je normalno da traje povišena temperatura nakon primljene '
+                                         'petovalentne vakcine?',
+                              'teze': 'Reakcija na vakcinu u vidu blage temperature do 38.5°C nije komplikacija već '
+                                      'dokaz da imuni sistem radi. Objasnite zašto se na mesto uboda ne stavlja oblog '
+                                      'od alkohola (isušuje i peče ranu).'},
+        'module': 'Modul 4',
+        'subtitle': 'Očekivane lokalne i opšte reakcije, nega mesta uboda i kada kontaktirati lekara',
+        'title': 'Vakcinacija: Postvakcinalne reakcije i nega deteta',
+        'title_styled': 'Vakcinacija: <em>Postvakcinalne reakcije i nega deteta</em>'},
+    {   'badge': 'MODUL 4: NEGA BOLESNOG DETETA',
         'bg_theme': 'light',
-        'category': 'PRVA POMOĆ',
-        'content_blocks': [   {   'bullets': [   '<strong>1. Mir i procena:</strong> Umiriti dete tihim glasom, proveriti svest i reakciju zenica.',
-                                                 '<strong>2. Hladan oblog:</strong> Led umotan u pamučnu krpu na hematom (nikada direktno na kožu).',
-                                                 '<strong>3. Opservacija 24–48h:</strong> Pratiti ponašanje, koordinaciju i budnost.',
-                                                 '<strong>ALARM ZA BOLNICU:</strong> Gubitak svesti, ponovljeno povraćanje, curenje tečnosti/krvi iz nosa/uha.'],
-                                   'title': 'Pad i trauma glave: Protokol'},
-                               {   'bullets': [   '<strong>Rana koja krvari:</strong> Direktan pritisak sterilnom gazom 5–10 minuta bez podizanja gaze.',
-                                                 '<strong>Epistaksa (krvarenje iz nosa):</strong> Glava nagnuta <strong>BLAGO NAPRED</strong> (nikada unazad!).',
-                                                 '<strong>Kompresija nosa:</strong> Čvrst pritisak na meki deo nosnih krilaca punih 10 minuta.',
-                                                 '<strong>Hladan oblog:</strong> Na koren nosa ili potiljak uz mirno disanje na usta.'],
-                                   'title': 'Zaustavljanje krvarenja i epistaksa'}],
+        'category': 'DIGESTIVNE SMETNJE',
+        'content_blocks': [   {   'bullets': [   '<strong>Rizik od brze dehidracije:</strong> Učestale vodenaste '
+                                                 'stolice kod odojčeta mogu dovesti do teške dehidracije unutar svega '
+                                                 'nekoliko sati.',
+                                                 '<strong>Oralna rehidracija (O.R.S.):</strong> Zlatni standard – '
+                                                 'kesica ORS rastvorena u prokuvanoj vodi daje se kašičicom na svakih '
+                                                 '5 minuta u malim gutljajima.',
+                                                 '<strong>Nastavak dojenja bez prekida:</strong> Dojenje se NIKADA ne '
+                                                 'prekida tokom dijareje; majčino mleko obnavlja crevnu sluzokožu i '
+                                                 'hidrira.',
+                                                 '<strong>Znaci teške dehidracije (HITNO 194):</strong> Upala '
+                                                 'fontanela, suva usta i jezik, plač bez suza, pelena suva duže od 6 '
+                                                 'sati i letargija.'],
+                                  'title': 'Dijareja (Proliv) i prevencija dehidracije'},
+                              {   'bullets': [   '<strong>Fiziologija stolice dojene bebe:</strong> Dojena beba može '
+                                                 'imati stolicu posle svakog podoja, ali i jednom u 7–10 dana ako je '
+                                                 'meka i beba napreduje.',
+                                                 '<strong>Kada je u pitanju zatvor:</strong> Tvrda, suva, brabonjasta '
+                                                 'stolica uz bolan plač, napinjanje i tragove krvi usled analnih '
+                                                 'fisura.',
+                                                 '<strong>Korekcija ishrane i navika:</strong> Kod dece na dohrani '
+                                                 'povećati unos vode, pasiranih šljiva, tikvica i krušaka; smanjiti '
+                                                 'pirinač i bananu.',
+                                                 '<strong>Stroga zabrana invazivnih metoda:</strong> NIKADA ne gurati '
+                                                 'toplomer, sapun ili štapiće u čmar radi izazivanja stolice (opasnost '
+                                                 'od traume i spazma)!'],
+                                  'title': 'Opstipacija (Zatvor) kod odojčadi'}],
         'id': 26,
-        'image': 'slide26_head_injury_first_aid.png',
+        'image': 'slide23_digestive_dehydration.png',
         'layout': 'split_right_image',
-        'lecturer_notes': {   'cilj': 'Uvežbati hitne reakcije i razbiti mit o zabacivanju glave unazad kod krvarenja '
-                                      'iz nosa.',
-                              'greske': "Podizanje gaze sa rane svakih 30 sekundi 'da se vidi da li još krvari' (time "
-                                        'se kida tek formiran fibrinski ugrušak).',
-                              'pitanje': 'Koja 4 simptoma nakon pada sa kreveta nalažu momentalni transport deteta u '
-                                         'neurohiruršku dežurnu ustanovu?',
-                              'teze': 'Zabacivanje glave unazad kod epistakse je jedna od najčešćih i najopasnijih '
-                                      'zabluda. Dete guta krv, javlja se mučnina i povraćanje krvi što stvara lažnu '
-                                      'sliku unutrašnjeg krvarenja. Glava uvek ide napred, a pritisak na nos mora '
-                                      'trajati punih 10 minuta po satu.'},
-        'module': 'Modul 6',
-        'subtitle': 'Opservacija potresa mozga, zaustavljanje krvarenja i epistaksa',
-        'title': 'Prva pomoć kod padova, povreda glave i krvarenja',
-        'title_styled': 'Prva pomoć kod <em>padova, povreda glave</em> i krvarenja'},
-    {   'badge': 'PROTOKOLI SPAŠAVANJA ŽIVOTA',
+        'lecturer_notes': {   'cilj': 'Osposobiti polaznice za brzu procenu dehidracije, primenu ORS rastvora i '
+                                      'eliminaciju opasnih metoda kod opstipacije.',
+                              'greske': 'Davanje lekova protiv proliva za odrasle (poput loperamida) deci – to '
+                                        'parališe creva i može biti smrtonosno.',
+                              'pitanje': 'Zašto se detetu koje povraća i ima proliv ne sme dati puna flašica vode ili '
+                                         'čaja odjednom?',
+                              'teze': 'Dehidracija je najveći neprijatelj odojčeta sa dijarejom. Pokažite znake: '
+                                      'uvučena fontanela, suve usne, nedostatak suza. Objasnite tehniku davanja ORS '
+                                      'rastvora kap po kap ili kašičicu po kašičicu.'},
+        'module': 'Modul 4',
+        'subtitle': 'Prevencija dehidracije, oralni rehidracioni rastvori (ORS) i regulacija stolice',
+        'title': 'Digestivni poremećaji: Opstipacija i dijareja',
+        'title_styled': 'Digestivni poremećaji: <em>Opstipacija i dijareja</em>'},
+    {   'badge': 'MODUL 4: NEGA BOLESNOG DETETA',
         'bg_theme': 'light',
-        'category': 'PRVA POMOĆ',
-        'content_blocks': [   {   'bullets': [   '<strong>1. Trenutno hlađenje:</strong> Mlazom hladne tekuće vode (ne ledene) punih <strong>10 do 20 minuta</strong>.',
-                                                 '<strong>2. Odeća i nakit:</strong> Skinuti što pre, <em>osim ako je zalepljeno za kožu</em> (ne cepati na silu!).',
-                                                 '<strong>3. Sterilno previjanje:</strong> Prekriti vlažnom sterilnom gazom; plikove nikada ne bušiti.',
-                                                 '<strong>STROGO ZABRANJENO:</strong> Mazanje uljem, mašću, pastom za zube ili brašnom (stvara infekciju!).'],
-                                   'title': 'Protokol kod opekotina'},
-                               {   'bullets': [   '<strong>Beba (< 1 god):</strong> Licem nadole duž podlaktice -> <strong>5 udaraca među lopatice</strong> + okretanje -> <strong>5 pritisaka na grudni koš</strong>.',
-                                                 '<strong>Dete (> 1 god):</strong> Hajmlihov zahvat (stisnuta pesnica u epigastrijum, brzi pritisci nagore).',
-                                                 '<strong>Gubitak svesti:</strong> Momentalni poziv Hitnoj pomoći (194) i započinjanje reanimacije (KPR).',
-                                                 '<strong>Stroga zabrana:</strong> Nikada ne gurati prste na slepo u bebina usta (potiskuje strano telo dublje u dušnik).'],
-                                   'title': 'Gušenje stranim telom (Aspiracija)'}],
+        'category': 'FEBRILNA STANJA',
+        'content_blocks': [   {   'bullets': [   '<strong>Rektalno merenje (zlatni standard do 1. god):</strong> '
+                                                 'Digitalni toplomer sa elastičnim vrhom; febrilnost je vrednost preko '
+                                                 '38.5°C.',
+                                                 '<strong>Aksilarno merenje (pazuh):</strong> Vrednost je za oko 0.5°C '
+                                                 'niža nego rektalno; temperatura preko 38.0°C smatra se febrilnošću.',
+                                                 '<strong>Beba mlađa od 3 meseca:</strong> Svaka temperatura iznad '
+                                                 '38.0°C kod bebe u prva 3 meseca zahteva HITAN pregled pedijatra!',
+                                                 '<strong>Opšte stanje važnije od broja:</strong> Ne leči se cifra na '
+                                                 'toplomeru već dete; da li dete uspostavlja kontakt očima, pije '
+                                                 'tečnost i mokri.'],
+                                  'title': 'Definicija febrilnosti i merenje'},
+                              {   'bullets': [   '<strong>Raskomoćivanje deteta:</strong> Skinuti suvišne slojeve '
+                                                 'odeće; ostaviti dete u laganom pamučnom bodiću na sobnoj temperaturi '
+                                                 'od 20–22°C.',
+                                                 '<strong>Tuširanje mlakom vodom (36–37°C):</strong> Kupanje ili '
+                                                 'tuširanje mlakom vodom tokom 10–15 minuta; NIKADA hladnom vodom '
+                                                 '(izaziva drhtavicu i skok T!).',
+                                                 '<strong>Pojačana hidratacija:</strong> Češći podoji, gutljaji vode '
+                                                 'ili rastvora elektrolita sprečavaju dehidraciju usled ubrzanog '
+                                                 'disanja i znojenja.',
+                                                 '<strong>STROGA ZABRANA ALKOHOLA I SIRĆETA:</strong> Utrljavanje '
+                                                 'alkohola ili sirćeta je opasno po život – alkohol se upija kroz kožu '
+                                                 'i izaziva trovanje i komu!'],
+                                  'title': 'Fizikalne mere obaranja temperature'}],
         'id': 27,
+        'image': 'slide22_pediatric_dosage_card.png',
+        'layout': 'split_right_image',
+        'lecturer_notes': {   'cilj': 'Usvojiti pravilne protokole merenja temperature i efikasne mere fizikalnog '
+                                      'rashlađivanja bez narodnih zabluda.',
+                              'greske': "Uvijanje febrilnog deteta u jorgane i ćebad 'da se preznoji' – to vodi pravo "
+                                        'u toplotni udar i febrilne konvulzije.',
+                              'pitanje': 'Zašto hladna voda i ledene obloge zapravo podižu unutrašnju temperaturu '
+                                         'tela?',
+                              'teze': 'Podvucite: alkohol i sirće su strogo zabranjeni u pedijatriji! Koža bebe je '
+                                      'tanak sunđer koji apsorbuje alkohol direktno u krvotok. Tuširanje se radi '
+                                      'isključivo mlakom vodom (36-37°C).'},
+        'module': 'Modul 4',
+        'subtitle': 'Metode merenja, aksilarna vs rektalna temperatura i fizikalno hlađenje',
+        'title': 'Visoka temperatura: Granične vrednosti i fizikalne mere',
+        'title_styled': 'Visoka temperatura: <em>Granične vrednosti i fizikalne mere</em>'},
+    {   'badge': 'MODUL 4: NEGA BOLESNOG DETETA',
+        'bg_theme': 'light',
+        'category': 'POVREDE I NEZGODE',
+        'content_blocks': [   {   'bullets': [   '<strong>Prva reakcija nakon pada:</strong> Ne pomerati naglo bebu '
+                                                 'ako se sumnja na povredu vrata; proveriti svest, disanje i reakciju '
+                                                 'zenica.',
+                                                 '<strong>Hladan oblog na hematom:</strong> Led umotan u pamučnu '
+                                                 'tkaninu držati 10–15 minuta radi sprečavanja širenja potkožnog '
+                                                 'krvarenja.',
+                                                 '<strong>5 znakova za HITNU POMOĆ (194):</strong> Gubitak svesti, '
+                                                 'povraćanje u mlazu više od 2 puta, asimetrične zenice, letargija i '
+                                                 'curenje bistre tečnosti iz nosa/uva.',
+                                                 '<strong>Praćenje 48 sati:</strong> Buditi dete noću na svaka 3–4 '
+                                                 'sata radi provere stanja svesti i koordinacije pokreta.'],
+                                  'title': 'Padovi sa visine i povrede glave (48h protokol)'},
+                              {   'bullets': [   '<strong>Opekotine (vrela voda, kafa):</strong> Odmah hladiti pod '
+                                                 'tekućom hladnom vodom 10–15 minuta; pokriti sterilnom gazom '
+                                                 '(zabranjeni ulje, mast i belance!).',
+                                                 '<strong>Gušenje kod odojčeta (do 1. god):</strong> Beba se postavlja '
+                                                 'potrbuške duž podlaktice sa glavom naniže; zadaje se 5 udaraca '
+                                                 'dlanom u leđa.',
+                                                 '<strong>5 pritisaka na grudnu kost:</strong> Ako strano telo nije '
+                                                 'izbačeno, okrenuti bebu na leđa i pritisnuti sredinu grudne kosti sa '
+                                                 'dva prsta 5 puta.',
+                                                 '<strong>Hajmlihov zahvat (posle 1. god):</strong> Primenjuje se samo '
+                                                 'kod starije dece koja stoje ili sede; nikada kod odojčadi zbog '
+                                                 'rizika od povrede jetre.'],
+                                  'title': 'Prva pomoć: Opekotine i gušenje stranim telom'}],
+        'id': 28,
         'image': 'slide27_infant_choking_protocol.png',
         'layout': 'split_right_image',
-        'lecturer_notes': {   'cilj': 'Spasiti život: tehnika deopstrukcije disajnih puteva kod beba mora se fizički '
-                                      'uvežbati do automatizma na trenažerima.',
-                              'greske': "Guranje prstiju 'na slepo' u bebina usta – time se strano telo samo još "
-                                        'dublje potiskuje u dušnik i pretvara delimično gušenje u potpuno!',
-                              'pitanje': 'Zašto se Hajmlihov zahvat ne sme primenjivati kod odojčadi mlađe od godinu '
-                                         'dana?',
-                              'teze': 'Naglasite: kod odojčadi do godinu dana Hajmlihov zahvat se NE RADI jer može '
-                                      'oštetiti jetru i unutrašnje organe trbuha. Primenjuje se isključivo '
-                                      'kombinacija: 5 udaraca po leđima + 5 pritisaka na grudnu kost. Kod opekotina '
-                                      'voda je jedini lek.'},
-        'metrics': [   {'lbl': 'Hlađenje opekotine hladnom vodom', 'val': '10–20 min'},
-                       {'lbl': 'Udarci u leđa + pritisci na grudni koš', 'val': '5 + 5'},
-                       {'lbl': 'Masti, ulja, brašno na opekotinu', 'val': '0%'}],
-        'module': 'Modul 6',
-        'subtitle': 'Zlatni standard hlađenja i tehnike deopstrukcije disajnih puteva',
-        'title': 'Prva pomoć kod opekotina i gušenja stranim telom',
-        'title_styled': 'Prva pomoć kod <em>opekotina i gušenja</em> stranim telom'},
-    {   'badge': 'IMUNOLOGIJA I ALERGIJE',
+        'lecturer_notes': {   'cilj': 'Drilovati protokole prve pomoći kod najčešćih i najopasnijih trauma u dečjem '
+                                      'uzrastu do nivoa automatske reakcije.',
+                              'greske': 'Stavljanje masti, masti od jazavca ili belanca na opekotinu – to zadržava '
+                                        'toplotu u dubini tkiva i dovodi do sepse.',
+                              'pitanje': 'Koja je ključna razlika u prvoj pomoći kod gušenja odojčeta (do 1 godine) i '
+                                         'todlera (posle 1 godine)?',
+                              'teze': 'Demonstrirajte prvu pomoć kod gušenja odojčeta na lutki: 5 udaraca u leđa, 5 '
+                                      'pritisaka na grudnu kost. Kod opekotina pravilo je: VODA, VODA, VODA – hladiti '
+                                      '15 minuta pre bilo kakvog transporta.'},
+        'module': 'Modul 4',
+        'subtitle': 'Protokoli prve pomoći kod hitnih pedijatrijskih stanja u kućnim uslovima',
+        'title': 'Povrede i nezgode: Padovi, povrede glave, opekotine i gušenje',
+        'title_styled': 'Povrede i nezgode: <em>Padovi, povrede glave, opekotine i gušenje</em>'},
+    {   'badge': 'MODUL 4: NEGA BOLESNOG DETETA',
         'bg_theme': 'light',
-        'category': 'ALERGIJE I INFEKCIJE',
-        'content_blocks': [   {   'bullets': [   '<strong>Uklanjanje žaoke:</strong> Sastrugati žaoku tupim predmetom (ivicom kartice); nikada ne stiskati pincetom.',
-                                                 '<strong>Lokalna prva pomoć:</strong> Oprati vodom i sapunom, staviti hladan oblog i naneti antihistaminsku mast.'],
-                                  'title': 'Ujed pčele ili ose'},
-                              {   'bullets': [   '<strong>Karakterističan osip:</strong> Progresija od crvenih tačkica, preko vodenih mehurića do krastica uz intenzivan svrab.',
-                                                 '<strong>Terapijska nega:</strong> Kratko tuširanje bez trljanja, tečni puder sa cinkom i podrezivanje noktiju radi infekcije.'],
-                                  'title': 'Varičele (Ovčije boginje)'},
-                              {   'bullets': [   '<strong>Klinički znaci uzbune:</strong> Iznenadno oticanje usana, jezika i kapaka, sviranje u grudima, stridor i cijanoza.',
-                                                 '<strong>Urgentni protokol:</strong> Momentalan poziv Hitnoj pomoći (194), ležeći položaj sa podignutim nogama i EpiPen. '],
-                                  'title': 'Anafilaktički šok (HITNO)'}],
-        'id': 28,
+        'category': 'ZARAZNE BOLESTI I ALERGIJE',
+        'content_blocks': [   {   'bullets': [   '<strong>Varičela (Ovčije boginje):</strong> Vezikule ispunjene '
+                                                 "bistrom tečnošću ('kapi rose') koje svrbe; higijena ruku, kratki "
+                                                 'noktići i antiseptički gel za svrab.',
+                                                 '<strong>Šesta bolest (Roseola infantum):</strong> Iznenadna visoka '
+                                                 'temperatura 3 dana; po padu temperature izbija sitan ružičasti osip '
+                                                 'po trupu koji brzo prolazi.',
+                                                 '<strong>BRNU sindrom (Ruke, noge, usta):</strong> Bolne ranice u '
+                                                 'usnoj duplji i vezikule na dlanovima i tabanima; meka prohladna '
+                                                 'hrana i hidratacija.',
+                                                 '<strong>Izolacija i mere opreza:</strong> Zaraženo dete ne dolazi u '
+                                                 'kontakt sa drugom decom i trudnicama; redovno provetravanje i '
+                                                 'dezinfekcija igračaka.'],
+                                  'title': 'Uobičajene zarazne bolesti kod dece'},
+                              {   'bullets': [   '<strong>Ujed krpelja:</strong> Pincetom uhvatiti što bliže koži i '
+                                                 'povući ravno nagore; NIKADA ne mazati alkoholom ili uljem (gušenje '
+                                                 'tera krpelja da povrati toksine!).',
+                                                 '<strong>Ujed ose ili pčele:</strong> Žaoku sastrugati tupom stranom '
+                                                 'kartice ili noža (ne stiskati pincetom); hladan oblog lokalno radi '
+                                                 'smanjenja otoka.',
+                                                 '<strong>Urtikarija (Koprivnjača):</strong> Crveni izdignuti pečati '
+                                                 'koji svrbe i migriraju po telu; znak alergijske reakcije na hranu '
+                                                 'ili lekove.',
+                                                 '<strong>CRVENI ALARM: Anafilaksa (HITNO 194):</strong> Otok usana, '
+                                                 'jezika, otežano čujno disanje (stridor), gušenje i bledo-siva koža – '
+                                                 'ODMAH 194 i EpiPen ako je propisan!'],
+                                  'title': 'Ujedi insekata i anafilaktički šok'}],
+        'id': 29,
         'image': 'slide28_insect_bites_allergies.png',
         'layout': 'split_right_image',
-        'lecturer_notes': {   'cilj': 'Razlikovati lokalnu reakciju na ujed od anafilakse koja zahteva hitnu '
-                                      'medicinsku pomoć u roku od nekoliko minuta.',
-                              'greske': 'Čupanje žaoke noktima (istiskivanje celog rezervoara otrova u krvotok); '
-                                        'davanje aspirina tokom varičela (apsolutno smrtonosna kombinacija!).',
-                              'pitanje': 'Koji su prvi simptomi koji razlikuju običnu koprivnjaču od početka teške '
-                                         'sistemske anafilakse?',
-                              'teze': 'Podsetite polaznice: ako je dete sklono alergijama, porodica često u kući ima '
-                                      'EpiPen (autoinjektor adrenalina). Dadilja mora tačno znati gde se nalazi i kako '
-                                      'se aktivira. Kod varičela je ključna prevencija bakterijske infekcije kože '
-                                      'izazvane češanjem prljavim noktima.'},
-        'module': 'Modul 6',
-        'subtitle': 'Uklanjanje žaoke, izolacija kod varičela i alarm za 194',
-        'title': 'Ujedi insekata, zarazne bolesti i anafilaksa',
-        'title_styled': 'Ujedi insekata, zarazne bolesti i <em>anafilaksa</em>'},
-    {   'badge': 'MODUL 7: PROTOKOLI PUTOVANJA',
+        'lecturer_notes': {   'cilj': 'Osposobiti polaznice za prepoznavanje tipičnih dečjih osipnih groznica i hitno '
+                                      'delovanje kod teških alergijskih reakcija.',
+                              'greske': "Čekanje da 'alergija sama prođe' kada dete počne da otječe u licu ili otežano "
+                                        'diše.',
+                              'pitanje': 'Zašto se krpelj pre vađenja nikada ne sme premazivati acetonom, uljem ili '
+                                         'alkoholom?',
+                              'teze': 'Kod anafilakse sekunde odlučuju. Polaznice moraju prepoznati rane znake: '
+                                      'oticanje očnih kapaka i usana, promuklost i kašalj poput laveža psa (stridor). '
+                                      'Pokažite pravilno vađenje krpelja.'},
+        'module': 'Modul 4',
+        'subtitle': 'Prepoznavanje dečjih osipnih groznica, lokalne reakcije i anafilaksa',
+        'title': 'Zarazne bolesti, ujedi insekata i alergije',
+        'title_styled': 'Zarazne bolesti, <em>ujedi insekata i alergije</em>'},
+    {   'badge': 'MODUL 4: NEGA BOLESNOG DETETA',
         'bg_theme': 'light',
-        'category': 'PUTOVANJA SA DECOM',
-        'content_blocks': [   {   'bullets': [   '<strong>Atestirano auto-sedište:</strong> Montirano suprotno od smera kretanja (rearfacing) što je duže moguće; pojas uz telo.',
-                                                 '<strong>Bez debelih jakni:</strong> Bebu vezivati bez zimske jakne (rizik od proklizavanja pojasa); prekriti ćebencetom preko.',
-                                                 '<strong>Pravilo 2 sata:</strong> Obavezna pauza od 15–20 minuta na svaka 2h vožnje radi promene položaja kičme i hidracije.',
-                                                 '<strong>Klimatizacija vozila:</strong> Razlika spoljašnje i unutrašnje temperature maksimalno 5 do 7°C (prevencija šoka).'],
-                                  'title': 'Priprema rute i vožnja'},
-                              {   'bullets': [   '<strong>UV zaštita i dojenčad:</strong> Bebe mlađe od 6 meseci nikada ne izlagati direktnom suncu; koristiti laganu pamučnu odeću.',
-                                                 '<strong>Plažni režim:</strong> Boravak na suncu dozvoljen isključivo pre 10h i posle 17h; od 6. meseca mineralni SPF 50+.',
-                                                 '<strong>Zimska nega na planini:</strong> Zaštitna masna krema za lice protiv mraza i vetra; redovna hidratacija usana i kože.',
-                                                 '<strong>Postepena aklimatizacija:</strong> Prvog dana na moru ili planini skratiti boravak napolju radi adaptacije organizma.'],
-                                  'title': 'Letovanje i zimovanje'}],
-        'id': 29,
-        'image': 'p7_img2_1080x1350.png',
-        'layout': 'split_right_image',
-        'lecturer_notes': {   'cilj': 'Obučiti dadilje da budu oslonac porodici na putovanjima i eliminišu rizike od '
-                                      'toplotnog udara ili povreda u automobilu.',
-                              'greske': "Izlazak na sunce u podne 'jer smo namazali kremu sa faktorom 50'; vožnja bebe "
-                                        'u naručju tokom putovanja automobilom.',
-                              'pitanje': 'Zašto je vezivanje deteta u auto-sedištu u debeloj perjanoj jakni ekstremno '
-                                         'opasno pri sudaru?',
-                              'teze': 'Podsetite polaznice: debela zimska jakna u auto-sedištu stvara lažnu '
-                                      'zategnutost pojaseva. U slučaju sudara jakna se sabije, dete izleće iz sedišta! '
-                                      'Dete se vezuje u odeći, a jakna ili ćebence se stavljaju preko vezanih '
-                                      'pojaseva.'},
-        'module': 'Modul 7',
-        'subtitle': 'Priprema rute, zaštita od sunca, vetra i aklimatizacija',
-        'title': 'Putovanja sa detetom: Letovanje i zimovanje',
-        'title_styled': 'Putovanja sa detetom: <em>Letovanje i zimovanje</em>'},
-    {   'badge': 'KONTROLNA LISTA APOTEKE',
-        'bg_theme': 'light',
-        'category': 'PUTNA APOTEKA',
-        'content_blocks': [   {   'bullets': [   '<strong>Antipiretici / analgetici:</strong> Paracetamol (sirup i '
-                                                 'čepići) + Ibuprofen sirup sa originalnim špricevima za doziranje.',
-                                                 '<strong>Oralna rehidracija (ORS):</strong> Kesice elektrolita '
-                                                 '(Orosal, Hidrostar) za rastvaranje u prokuvanoj vodi.',
-                                                 '<strong>Probiotik:</strong> Kapi ili prašak za očuvanje crevne flore '
-                                                 'kod proliva ili stomačnih virusa.',
-                                                 '<strong>Antihistaminik:</strong> Sirup ili kapi za alergijske '
-                                                 'reakcije (isključivo po preporuci pedijatra) + gel za ujede '
-                                                 'insekata.'],
-                                  'title': 'Obavezni lekovi i rehidracija'},
-                              {   'bullets': [   '<strong>Digitalni toplomer:</strong> Sa savitljivim vrhom + rezervne '
-                                                 'baterije.',
-                                                 '<strong>Nazalna toaleta:</strong> Fiziološki rastvor u ampulama + '
-                                                 'nazalni aspirator sa filterima.',
-                                                 '<strong>Obrada rana:</strong> Antiseptik sprej (Oktenisept), '
-                                                 'sterilne gaze (5x5 i 10x10 cm), flasteri, elastični zavoj.',
-                                                 '<strong>Skladištenje:</strong> U termalnoj torbici, zaštićeno od '
-                                                 'toplote, svetlosti i <em>apsolutno van domašaja dece</em>.'],
-                                  'title': 'Sanitetski materijal i oprema'}],
+        'category': 'PUTNA I KUĆNA APOTEKA',
+        'content_blocks': [   {   'bullets': [   '<strong>Antipiretički segment:</strong> Paracetamol (sirup i čepići) '
+                                                 'i Ibuprofen sirup sa originalnim baždarenim špricevima za doziranje '
+                                                 'po kilogramu.',
+                                                 '<strong>Gastroenterološki segment:</strong> Kesice oralnog '
+                                                 'rehidracionog rastvora (O.R.S.) i pedijatrijski probiotik u kapima '
+                                                 'za regulaciju crevne flore.',
+                                                 '<strong>Respiratorni segment:</strong> Fiziološki rastvor u ampulama '
+                                                 '(0.9% NaCl), nosni aspirator i sterilni špricevi za toaletu disajnih '
+                                                 'puteva.',
+                                                 '<strong>Sanitetski i antiseptički pribor:</strong> Octenisept sprej '
+                                                 '(ne peče), sterilne gaze, flasteri, digitalni toplomer i anatomska '
+                                                 'pinceta za krpelje.'],
+                                  'title': '4 obavezna segmenta dečje apoteke'},
+                              {   'bullets': [   '<strong>Bezbedno čuvanje van domašaja:</strong> Apoteka mora biti '
+                                                 'zaključana na visini preko 1.5 m, van vidokruga i domašaja radoznale '
+                                                 'dece.',
+                                                 '<strong>Temperaturni režim:</strong> Čuvanje na suvom i tamnom mestu '
+                                                 'do 25°C; lekovi koji zahtevaju hladan lanac (određeni '
+                                                 'antibiotici/probiotici) u frižideru.',
+                                                 '<strong>Revizija rokova upotrebe:</strong> Provera rokova trajanja '
+                                                 'na svakih 6 meseci; obavezno upisivanje datuma otvaranja na bočicama '
+                                                 'sirupa i kapi.',
+                                                 '<strong>Zapis brojeva hitnih službi:</strong> U kutiji apoteke uvek '
+                                                 'se nalazi cedulja sa brojem izabranog pedijatra, dežurne dečje '
+                                                 'bolnice i Hitne pomoći (194).'],
+                                  'title': 'Skladištenje, revizija i odgovornost'}],
         'id': 30,
         'image': 'slide30_apoteka_kit.png',
         'layout': 'split_right_image',
-        'lecturer_notes': {   'cilj': 'Osposobiti dadilju da pre svakog polaska na put samostalno proveri i spakuje '
-                                      'putnu apoteku po kontrolnoj listi.',
-                              'greske': 'Držanje lekova u neseseru na noćnom stočiću gde dete može da dohvati šarene '
-                                        'sirupe; korišćenje lekova kojima je istekao rok.',
-                              'pitanje': 'Koje lekove iz apoteke uvek morate nositi u ručnom prtljagu u avionu, a šta '
-                                         'ide u predati kofer?',
-                              'teze': 'Podsetite polaznice: na put se nikada ne kreće bez oba oblika antipiretika (i '
-                                      'sirup i supozitorije). Ako dete povraća i ima temperaturu, sirup ne vredi jer '
-                                      'ga odmah izbaci – tada je čepić jedini spas.'},
-        'module': 'Modul 7',
-        'subtitle': 'Kompletan kontrolni spisak medicinskog pribora i lekova',
-        'title': 'Zlatni standard putne i kućne apoteke',
-        'title_styled': 'Zlatni standard <em>putne i kućne apoteke</em>'},
-    {   'badge': 'MEDICINSKE VEŠTINE',
+        'lecturer_notes': {   'cilj': 'Standardizovati sadržaj i bezbedno rukovanje kućnom i putnom pedijatrijskom '
+                                      'apotekom.',
+                              'greske': 'Držanje lekova u noćnom ormariću ili na stolu gde ih dete može dohvatiti i '
+                                        'progutati.',
+                              'pitanje': 'Koliko dugo sirup paracetamola ili antibiotska suspenzija smeju da se '
+                                         'koriste nakon prvog otvaranja bočice?',
+                              'teze': 'Kada nastupi hitna situacija, nema vremena za odlazak u dežurnu apoteku. Sve '
+                                      'mora biti u kući, sa važećim rokom i baždarenim špricem. Apoteka mora biti '
+                                      'strogo zaključana.'},
+        'module': 'Modul 4',
+        'subtitle': 'Obavezni set lekova, sanitetski materijal, uslovi čuvanja i provera rokova',
+        'title': 'Zlatni standard putne i kućne apoteke za decu',
+        'title_styled': 'Zlatni standard <em>putne i kućne apoteke za decu</em>'},
+    {   'badge': 'MODUL 4: NEGA BOLESNOG DETETA',
         'bg_theme': 'light',
         'category': 'ADMINISTRACIJA LEKOVA',
-        'content_blocks': [   {   'bullets': [   '<strong>Položaj i ugao šprica:</strong> Dete u polusedećem položaju; špric se prislanja u ugao usne duplje uz obraz.',
-                                                 '<strong>Bezbedno gutanje:</strong> Sirup brizgati u malim gutljajima; <em>nikada pravo u grlo</em> (rizik od aspiracije i gušenja).'],
-                                  'title': 'Oralni sirupi (Špricem)'},
-                              {   'bullets': [   '<strong>Priprema čepića:</strong> Beba na boku ili leđima sa podignutim nogicama; vrh čepića blago zagrejati među prstima.',
-                                                 '<strong>Zlatno pravilo (5–10 min):</strong> Prstima držati sastavljene gluteuse punih 5 do 10 minuta da se čepić rastopi.'],
-                                  'title': 'Rektalni čepići (Supozitorije)'},
-                              {   'bullets': [   '<strong>Aplikacija kapi za oči:</strong> Povući donji kapak nadole i ukapati u konjunktivalnu vrećicu (vrh bočice ne dotiče oko).',
-                                                 '<strong>Zagrevanje kapi za uši:</strong> Kapi pre ukapavanja uvek zagrejati u dlanu (hladne kapi izazivaju jaku vrtoglavicu).'],
-                                  'title': 'Kapi za oči i uši'}],
+        'content_blocks': [   {   'bullets': [   '<strong>1. Pravi pacijent:</strong> Proveriti ime deteta pre '
+                                                 'aplikacije, posebno u domovima sa više dece različitog uzrasta.',
+                                                 '<strong>2. Pravi lek:</strong> Trostruka provera naziva na ambalaži '
+                                                 '(pri uzimanju, pre merenja i pre vraćanja u apoteku).',
+                                                 '<strong>3. Prava doza (PO KILOGRAMIMA):</strong> Doziranje se računa '
+                                                 'ISKLJUČIVO prema težini deteta u kilogramima, nikada prema uzrastu '
+                                                 'sa kutije!',
+                                                 '<strong>4. Pravo vreme:</strong> Strogo poštovanje vremenskih '
+                                                 'intervala (npr. antibiotik na 8h ili 12h, antipiretik na 4–6h).',
+                                                 '<strong>5. Pravi način:</strong> Oralno, rektalno, nazalno ili '
+                                                 'okularno – striktno poštovanje propisanog puta aplikacije.'],
+                                  'title': "Protokol '5 PRAVILA BEZBEDNOSTI'"},
+                              {   'bullets': [   '<strong>Oralni špric (NIKADA kašičicom):</strong> Špric se uvodi uz '
+                                                 'unutrašnju stranu obraza (ka kutnjacima); lek se istiskuje lagano u '
+                                                 'ritmu gutanja (ne u grlo!).',
+                                                 '<strong>Položaj deteta:</strong> Dete mora biti u polusedećem '
+                                                 'položaju u naručju (stroga zabrana davanja sirupa u ležećem položaju '
+                                                 'zbog aspiracije).',
+                                                 '<strong>Aplikacija čepića (supozitorija):</strong> Dete leži na boku '
+                                                 'sa savijenim nožicama; nakon umetanja stisnuti gluteuse tokom 60 '
+                                                 'sekundi da čepić ne ispadne.',
+                                                 '<strong>Evidencija u Dnevnik nege:</strong> Svaki dati lek (tačan '
+                                                 'naziv, doza u ml/mg, vreme davanja i potpis dadilje) unosi se u '
+                                                 'Dnevnik nege.'],
+                                  'title': 'Tehnike aplikacije sirupa, čepića i kapi'}],
         'id': 31,
         'image': 'slide31_safe_medicine_admin.png',
         'layout': 'split_right_image',
-        'lecturer_notes': {   'cilj': 'Detaljno demonstrirati manualne tehnike davanja lekova i eliminisati rizik od '
-                                      'aspiracije sirupa.',
-                              'greske': 'Brizganje sirupa na silu detetu koje vrišti direktno u grlo; stavljanje '
-                                        'hladnih kapi iz frižidera direktno u uho deteta.',
-                              'pitanje': 'Zašto se kapi za uho moraju uvek prethodno zagrejati među dlanovima pre '
-                                         'ukapavanja detetu?',
-                              'teze': 'Podvucite zašto se gluteusi drže 5-10 minuta nakon stavljanja čepića: unošenje '
-                                      'stranog tela u rektum izaziva refleksni nagon za defekacijom. Ako ne zadržite '
-                                      'guzu, beba će istisnuti čepić u roku od 30 sekundi.'},
-        'module': 'Modul 7',
-        'subtitle': 'Pravilna aplikacija sirupa, rektalnih supozitorija i kapi',
-        'title': 'Tehnike bezbedne administracije lekova',
-        'title_styled': 'Tehnike bezbedne <em>administracije lekova</em>'},
-    {   'badge': 'ZAVRŠNI MODUL: STANDARDI',
+        'lecturer_notes': {   'cilj': 'Usvojiti farmakološku bezbednost i savladati tehnike aplikacije lekova bez '
+                                      'rizika od aspiracije i traumatskog iskustva za dete.',
+                              'greske': 'Špricanje celokupne doze leka direktno u grlo deteta – to izaziva '
+                                        'laringospazam, gušenje i povraćanje.',
+                              'pitanje': 'Šta ćete uraditi ako dete povrati lek 5 minuta nakon što ste mu dali sirup '
+                                         'paracetamola?',
+                              'teze': 'Lek se dozira po KILOGRAMIMA. Dete od 2 godine može imati 10 kg ili 16 kg – '
+                                      'doza ne može biti ista. Kašičice iz kuhinje su zabranjene (zapremine variraju '
+                                      'od 2.5 do 7 ml). Uvek se koristi originalni dozirni špric.'},
+        'module': 'Modul 4',
+        'subtitle': 'Protokol 5 pravila, doziranje po kilogramu i tehnika aplikacije bez stresa',
+        'title': 'Davanje lekova: Tehnike bezbedne administracije',
+        'title_styled': 'Davanje lekova: <em>Tehnike bezbedne administracije</em>'},
+    {   'badge': 'ZAVRŠNI MODUL: STANDARDI IZVRSNOSTI',
         'bg_theme': 'dark',
         'category': 'ETIKA I PROTOKOL',
-        'content_blocks': [   {   'bullets': [   '<strong>Pedantna satnica ishrane:</strong> Vreme svakog obroka, tačna mililitraža mleka, uvođenje novih namirnica i unos vode.',
-                                                 '<strong>Fiziološko praćenje:</strong> Broj i izgled stolica, mokre pelene, izmerena telesna temperatura i dužina sna.',
-                                                 '<strong>Zdravstveni dnevnik:</strong> Evidencija primenjene terapije, toalete pupka ili nosića i promena na koži.',
-                                                 '<strong>Razvojna zapažanja:</strong> Napredak u motorici, bebino raspoloženje, vreme na stomaku i aktivnosti napolju.'],
-                                  'title': 'Royal Nanny Dnevnik nege'},
-                              {   'bullets': [   '<strong>Apsolutna diskrecija:</strong> Privatnost porodice je svetinja – bez fotografisanja doma i deljenja na mrežama.',
-                                                 '<strong>Miran i precizan izveštaj:</strong> Primopredaja roditeljima je staložena, strukturisana i potkrepljena dnevnikom.',
-                                                 '<strong>Pedijatrijska savest:</strong> Dadilja je tihi oslonac doma – uvek tačna, uredna, empatična i visoko pouzdana.',
-                                                 '<strong>Pečat Royal Nanny:</strong> Kontinuirano usavršavanje, poštovanje porodičnih vrednosti i besprekorna etika.'],
-                                  'title': 'Zlatna pravila profesionalne etike'}],
+        'content_blocks': [   {   'bullets': [   '<strong>Precizna dnevna evidencija:</strong> Svaki obrok (vreme, '
+                                                 'količina), intervali sna, broj i izgled pelena, temperatura i '
+                                                 'raspoloženje evidentiraju se u Dnevnik nege.',
+                                                 '<strong>Primopredaja dužnosti roditeljima:</strong> Strukturiran '
+                                                 'usmeni i pismeni brifing na kraju smene pruža roditeljima apsolutan '
+                                                 'mir i uvid u ritam deteta.',
+                                                 '<strong>Diplomatska i topla komunikacija:</strong> Asertivan, smiren '
+                                                 'i profesionalan ton; poštovanje roditeljskog stila vaspitanja i '
+                                                 'pravila luksuznog doma.',
+                                                 '<strong>Profesionalni bonton u kući:</strong> Uredna uniforma, '
+                                                 'besprekorna lična higijena, nenametljivo prisustvo i tačnost u '
+                                                 'minut.'],
+                                  'title': 'Vođenje Dnevnika nege i komunikacija'},
+                              {   'bullets': [   '<strong>Apsolutna diskrecija (Ugovor o poverljivosti - '
+                                                 'NDA):</strong> Stroga zabrana deljenja informacija o porodici, deci, '
+                                                 'adresi i navikama doma na društvenim mrežama ili trećim licima.',
+                                                 '<strong>Zabrana fotografisanja:</strong> Fotografisanje dece i '
+                                                 'enterijera privatnim telefonom najstrože je zabranjeno bez izričite '
+                                                 'pismene saglasnosti roditelja.',
+                                                 '<strong>Stručni saradnik programa:</strong> Spec. strukovna '
+                                                 'med-sestra Jelena Aleksić • Garant najviših pedijatrijskih i '
+                                                 'kliničkih standarda.',
+                                                 '<strong>Završna evaluacija i licenca:</strong> Polaganje praktičnih '
+                                                 'simulacija na lutkama, provera znanja iz urgentne pedijatrije i '
+                                                 'dodela Royal Nanny sertifikata.'],
+                                  'title': 'Diskrecija, etika i sertifikacija'}],
         'id': 32,
         'image': 'p12_img1_736x1104.png',
         'layout': 'split_right_image',
-        'lecturer_notes': {   'cilj': 'Zaokružiti obuku snažnom motivacionom porukom i definisati zahteve za dobijanje '
-                                      'Royal Nanny sertifikata.',
-                              'greske': 'Objavljivanje bilo kakvog sadržaja iz klijentovog doma na ličnim mrežama '
-                                        '(automatski prekid ugovora i gubitak licence); nervozna ili neprecizna '
-                                        'primopredaja na kraju smene.',
-                              'pitanje': 'Kako biste formulisali večernji izveštaj majci koja je došla umorna sa '
-                                         'posla, a dete je tog dana imalo epizodu visoke temperature?',
-                              'teze': 'Podsetite polaznice: na ovom nivou vrhunska porodica ne plaća samo čuvanje '
-                                      'deteta – oni plaćaju mir, sigurnost i spokoj. Dnevnik nege je ogledalo '
-                                      'profesionalizma dadilje. On sprečava nesporazume i gradi trajno poverenje sa '
-                                      'roditeljima.'},
-        'logo': 'logo_horizontal_light.png',
-        'metrics': [   {'lbl': 'Diskrecija i poverenje', 'val': '100%'},
-                       {'lbl': 'Pedijatrijska savest', 'val': '24/7'},
-                       {'lbl': 'Standard izvrsnosti', 'val': 'Royal'}],
+        'lecturer_notes': {   'cilj': 'Zaključiti obuku, definisati profesionalni i etički kodeks i pripremiti '
+                                      'polaznice za uspešan rad u klijentskim porodicama.',
+                              'greske': 'Objavljivanje bilo kakve fotografije deteta ili enterijera na Instagramu ili '
+                                        'TikToku – to povlači trenutni otkaz i gubitak licence.',
+                              'pitanje': 'Kako ćete odgovoriti prijateljima ili poznanicima koji vas pitaju kod koga '
+                                         'radite i kako izgleda kuća poznatog klijenta?',
+                              'teze': 'Izvrsnost je navika, a ne jednokratan čin. Dnevnik nege je ogledalo '
+                                      'profesionalnosti, a diskrecija je sveta. Zahvalite se polaznicama u ime '
+                                      'saradnika Spec. strukovne med-sestre Jelene Aleksić i brenda Royal Nanny.'},
         'module': 'Završni modul',
-        'subtitle': 'Profesionalna komunikacija, poverenje roditelja i pečat Royal Nanny',
-        'title': 'Standardi izvrsnosti: Dnevnik nege, diskrecija i etika',
-        'title_styled': 'Standardi izvrsnosti: <em>Dnevnik nege</em> i diskrecija'}]
-
+        'subtitle': 'Partnerstvo sa roditeljima, standardi elitne nege i sertifikacija predavača',
+        'title': 'Dnevnik nege, diskrecija i etički kodeks Royal Nanny',
+        'title_styled': 'Dnevnik nege, <em>diskrecija i etički kodeks Royal Nanny</em>'}]

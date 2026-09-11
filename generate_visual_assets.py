@@ -94,7 +94,7 @@ def draw_item(draw, x, y, label, desc, font_lbl=F_BOLD, font_desc=F_BODY, col_lb
 # -------------------------------------------------------------
 def make_slide05():
     img, draw = create_base_canvas(
-        'ROYAL NANNY • MODUL I: NEGA NOVOROĐENČETA',
+        'ROYAL NANNY • MODUL 1: HIGIJENA I NEGA NOVOROĐENČETA',
         'STANICA ZA KUPANJE: PRIPREMA PRE SVLAČENJA',
         'Zlatni standard: Sve je na dohvat ruke pre nego što se beba svuče'
     )
@@ -142,7 +142,7 @@ def make_slide05():
 # -------------------------------------------------------------
 def make_slide08():
     img, draw = create_base_canvas(
-        'ROYAL NANNY • MODUL I: PROTOKOL NEGE PUPKA',
+        'ROYAL NANNY • MODUL 1: NEGA PUPČANIKA I PUPČANE RANE',
         'OBRADA PUPČANIKA I PUPČANE RANE',
         'Zlatni standard suve nege pupka i rano uočavanje infekcije'
     )
@@ -187,7 +187,7 @@ def make_slide08():
 # -------------------------------------------------------------
 def make_slide12():
     img, draw = create_base_canvas(
-        'ROYAL NANNY • MODUL II: ISHRANA ODOJČETA',
+        'ROYAL NANNY • MODUL 2: DOJENJE',
         'POLOŽAJI PRI DOJENJU I ASIMETRIČNI HVAT',
         'Biomehanika pravilnog podoja bez bola i ragada'
     )
@@ -233,7 +233,7 @@ def make_slide12():
 # -------------------------------------------------------------
 def make_slide13():
     img, draw = create_base_canvas(
-        'ROYAL NANNY • MODUL II: PEDIJATRIJSKA PODRŠKA',
+        'ROYAL NANNY • MODUL 2: DOJENJE',
         'IZAZOVI U LAKTACIJI: PROTOKOL TRIJAŽE',
         'Efikasno olakšavanje tegoba i razlikovanje prepunjenosti od mastitisa'
     )
@@ -275,7 +275,7 @@ def make_slide13():
 # -------------------------------------------------------------
 def make_slide14():
     img, draw = create_base_canvas(
-        'ROYAL NANNY • MODUL II: PROTOKOL SKLADIŠTENJA',
+        'ROYAL NANNY • MODUL 2: DOJENJE',
         'SKLADIŠTENJE MAJČINOG MLEKA: PRAVILO 4-4-6',
         'Očuvanje nutritivnih i imunoloških svojstava izmlazanog mleka'
     )
@@ -328,7 +328,7 @@ def make_slide14():
 # -------------------------------------------------------------
 def make_slide15():
     img, draw = create_base_canvas(
-        'ROYAL NANNY • MODUL II: MLEČNA FORMULA',
+        'ROYAL NANNY • MODUL 2: DOJENJE',
         'ADAPTIRANA MLEČNA FORMULA: STERILNA PRIPREMA',
         'Sigurnost pripreme i prevencija bakterijskih infekcija'
     )
@@ -371,7 +371,7 @@ def make_slide15():
 # -------------------------------------------------------------
 def make_slide21():
     img, draw = create_base_canvas(
-        'ROYAL NANNY • MODUL V: PROTOKOL ZA FEBRILNA STANJA',
+        'ROYAL NANNY • MODUL 4: NEGA BOLESNOG DETETA',
         'VISOKA TEMPERATURA: MERENJE I HLAĐENJE',
         'Egzaktni pragovi febrilnosti i bezbedne mere fizikalnog rashlađivanja'
     )
@@ -418,7 +418,7 @@ def make_slide21():
 # -------------------------------------------------------------
 def make_slide22():
     img, draw = create_base_canvas(
-        'ROYAL NANNY • MODUL IV: HITNA STANJA I TEMPERATURA',
+        'ROYAL NANNY • MODUL 4: NEGA BOLESNOG DETETA',
         'DOZIRANJE ANTIPIRETIKA: PARACETAMOL VS IBUPROFEN',
         'Zlatno pravilo pedijatrije: Lek se dozira STROGO PO KILOGRAMIMA, nikada po uzrastu!'
     )
@@ -479,7 +479,7 @@ def make_slide22():
 # -------------------------------------------------------------
 def make_slide23():
     img, draw = create_base_canvas(
-        'ROYAL NANNY • MODUL IV: GASTROENTEROLOGIJA',
+        'ROYAL NANNY • MODUL 4: NEGA BOLESNOG DETETA',
         'POVRAĆANJE, DIJAREJA I ORALNA REHIDRACIJA',
         'Klinička trijaža, sprečavanje dehidratacije i primena O.R.S.'
     )
@@ -531,7 +531,7 @@ def make_slide23():
 # -------------------------------------------------------------
 def make_slide24():
     img, draw = create_base_canvas(
-        'ROYAL NANNY • MODUL IV: RESPIRATORNA TOALETA',
+        'ROYAL NANNY • MODUL 4: NEGA BOLESNOG DETETA',
         'RESPIRATORNE INFEKCIJE I TOALETA OČIJU',
         'Tehnika aspiracije nosa i nega zapušenih suznih kanala'
     )
@@ -573,7 +573,7 @@ def make_slide24():
 # -------------------------------------------------------------
 def make_slide25():
     img, draw = create_base_canvas(
-        'ROYAL NANNY • MODUL VI: BEZBEDNOST I PREVENCIJA',
+        'ROYAL NANNY • MODUL 4: NEGA BOLESNOG DETETA',
         'MAPA BEZBEDNOSTI DOMA PO UZRASTIMA',
         'Prevencija tihih opasnosti kod odojčadi i radoznalih todlera'
     )
@@ -624,7 +624,7 @@ def make_slide25():
 # -------------------------------------------------------------
 def make_slide26():
     img, draw = create_base_canvas(
-        'ROYAL NANNY • MODUL V: URGENTNA STANJA',
+        'ROYAL NANNY • MODUL 4: NEGA BOLESNOG DETETA',
         'PADOVI I POVREDE GLAVE: 48-ČASOVNI PROTOKOL',
         'Smiren pristup, prva pomoć na licu mesta i praćenje znakova potresa mozga'
     )
@@ -668,7 +668,7 @@ def make_slide26():
 # -------------------------------------------------------------
 def make_slide28():
     img, draw = create_base_canvas(
-        'ROYAL NANNY • MODUL V: PEDIJATRIJSKA DIJAGNOSTIKA',
+        'ROYAL NANNY • MODUL 4: NEGA BOLESNOG DETETA',
         'UJEDI INSEKATA, DEČJI OSIPI I ALERGIJE',
         'Pravilno uklanjanje krpelja, prepoznavanje osipa i anafilaksa'
     )
@@ -709,7 +709,7 @@ def make_slide28():
 # -------------------------------------------------------------
 def make_slide30():
     img, draw = create_base_canvas(
-        'ROYAL NANNY • MODUL VI: APOTEKA I FARMACIJA',
+        'ROYAL NANNY • MODUL 4: NEGA BOLESNOG DETETA',
         'ZLATNI STANDARD KUĆNE I PUTNE APOTEKE',
         '4 obavezna segmenta profesionalne torbe za pedijatrijsku negu'
     )
@@ -756,7 +756,7 @@ def make_slide30():
 # -------------------------------------------------------------
 def make_slide31():
     img, draw = create_base_canvas(
-        'ROYAL NANNY • MODUL VI: PROTOKOLI DAVANJA LEKOVA',
+        'ROYAL NANNY • MODUL 4: NEGA BOLESNOG DETETA',
         'TEHNIKE BEZBEDNE ADMINISTRACIJE LEKOVA',
         'Sprečavanje aspiracije, gušenja i stresa kod deteta'
     )

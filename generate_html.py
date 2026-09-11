@@ -343,10 +343,95 @@ def build_html():
             min-height: 0;
         }
 
-        /* Layout: Split Right Image */
+        /* Layout: Split Right Image (Root layout extending right edge up to logo) */
+        .layout-split-image-root {
+            display: grid;
+            grid-template-columns: 1.04fr 0.96fr;
+            gap: 28px;
+            flex: 1;
+            min-height: 0;
+            height: calc(100% - 44px);
+        }
+
+        .split-left-main {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            min-height: 0;
+        }
+
+        .split-left-main .slide-titles-wrap {
+            margin-bottom: 8px;
+            flex-shrink: 0;
+        }
+
+        .split-left-main .split-text-col {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            min-height: 0;
+        }
+
+        .split-left-main .split-text-col .proto-card {
+            padding: 10px 16px;
+        }
+
+        .split-left-main .split-text-col .proto-card-title {
+            font-size: 17.5px;
+            margin-bottom: 4px;
+        }
+
+        .split-left-main .split-text-col .proto-bullets {
+            gap: 3px;
+        }
+
+        .split-left-main .split-text-col .proto-bullets li {
+            font-size: 13.2px;
+            line-height: 1.32;
+            padding-left: 14px;
+        }
+
+        .split-right-main {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            min-height: 0;
+        }
+
+        .split-right-header {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            height: 38px;
+            margin-bottom: 8px;
+            flex-shrink: 0;
+        }
+
+        .split-right-main .split-image-col {
+            flex: 1;
+            min-height: 0;
+            border-radius: 12px;
+            overflow: hidden;
+            border: 1px solid var(--c-border);
+            box-shadow: var(--shadow-sm);
+            background: #EDE6D8;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+        }
+
+        .split-right-main .split-image-col img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            display: block;
+        }
+
         .layout-split-image {
             display: grid;
-            grid-template-columns: 1.18fr 0.82fr;
+            grid-template-columns: 1.04fr 0.96fr;
             gap: 24px;
             height: 100%;
             min-height: 0;
@@ -1111,118 +1196,124 @@ def build_html():
                 `).join("") + `</div>`;
             }
 
-            if (s.layout === "split_right_image" || s.layout === "cover") {
-                bodyHtml += `
-                    <div class="layout-split-image">
-                        <div class="split-text-col">
-                            ${metricsHtml}
-                            ${s.content_blocks.map(b => `
-                                <div class="proto-card">
-                                    <h3 class="proto-card-title">${b.title}</h3>
-                                    ${b.text ? `<p class="proto-card-desc">${b.text}</p>` : ""}
-                                    ${b.bullets ? `
-                                        <ul class="proto-bullets">
-                                            ${b.bullets.map(item => `<li>${item}</li>`).join("")}
-                                        </ul>
-                                    ` : ""}
-                                </div>
-                            `).join("")}
-                        </div>
-                        ${(() => {
-                            if (!s.image) return '<div class="split-image-col"></div>';
-                            const isInfo = s.image.startsWith("slide") || s.image.includes("_protocol") || s.image.includes("_card") || s.image.includes("_station") || s.image.includes("_care") || s.image.includes("_admin") || s.image.includes("_kit") || s.image.includes("_allergies") || s.image.includes("_positions") || s.image.includes("_first_aid") || s.image.includes("_dehydration") || s.image.includes("_hd.png");
-                            const colStyle = isInfo ? "background: transparent; border: none; box-shadow: none;" : "";
-                            const fitStyle = isInfo ? "object-fit: contain; background: transparent; padding: 0;" : "object-fit: cover;";
-                            return `
-                                <div class="split-image-col" style="${colStyle}">
-                                    <img src="extracted_assets/${s.image}" alt="${s.title}" style="${fitStyle}">
-                                    ${!isInfo ? `
-                                        <div class="photo-overlay-badge">
-                                            <img src="${LOGO_LIGHT}" alt="Royal Nanny">
-                                        </div>
-                                    ` : ""}
-                                </div>
-                            `;
-                        })()}
-                    </div>
-                `;
-            } else if (s.layout === "two_col_cards") {
-                bodyHtml += `
-                    <div style="display: flex; flex-direction: column; width: 100%; height: 100%;">
-                        ${metricsHtml}
-                        <div class="layout-two-col">
-                            ${s.content_blocks.map(b => `
-                                <div class="proto-card">
-                                    <h3 class="proto-card-title">${b.title}</h3>
-                                    ${b.text ? `<p class="proto-card-desc">${b.text}</p>` : ""}
-                                    ${b.bullets ? `
-                                        <ul class="proto-bullets">
-                                            ${b.bullets.map(item => `<li>${item}</li>`).join("")}
-                                        </ul>
-                                    ` : ""}
-                                </div>
-                            `).join("")}
-                        </div>
-                    </div>
-                `;
-            } else if (s.layout === "three_cards") {
-                bodyHtml += `
-                    <div style="display: flex; flex-direction: column; width: 100%; height: 100%;">
-                        ${metricsHtml}
-                        <div class="layout-three-cards">
-                            ${s.content_blocks.map(b => `
-                                <div class="proto-card">
-                                    <h3 class="proto-card-title">${b.title}</h3>
-                                    ${b.text ? `<p class="proto-card-desc">${b.text}</p>` : ""}
-                                    ${b.bullets ? `
-                                        <ul class="proto-bullets">
-                                            ${b.bullets.map(item => `<li>${item}</li>`).join("")}
-                                        </ul>
-                                    ` : ""}
-                                </div>
-                            `).join("")}
-                        </div>
-                    </div>
-                `;
-            } else if (s.layout === "matrix_4") {
-                bodyHtml += `
-                    <div class="layout-matrix-4">
-                        ${s.content_blocks.map(b => `
-                            <div class="proto-card">
-                                <h3 class="proto-card-title">${b.title}</h3>
-                                <div class="proto-card-inner">
-                                    ${b.text ? `<p class="proto-card-desc">${b.text}</p>` : ""}
-                                    ${b.bullets ? `
-                                        <ul class="proto-bullets">
-                                            ${b.bullets.map(item => `<li>${item}</li>`).join("")}
-                                        </ul>
-                                    ` : ""}
-                                </div>
-                            </div>
-                        `).join("")}
-                    </div>
-                `;
-            }
-
-            bodyHtml += `</div>`;
-
             let footerHtml = `
                 <div class="slide-inner-footer">
-                    <div class="footer-values-strip">
-                        <span>PROVERENE</span>
-                        <span class="val-dot">•</span>
-                        <span>ELEGANTNE</span>
-                        <span class="val-dot">•</span>
-                        <span>POUZDANE</span>
-                    </div>
                     <div class="footer-meta-strip">
                         <span>ROYAL NANNY AKADEMIJA • STANDARDI PROFESIONALNE NEGE</span>
-                        <span class="footer-slide-num">${String(index + 1).padStart(2, '0')} / ${String(SLIDES.length).padStart(2, '0')}</span>
                     </div>
+                    <div class="footer-slide-num">${String(index + 1).padStart(2, '0')} / ${String(SLIDES.length).padStart(2, '0')}</div>
                 </div>
             `;
 
-            slideContent.innerHTML = headerHtml + bodyHtml + footerHtml;
+            if (s.layout === "split_right_image" || s.layout === "cover") {
+                const isInfo = !s.image ? false : (s.image.startsWith("slide") || s.image.includes("_protocol") || s.image.includes("_card") || s.image.includes("_station") || s.image.includes("_care") || s.image.includes("_admin") || s.image.includes("_kit") || s.image.includes("_allergies") || s.image.includes("_positions") || s.image.includes("_first_aid") || s.image.includes("_dehydration") || s.image.includes("_hd.png"));
+                const colStyle = isInfo ? "background: transparent; border: none; box-shadow: none;" : "";
+                const fitStyle = isInfo ? "object-fit: contain; background: transparent; padding: 0;" : "object-fit: cover;";
+
+                slideContent.innerHTML = `
+                    <div class="layout-split-image-root">
+                        <div class="split-left-main">
+                            <div class="slide-titles-wrap">
+                                <div class="brand-eyebrow">
+                                    <img src="${currentMonogram}" alt="RN" class="rn-monogram-mark">
+                                    <span class="category-pill">${s.category || "ROYAL NANNY"}</span>
+                                </div>
+                                <h1 class="slide-h1">${s.title_styled || s.title}</h1>
+                                ${s.subtitle ? `<p class="slide-sub">${s.subtitle}</p>` : ""}
+                            </div>
+                            <div class="split-text-col">
+                                ${metricsHtml}
+                                ${s.content_blocks.map(b => `
+                                    <div class="proto-card">
+                                        <h3 class="proto-card-title">${b.title}</h3>
+                                        ${b.text ? `<p class="proto-card-desc">${b.text}</p>` : ""}
+                                        ${b.bullets ? `
+                                            <ul class="proto-bullets">
+                                                ${b.bullets.map(item => `<li>${item}</li>`).join("")}
+                                            </ul>
+                                        ` : ""}
+                                    </div>
+                                `).join("")}
+                            </div>
+                        </div>
+                        <div class="split-right-main">
+                            <div class="split-right-header">
+                                <img src="${currentLogo}" alt="Royal Nanny" class="slide-watermark-logo">
+                            </div>
+                            <div class="split-image-col" style="${colStyle}">
+                                ${s.image ? `<img src="extracted_assets/${s.image}" alt="${s.title}" style="${fitStyle}">` : ""}
+                                ${(!isInfo && s.image) ? `
+                                    <div class="photo-overlay-badge">
+                                        <img src="${LOGO_LIGHT}" alt="Royal Nanny">
+                                    </div>
+                                ` : ""}
+                            </div>
+                        </div>
+                    </div>
+                    ${footerHtml}
+                `;
+            } else {
+                if (s.layout === "two_col_cards") {
+                    bodyHtml += `
+                        <div style="display: flex; flex-direction: column; width: 100%; height: 100%;">
+                            ${metricsHtml}
+                            <div class="layout-two-col">
+                                ${s.content_blocks.map(b => `
+                                    <div class="proto-card">
+                                        <h3 class="proto-card-title">${b.title}</h3>
+                                        ${b.text ? `<p class="proto-card-desc">${b.text}</p>` : ""}
+                                        ${b.bullets ? `
+                                            <ul class="proto-bullets">
+                                                ${b.bullets.map(item => `<li>${item}</li>`).join("")}
+                                            </ul>
+                                        ` : ""}
+                                    </div>
+                                `).join("")}
+                            </div>
+                        </div>
+                    `;
+                } else if (s.layout === "three_cards") {
+                    bodyHtml += `
+                        <div style="display: flex; flex-direction: column; width: 100%; height: 100%;">
+                            ${metricsHtml}
+                            <div class="layout-three-cards">
+                                ${s.content_blocks.map(b => `
+                                    <div class="proto-card">
+                                        <h3 class="proto-card-title">${b.title}</h3>
+                                        ${b.text ? `<p class="proto-card-desc">${b.text}</p>` : ""}
+                                        ${b.bullets ? `
+                                            <ul class="proto-bullets">
+                                                ${b.bullets.map(item => `<li>${item}</li>`).join("")}
+                                            </ul>
+                                        ` : ""}
+                                    </div>
+                                `).join("")}
+                            </div>
+                        </div>
+                    `;
+                } else if (s.layout === "matrix_4") {
+                    bodyHtml += `
+                        <div class="layout-matrix-4">
+                            ${s.content_blocks.map(b => `
+                                <div class="proto-card">
+                                    <h3 class="proto-card-title">${b.title}</h3>
+                                    <div class="proto-card-inner">
+                                        ${b.text ? `<p class="proto-card-desc">${b.text}</p>` : ""}
+                                        ${b.bullets ? `
+                                            <ul class="proto-bullets">
+                                                ${b.bullets.map(item => `<li>${item}</li>`).join("")}
+                                            </ul>
+                                        ` : ""}
+                                    </div>
+                                </div>
+                            `).join("")}
+                        </div>
+                    `;
+                }
+
+                bodyHtml += `</div>`;
+                slideContent.innerHTML = headerHtml + bodyHtml + footerHtml;
+            }
 
             slideCounter.textContent = `${String(index + 1).padStart(2, '0')} / ${String(SLIDES.length).padStart(2, '0')}`;
             moduleBadge.textContent = s.module;

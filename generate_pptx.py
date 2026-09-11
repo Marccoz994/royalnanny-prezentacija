@@ -284,41 +284,38 @@ def render_split_image_layout(slide, s, is_dark):
         img_path = os.path.join(ASSETS_DIR, img_name)
         if os.path.exists(img_path):
             is_info = img_name.startswith("slide") or any(k in img_name for k in ["_protocol", "_card", "_station", "_care", "_admin", "_kit", "_allergies", "_positions", "_first_aid", "_dehydration", "_hd.png"])
+            box_w = Inches(4.8)
+            box_h = Inches(5.6)
+            box_aspect = 4.8 / 5.6
+            
             if not is_info:
-                card = slide.shapes.add_shape(MSO_SHAPE.ROUNDED_RECTANGLE, Inches(8.0), Inches(1.85), Inches(4.55), Inches(5.0))
+                card = slide.shapes.add_shape(MSO_SHAPE.ROUNDED_RECTANGLE, Inches(7.7), Inches(1.15), Inches(4.85), Inches(5.65))
                 card.fill.solid()
                 card.fill.fore_color.rgb = RGB_DARK_CARD if is_dark else RGB_CARD_BG
                 card.line.color.rgb = RGB_SAND if is_dark else RGB_BORDER
-                card.line.width = Pt(1)
-            
             from PIL import Image as PILImage
             with PILImage.open(img_path) as p_img:
                 img_w, img_h = p_img.size
                 aspect = img_w / img_h
-                
-            box_w = Inches(4.25)
-            box_h = Inches(4.7)
-            box_aspect = 4.25 / 4.7
-            
+
             if aspect > box_aspect:
                 pic_w = box_w
                 pic_h = box_w / aspect
-                pic_left = Inches(8.15)
-                pic_top = Inches(2.0) + (box_h - pic_h) / 2
+                pic_left = Inches(7.72)
+                pic_top = Inches(1.18) + (box_h - pic_h) / 2
             else:
                 pic_h = box_h
                 pic_w = box_h * aspect
-                pic_top = Inches(2.0)
-                pic_left = Inches(8.15) + (box_w - pic_w) / 2
+                pic_top = Inches(1.18)
+                pic_left = Inches(7.72) + (box_w - pic_w) / 2
                 
             slide.shapes.add_picture(img_path, pic_left, pic_top, width=pic_w, height=pic_h)
             
             # Watermark overlay for photoshoot photos
-            is_info = img_name.startswith("slide") or any(k in img_name for k in ["_protocol", "_card", "_station", "_care", "_admin", "_kit", "_allergies", "_positions", "_first_aid", "_dehydration", "_hd.png"])
             if not is_info:
                 wm_path = os.path.join(ASSETS_DIR, "logo_horizontal_light.png")
                 if os.path.exists(wm_path):
-                    slide.shapes.add_picture(wm_path, Inches(9.3), Inches(2.05), width=Inches(1.8))
+                    slide.shapes.add_picture(wm_path, Inches(9.2), Inches(1.3), width=Inches(1.8))
 
     # Provera za metrics traku
     metrics = s.get("metrics", [])

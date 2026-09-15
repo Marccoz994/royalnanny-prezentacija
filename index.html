@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="sr">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <!-- description postavlja PageMeta/Helmet po ruti (src/lib/pageMeta.js);
+         statički tag bi pravio duplikat koji Helmet ne može da ukloni -->
+    <meta name="ssr-fallback-description" content="pronadjimo.se - Poslovni direktorijum. Registrujte profil, pronađite usluge, događaje i prilike." />
+    <title>Pronađimo.se — Povežite se sa Stručnjacima i Firmama u Srbiji</title>
+
+    <!-- ⚠️ OVDE NEMA ANALITIKE — I NE SME DA JE BUDE.
+         Google Tag Manager i Google Analytics su se ranije učitavali odavde,
+         bezuslovno, pre nego što je posetilac išta rekao. Skripta ubačena u
+         <head> radi PRE nego što React uopšte krene, pa banner za kolačiće nije
+         imao šta da gejtuje — kad se prikaže, praćenje već traje.
+         Analitiku sada ubacuje `src/lib/analyticsConsent.js`, i to isključivo
+         posle izričitog pristanka. Bez pristanka se ne učita nikad. -->
+
+    <!-- Sentry je UKLONJEN odavde 02.08.2026 (nalaz B5).
+         Stajao je sinhrono u <head>, pa je svaki posetilac otvarao vezu ka
+         browser.sentry-cdn.com — sa svojom IP adresom, User-Agent-om i
+         Referer-om — pre nego što ga je iko išta pitao. Baner je istovremeno
+         tvrdio da se treća lica učitavaju tek posle pristanka.
+         Sada ga ubacuje `src/lib/analyticsConsent.js` → `applyConsent`, kroz
+         istu odluku kao analitiku. Greške se i dalje beleže PRVOM STRANOM
+         (`/api/errors`), pa odbijanje pristanka ne ostavlja nas slepim. -->
+
+
+    <!-- PWA Manifest -->
+    <link rel="manifest" href="/manifest.json" />
+    <meta name="theme-color" content="#863bff" />
+
+    <!-- iOS PWA -->
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="pronadjimo.se" />
+    <link rel="apple-touch-icon" href="/icons/apple-touch-icon.png" />
+
+    <!-- Windows Tile -->
+    <meta name="msapplication-TileColor" content="#863bff" />
+    <meta name="msapplication-TileImage" content="/icons/icon-144x144.png" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&display=swap">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" media="print" >
+    <noscript><link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet"></noscript>
+    <style>body { font-family: 'Outfit', sans-serif; }</style>
+    <script>
+      // Prevent "White Screen of Death" on first load after deployments due to missing chunks
+      window.addEventListener('error', function(e) {
+        if (e.message && (e.message.includes('Failed to fetch dynamically imported module') || e.message.includes('Importing a module script failed'))) {
+          if (!sessionStorage.getItem('chunk_failed_reloaded')) {
+            sessionStorage.setItem('chunk_failed_reloaded', 'true');
+            window.location.reload(true);
+          }
+        }
+      });
+    </script>
+  </head>
+  <body>
+    <!-- GTM <noscript> iframe je uklonjen zajedno sa GTM-om: ni on nije mogao
+         da čeka pristanak (nema JS koji bi ga zadržao), pa je posetilac bez
+         JavaScript-a bio praćen bez ijednog pitanja. -->
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
